@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032133E32A1D7A05002FD592 /* TickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032133E22A1D7A05002FD592 /* TickersApp.swift */; };
+		032133E52A1D7A05002FD592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032133E42A1D7A05002FD592 /* ContentView.swift */; };
+		032133E72A1D7A07002FD592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032133E62A1D7A07002FD592 /* Assets.xcassets */; };
+		032133EA2A1D7A07002FD592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032133E92A1D7A07002FD592 /* Preview Assets.xcassets */; };
+		032133F42A1D7A07002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032133F32A1D7A07002FD592 /* TickersTests.swift */; };
+		032133FE2A1D7A07002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032133FD2A1D7A07002FD592 /* TickersUITests.swift */; };
+		032134002A1D7A07002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032133FF2A1D7A07002FD592 /* TickersUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		032133F02A1D7A07002FD592 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032133D72A1D7A05002FD592 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032133DE2A1D7A05002FD592;
+			remoteInfo = Tickers;
+		};
+		032133FA2A1D7A07002FD592 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 032133D72A1D7A05002FD592 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 032133DE2A1D7A05002FD592;
+			remoteInfo = Tickers;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		032133DF2A1D7A05002FD592 /* Tickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		032133E22A1D7A05002FD592 /* TickersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersApp.swift; sourceTree = "<group>"; };
+		032133E42A1D7A05002FD592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		032133E62A1D7A07002FD592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		032133E92A1D7A07002FD592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		032133EF2A1D7A07002FD592 /* TickersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032133F32A1D7A07002FD592 /* TickersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersTests.swift; sourceTree = "<group>"; };
+		032133F92A1D7A07002FD592 /* TickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		032133FD2A1D7A07002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
+		032133FF2A1D7A07002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032133DC2A1D7A05002FD592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032133EC2A1D7A07002FD592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032133F62A1D7A07002FD592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032133D62A1D7A05002FD592 = {
+			isa = PBXGroup;
+			children = (
+				032133E12A1D7A05002FD592 /* Tickers */,
+				032133F22A1D7A07002FD592 /* TickersTests */,
+				032133FC2A1D7A07002FD592 /* TickersUITests */,
+				032133E02A1D7A05002FD592 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		032133E02A1D7A05002FD592 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032133DF2A1D7A05002FD592 /* Tickers.app */,
+				032133EF2A1D7A07002FD592 /* TickersTests.xctest */,
+				032133F92A1D7A07002FD592 /* TickersUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032133E12A1D7A05002FD592 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				032133E22A1D7A05002FD592 /* TickersApp.swift */,
+				032133E42A1D7A05002FD592 /* ContentView.swift */,
+				032133E62A1D7A07002FD592 /* Assets.xcassets */,
+				032133E82A1D7A07002FD592 /* Preview Content */,
+			);
+			path = Tickers;
+			sourceTree = "<group>";
+		};
+		032133E82A1D7A07002FD592 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				032133E92A1D7A07002FD592 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		032133F22A1D7A07002FD592 /* TickersTests */ = {
+			isa = PBXGroup;
+			children = (
+				032133F32A1D7A07002FD592 /* TickersTests.swift */,
+			);
+			path = TickersTests;
+			sourceTree = "<group>";
+		};
+		032133FC2A1D7A07002FD592 /* TickersUITests */ = {
+			isa = PBXGroup;
+			children = (
+				032133FD2A1D7A07002FD592 /* TickersUITests.swift */,
+				032133FF2A1D7A07002FD592 /* TickersUITestsLaunchTests.swift */,
+			);
+			path = TickersUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032133DE2A1D7A05002FD592 /* Tickers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032134032A1D7A07002FD592 /* Build configuration list for PBXNativeTarget "Tickers" */;
+			buildPhases = (
+				032133DB2A1D7A05002FD592 /* Sources */,
+				032133DC2A1D7A05002FD592 /* Frameworks */,
+				032133DD2A1D7A05002FD592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tickers;
+			productName = Tickers;
+			productReference = 032133DF2A1D7A05002FD592 /* Tickers.app */;
+			productType = "com.apple.product-type.application";
+		};
+		032133EE2A1D7A07002FD592 /* TickersTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032134062A1D7A07002FD592 /* Build configuration list for PBXNativeTarget "TickersTests" */;
+			buildPhases = (
+				032133EB2A1D7A07002FD592 /* Sources */,
+				032133EC2A1D7A07002FD592 /* Frameworks */,
+				032133ED2A1D7A07002FD592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032133F12A1D7A07002FD592 /* PBXTargetDependency */,
+			);
+			name = TickersTests;
+			productName = TickersTests;
+			productReference = 032133EF2A1D7A07002FD592 /* TickersTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		032133F82A1D7A07002FD592 /* TickersUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032134092A1D7A07002FD592 /* Build configuration list for PBXNativeTarget "TickersUITests" */;
+			buildPhases = (
+				032133F52A1D7A07002FD592 /* Sources */,
+				032133F62A1D7A07002FD592 /* Frameworks */,
+				032133F72A1D7A07002FD592 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				032133FB2A1D7A07002FD592 /* PBXTargetDependency */,
+			);
+			name = TickersUITests;
+			productName = TickersUITests;
+			productReference = 032133F92A1D7A07002FD592 /* TickersUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032133D72A1D7A05002FD592 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					032133DE2A1D7A05002FD592 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					032133EE2A1D7A07002FD592 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 032133DE2A1D7A05002FD592;
+					};
+					032133F82A1D7A07002FD592 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 032133DE2A1D7A05002FD592;
+					};
+				};
+			};
+			buildConfigurationList = 032133DA2A1D7A05002FD592 /* Build configuration list for PBXProject "Tickers" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 032133D62A1D7A05002FD592;
+			productRefGroup = 032133E02A1D7A05002FD592 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032133DE2A1D7A05002FD592 /* Tickers */,
+				032133EE2A1D7A07002FD592 /* TickersTests */,
+				032133F82A1D7A07002FD592 /* TickersUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032133DD2A1D7A05002FD592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032133EA2A1D7A07002FD592 /* Preview Assets.xcassets in Resources */,
+				032133E72A1D7A07002FD592 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032133ED2A1D7A07002FD592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032133F72A1D7A07002FD592 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032133DB2A1D7A05002FD592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032133E52A1D7A05002FD592 /* ContentView.swift in Sources */,
+				032133E32A1D7A05002FD592 /* TickersApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032133EB2A1D7A07002FD592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032133F42A1D7A07002FD592 /* TickersTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		032133F52A1D7A07002FD592 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032134002A1D7A07002FD592 /* TickersUITestsLaunchTests.swift in Sources */,
+				032133FE2A1D7A07002FD592 /* TickersUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		032133F12A1D7A07002FD592 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032133DE2A1D7A05002FD592 /* Tickers */;
+			targetProxy = 032133F02A1D7A07002FD592 /* PBXContainerItemProxy */;
+		};
+		032133FB2A1D7A07002FD592 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 032133DE2A1D7A05002FD592 /* Tickers */;
+			targetProxy = 032133FA2A1D7A07002FD592 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		032134012A1D7A07002FD592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		032134022A1D7A07002FD592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032134042A1D7A07002FD592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.Tickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		032134052A1D7A07002FD592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.Tickers;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		032134072A1D7A07002FD592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tickers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tickers";
+			};
+			name = Debug;
+		};
+		032134082A1D7A07002FD592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tickers.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tickers";
+			};
+			name = Release;
+		};
+		0321340A2A1D7A07002FD592 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tickers;
+			};
+			name = Debug;
+		};
+		0321340B2A1D7A07002FD592 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tickers;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032133DA2A1D7A05002FD592 /* Build configuration list for PBXProject "Tickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032134012A1D7A07002FD592 /* Debug */,
+				032134022A1D7A07002FD592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032134032A1D7A07002FD592 /* Build configuration list for PBXNativeTarget "Tickers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032134042A1D7A07002FD592 /* Debug */,
+				032134052A1D7A07002FD592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032134062A1D7A07002FD592 /* Build configuration list for PBXNativeTarget "TickersTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032134072A1D7A07002FD592 /* Debug */,
+				032134082A1D7A07002FD592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032134092A1D7A07002FD592 /* Build configuration list for PBXNativeTarget "TickersUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0321340A2A1D7A07002FD592 /* Debug */,
+				0321340B2A1D7A07002FD592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 032133D72A1D7A05002FD592 /* Project object */;
+}
