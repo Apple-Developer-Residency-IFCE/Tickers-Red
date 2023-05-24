@@ -14,6 +14,9 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+                .tickerFontRegular(size: 24)
+            Text("Hello, world!")
+                .tickerFontBold(size: 24)
         }
         .padding()
     }
@@ -24,3 +27,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
