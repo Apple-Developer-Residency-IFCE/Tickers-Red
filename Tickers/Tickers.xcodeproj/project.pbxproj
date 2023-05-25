@@ -96,10 +96,9 @@
 		032134172A1D7AC4002FD592 /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
-				645E0DE62A1EDE7900293553 /* VViews */,
+				645E0DE62A1EDE7900293553 /* Timer */,
 				032134182A1D7AC4002FD592 /* TickersApp.swift */,
 				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
-				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
 			);
@@ -131,11 +130,12 @@
 			path = TickersUITests;
 			sourceTree = "<group>";
 		};
-		645E0DE62A1EDE7900293553 /* VViews */ = {
+		645E0DE62A1EDE7900293553 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
 			);
-			path = VViews;
+			path = Timer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

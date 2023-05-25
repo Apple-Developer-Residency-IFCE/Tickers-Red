@@ -14,32 +14,41 @@ struct TimerView: View {
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
+    let color = Color(
+        red: 59 / 255,
+        green: 129 / 255,
+        blue: 235 / 255
+    )
+    
+    let fadingColor = Color(
+        red: 213 / 255,
+        green: 224 / 255,
+        blue: 249 / 255
+    )
+    
     var body: some View {
         GeometryReader { geo in
             VStack(spacing: 15) {
-                ZStack {
-                    
+                ZStack(alignment: .trailing) {
                     Circle()
-                        .fill(.clear)
-                        .padding(-40)
-                    
+                        .stroke(fadingColor, lineWidth: 10)
                     Circle()
                         .trim(from: 0, to: progressTimer)
-                        .stroke(Color(red: 59 / 255, green: 129 / 255, blue: 235 / 255), lineWidth: 10)
-                        .padding(-2)
-                    
-                    Circle()
-                        .fill(.clear)
-                    
-                    Circle()
-                        .trim(from: 0, to: progressTimer)
-                        .stroke(Color.white.opacity(0.7), lineWidth: 10)
+                        .stroke(color, lineWidth: 10)
                     ballKnobView
+                    Circle()
+                        .fill(fadingColor)
+                        .frame(width: 10, height: 10)
+                        .offset(x: 5)
+                        .opacity(1)
                 }
-                
                 .padding()
                 .frame(height: geo.size.width)
-                .rotationEffect(.degrees(-90))
+                .rotationEffect(.degrees(90))
+                .rotation3DEffect(
+                    .degrees(180),
+                    axis: (x: 0, y: 1, z: 0)
+                )
                 .animation(.spring(), value: progressTimer)
                 .overlay {
                     Text("\(count)")
