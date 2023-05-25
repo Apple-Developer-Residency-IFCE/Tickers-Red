@@ -1,17 +1,15 @@
 {
   "images" : [
     {
-      "filename" : "missoes.svg",
+      "filename" : "Baby Cat (3).svg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "missoes 1.svg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "missoes 2.svg",
       "idiom" : "universal",
       "scale" : "3x"
     }
