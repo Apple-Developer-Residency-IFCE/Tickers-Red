@@ -8,11 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    var image = Image("babyCatAwake")
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
+            image
             Text("Hello, world!")
                 .tickerFont(size: 24, weight: .regular)
             Text("Hello, world!")
