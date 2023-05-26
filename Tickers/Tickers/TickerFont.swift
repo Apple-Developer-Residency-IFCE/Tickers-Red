@@ -8,12 +8,13 @@
 import Foundation
 import SwiftUI
 
+enum TickerFontWeight: String {
+    case regular = "Nunito-Regular"
+    case bold = "Nunito-Bold"
+}
 
 extension Text {
-    func tickerFontRegular(size: CGFloat) -> Text {
-        self.font(.custom("Nunito-Regular", size: size))
-    }
-    func tickerFontBold(size: CGFloat) -> Text {
-        self.font(.custom("Nunito-Bold", size: size))
+    func tickerFont(size: CGFloat, weight: TickerFontWeight) -> Text {
+        return self.font(.custom(weight.rawValue, size: size))
     }
 }

@@ -14,9 +14,9 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
-                .tickerFontRegular(size: 24)
+                .tickerFont(size: 24, weight: .regular)
             Text("Hello, world!")
-                .tickerFontBold(size: 24)
+                .tickerFont(size: 24, weight: .bold)
         }
         .padding()
     }
