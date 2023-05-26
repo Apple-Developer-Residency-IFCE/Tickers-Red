@@ -9,8 +9,10 @@ import SwiftUI
 
 struct TimerView: View {
     
+    @State var isTimerRunning = false
     @State private var progressTimer: Double = 1.0
-    @State private var count: Int = 10
+    @State private var startTime = Date()
+    @State private var timerString = "0:00"
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -51,15 +53,14 @@ struct TimerView: View {
                 )
                 .animation(.spring(), value: progressTimer)
                 .overlay {
-                    Text("\(count)")
+                    Text(self.timerString)
                         .font(.largeTitle)
-                        .tint(.black)
+                        .foregroundColor(color)
                     
                 }
                 .onReceive(timer) { _ in
                     progressTimer -= 0.1
-                    count -= 1
-                    if (progressTimer <= 0.0 || count <= 0) {
+                    if (progressTimer <= 0.0) {
                         timer.upstream.connect().cancel()
                     }
                 }
