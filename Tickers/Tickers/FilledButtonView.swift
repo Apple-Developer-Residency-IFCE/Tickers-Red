@@ -13,6 +13,7 @@ struct ConfirmBtn: View {
     var body: some View {
         ZStack{
             Text(text)
+                .tickerFont(size: 24, weight: .bold)
                 .padding([.bottom, .top], 11)
                 .padding([.leading, .trailing], 20)
                 .background{
@@ -20,7 +21,6 @@ struct ConfirmBtn: View {
                         .foregroundColor(.blue)
                 }
                 .foregroundColor(.white)
-                .bold()
         }
         .onTapGesture {
             print("dosomethingelse!")

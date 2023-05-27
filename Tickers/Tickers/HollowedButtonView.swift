@@ -13,6 +13,7 @@ struct HollowButton: View {
     var body: some View {
         ZStack{
             Text(text)
+                .tickerFont(size: 24, weight: .bold)
                 .padding([.bottom, .top], 11)
                 .padding([.leading, .trailing], 20)
                 .background{
@@ -21,7 +22,6 @@ struct HollowButton: View {
                         .foregroundColor(.clear)
                 }
                 .foregroundColor(.blue)
-                .bold()
         }
         .onTapGesture {
             print("dosomething?")
