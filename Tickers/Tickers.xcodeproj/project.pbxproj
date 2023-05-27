@@ -15,6 +15,9 @@
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
 		645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
+		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
+		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
+		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
 		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +50,10 @@
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		645E0DE12A1EDE4D00293553 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		64EEA3E62A1ECAD70007F9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
 		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,8 +106,11 @@
 			isa = PBXGroup;
 			children = (
 				645E0DE62A1EDE7900293553 /* Timer */,
+				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
+				64EEA3E02A1EC93D0007F9CD /* Assets */,
 				032134182A1D7AC4002FD592 /* TickersApp.swift */,
 				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
+				64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
 			);
@@ -139,6 +149,23 @@
 				CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */,
 			);
 			path = Timer;
+			sourceTree = "<group>";
+		};
+		64EEA3E02A1EC93D0007F9CD /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				64EEA3E12A1EC9560007F9CD /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		64EEA3E12A1EC9560007F9CD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */,
+				64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,7 +272,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */,
 				032134202A1D7AC4002FD592 /* Preview Assets.xcassets in Resources */,
+				64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */,
 				0321341D2A1D7AC4002FD592 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +304,7 @@
 				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
+				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -415,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,14 +463,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tickers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,14 +494,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Tickers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,7 +526,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62NRBAKMQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -512,7 +546,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62NRBAKMQ3;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,6 +565,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62NRBAKMQ3;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -549,6 +584,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62NRBAKMQ3;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.TickersUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

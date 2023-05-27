@@ -81,9 +81,10 @@ struct TimerView: View {
                     componentView
                 }
                 .onReceive(timer) { _ in
-                    progressTimer -= 0.1
+                    durationInSecond -= 1
+                    progressTimer -= stepTimer
                     if (progressTimer <= 0.0 || durationInSecond <= 0) {
-                        configureTimer(true)
+                        configureTimer(false)
                     }
                 }
             }
@@ -96,7 +97,7 @@ struct TimerView: View {
     private var ballKnobView: some View {
         GeometryReader { knobGeo in
             Circle()
-                .fill(Color(red: 59 / 255, green: 129 / 255, blue: 235 / 255))
+                .fill(color)
                 .frame(width: 20, height: 20)
                 .overlay(
                     Circle()
@@ -148,6 +149,6 @@ struct TimerView: View {
 
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
-        TimerView(durationInSecond: 12)
+        TimerView(durationInSecond: 5)
     }
 }
