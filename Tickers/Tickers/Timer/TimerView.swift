@@ -10,9 +10,10 @@ import SwiftUI
 struct TimerView: View {
     
     // MARK: - Properties
-    @State var isTimerRunning: Bool = false
+    @State var isTimerRunning: Bool = true
     @State private var progressTimer: Double = 1.0
     @State var durationInSecond: TimeInterval
+    let originalDuration: TimeInterval
     
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
@@ -32,26 +33,21 @@ struct TimerView: View {
     
     init(durationInSecond: TimeInterval) {
         self.durationInSecond = durationInSecond
+        self.originalDuration = durationInSecond
         self.stepTimer = 1/(durationInSecond)
     }
     
     // MARK: -  Actions
-    func stop() {
-        timer.upstream.connect().cancel()
-    }
-    func start() {
-        timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    }
-    
     func configureTimer(_ toRunOrReload: Bool) {
         isTimerRunning = toRunOrReload
         if isTimerRunning {
             guard durationInSecond > 0 else { return }
-            start()
+            timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
         } else {
-            stop()
+            timer.upstream.connect().cancel()
         }
     }
+    
     // MARK: Views
     var body: some View {
         GeometryReader { geo in
@@ -86,6 +82,9 @@ struct TimerView: View {
                     if (progressTimer <= 0.0 || durationInSecond <= 0) {
                         configureTimer(false)
                     }
+                }
+                .onAppear {
+                    configureTimer(isTimerRunning)
                 }
             }
         }
@@ -125,14 +124,18 @@ struct TimerView: View {
 
                 Button {
                     print("Reiniciando o timer")
+                    configureTimer(false)
+                    durationInSecond = originalDuration
+                    progressTimer = 1
                 } label: {
                     Image("restartWatch")
                 }
 
                 Button {
-                    print("Iniciando o timer")
+                    print("Play/pause no timer")
+                    configureTimer(!isTimerRunning)
                 } label: {
-                    Image("playButton")
+                    Image(isTimerRunning ? "pauseWatch" : "playButton")
                         .padding(.bottom, 10)
                 }
         
