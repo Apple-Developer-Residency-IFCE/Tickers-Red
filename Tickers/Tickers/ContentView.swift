@@ -13,7 +13,9 @@ struct ContentView: View {
         VStack {
             image
             Text("Hello, world!")
-            
+                .tickerFont(size: 24, weight: .regular)
+            Text("Hello, world!")
+                .tickerFont(size: 24, weight: .bold)
         }
         .padding()
     }
@@ -24,3 +26,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
