@@ -14,6 +14,7 @@
 		0321342A2A1D7AC5002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134292A1D7AC5002FD592 /* TickersTests.swift */; };
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
+		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
+				643BA2F02A200CBC00B8DA69 /* RadioButton.swift */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
 			);
