@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ConfirmBtn: View {
     var text: String
+    var filled: Bool
     
     var body: some View {
         ZStack{
@@ -17,19 +18,30 @@ struct ConfirmBtn: View {
                 .padding([.bottom, .top], 11)
                 .padding([.leading, .trailing], 20)
                 .background{
-                    RoundedRectangle(cornerRadius: 15)
-                        .foregroundColor(.blue)
+                    rectangleBuilder(filled: filled)
                 }
-                .foregroundColor(.white)
+                .foregroundColor(filled ? .white :.blue)
         }
         .onTapGesture {
-            print("dosomethingelse!")
+            print("doSomething!")
         }
     }
+    
+    @ViewBuilder func rectangleBuilder(filled: Bool) -> some View{
+        if filled {
+            RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(.blue)
+        } else {
+            RoundedRectangle(cornerRadius: 15)
+                .stroke(.blue, lineWidth: 3.5)
+                .foregroundColor(.clear)
+        }
+    }
+    
 }
 
 struct ConfirmBtn_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmBtn(text: "Pular pomodoro")
+        ConfirmBtn(text: "Pular pomodoro", filled: true)
     }
 }

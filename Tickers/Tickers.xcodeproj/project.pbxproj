@@ -15,7 +15,6 @@
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
 		646B6E4D2A201C9B0048402C /* FilledButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* FilledButtonView.swift */; };
-		646B6E4F2A201CFB0048402C /* HollowedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4E2A201CFB0048402C /* HollowedButtonView.swift */; };
 		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
@@ -50,7 +49,6 @@
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		646B6E4C2A201C9B0048402C /* FilledButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilledButtonView.swift; sourceTree = "<group>"; };
-		646B6E4E2A201CFB0048402C /* HollowedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HollowedButtonView.swift; sourceTree = "<group>"; };
 		64EEA3E62A1ECAD70007F9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
 				646B6E4C2A201C9B0048402C /* FilledButtonView.swift */,
-				646B6E4E2A201CFB0048402C /* HollowedButtonView.swift */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -295,7 +292,6 @@
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* FilledButtonView.swift in Sources */,
-				646B6E4F2A201CFB0048402C /* HollowedButtonView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
