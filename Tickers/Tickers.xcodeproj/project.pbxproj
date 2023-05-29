@@ -18,7 +18,6 @@
 		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
-		CE4CA9C32A253F1B002AB106 /* TimerViewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4CA9C22A253F1B002AB106 /* TimerViewComponent.swift */; };
 		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
-		CE4CA9C22A253F1B002AB106 /* TimerViewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewComponent.swift; sourceTree = "<group>"; };
 		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 				64EEA3E02A1EC93D0007F9CD /* Assets */,
 				032134182A1D7AC4002FD592 /* TickersApp.swift */,
 				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
-				CE4CA9C22A253F1B002AB106 /* TimerViewComponent.swift */,
 				64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
@@ -303,7 +300,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE4CA9C32A253F1B002AB106 /* TimerViewComponent.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,

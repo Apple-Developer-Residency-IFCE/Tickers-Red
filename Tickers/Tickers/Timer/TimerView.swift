@@ -10,51 +10,43 @@ import SwiftUI
 struct TimerView: View {
     
     // MARK: - Properties
-    @State private var durationInSecond: TimeInterval
-    @State private var isTimerRunning: Bool = false
-    @State private var progressTimer: Double = 1.0
-    @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
-    let color = Color(
+    private let color = Color(
         red: 59 / 255,
         green: 129 / 255,
         blue: 235 / 255
     )
     
-    let fadingColor = Color(
+    private let fadingColor = Color(
         red: 213 / 255,
         green: 224 / 255,
         blue: 249 / 255
     )
     
-    var originalDuration: TimeInterval
-    var stepTimer: TimeInterval
-    let endTimerHandler: () -> Void
+    private let durationInSecond: TimeInterval
+    private let isTimerRunning: Bool
+    private let progressTimer: Double
     
-    init(durationInSecond: TimeInterval, endTimerHandler: @escaping () -> Void) {
+    private let onReset: () -> Void
+    private let onPlayPause: () -> Void
+    private let onSkip: () -> Void
+    
+    init(
+        durationInSecond: TimeInterval,
+        isTimerRunning: Bool,
+        progressTimer: Double,
+        onReset: @escaping () -> Void,
+        onPlayPause: @escaping () -> Void,
+        onSkip: @escaping () -> Void
+    ) {
         self.durationInSecond = durationInSecond
-        self.originalDuration = durationInSecond
-        self.stepTimer = 1/(durationInSecond)
-        self.endTimerHandler = endTimerHandler
+        self.isTimerRunning = isTimerRunning
+        self.progressTimer = progressTimer
+        self.onReset = onReset
+        self.onPlayPause = onPlayPause
+        self.onSkip = onSkip
     }
     
-    // MARK: -  Actions
-    func endTimer() {
-        configureTimer(false)
-        endTimerHandler()
-    }
-
-    func configureTimer(_ toRunOrReload: Bool) {
-        isTimerRunning = toRunOrReload
-        if isTimerRunning {
-            guard durationInSecond > 0 else { return }
-            timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-        } else {
-            timer.upstream.connect().cancel()
-        }
-    }
-    
-    // MARK: Views
+    // MARK:  - Views
     var body: some View {
         GeometryReader { geo in
             VStack(spacing: 15) {
@@ -62,7 +54,7 @@ struct TimerView: View {
                     Circle()
                         .stroke(fadingColor, lineWidth: 10)
                     Circle()
-                        .trim(from: 0, to: progressTimer)
+                        .trim(from: 0, to: CGFloat(progressTimer))
                         .stroke(color, lineWidth: 10)
                     Circle()
                         .fill(fadingColor)
@@ -80,26 +72,13 @@ struct TimerView: View {
                 )
                 .animation(.spring(), value: progressTimer)
                 .overlay {
-                    componentView
-                }
-                .onReceive(timer) { _ in
-                    durationInSecond -= 1
-                    progressTimer -= stepTimer
-                    if (progressTimer <= 0.0 || durationInSecond <= 0) {
-                        endTimer()
-                    }
-                }
-            
-                .onAppear {
-                    configureTimer(isTimerRunning)
-                    durationInSecond = originalDuration
-                    progressTimer = 1
+                    timerControlsView
                 }
             }
         }
         .padding(40)
         
-    } //: Body View
+    } //: View
     
     // MARK: - View to create a ball on progress
     private var ballKnobView: some View {
@@ -120,11 +99,11 @@ struct TimerView: View {
                 .offset(x: knobGeo.size.height / 2)
                 .rotationEffect(.degrees(progressTimer * 360))
         }
-    }
+    }  //: View
     
     
     // MARK: View to create buttons of body view
-    private var componentView: some View {
+    private var timerControlsView: some View {
         VStack(spacing: 20) {
             Text("\(durationInSecond.timeString)")
                 .font(.system(size: 60, weight: .medium, design: .rounded))
@@ -132,37 +111,41 @@ struct TimerView: View {
             HStack(alignment: .bottom, spacing: 20) {
 
                 Button {
-                    print("Reiniciando o timer")
-                    configureTimer(false)
-                    durationInSecond = originalDuration
-                    progressTimer = 1
+                    onReset()
                 } label: {
                     Image("restartWatch")
                 }
 
                 Button {
-                    print("Play/pause no timer")
-                    configureTimer(!isTimerRunning)
+                    onPlayPause()
                 } label: {
                     Image(isTimerRunning ? "pauseWatch" : "playButton")
                         .padding(.bottom, 10)
                 }
         
                 Button {
-                    print("Pulando o timer")
-                    endTimer()
+                    onSkip()
                 } label: {
                     Image("skipRest")
                 }
                 
             } //: HStack
-        }//: VStack
-    }
+        } //: VStack
+    } //: View
 }
+
+ //MARK: - Preview
 
 struct TimerView_Previews: PreviewProvider {
     @State static var timer: TimeInterval = 15
     static var previews: some View {
-        TimerView(durationInSecond: timer, endTimerHandler: { })
+        TimerView(
+            durationInSecond: timer,
+            isTimerRunning: true,
+            progressTimer: 1.0,
+            onReset: { print("Reset button pressed.") },
+            onPlayPause: { print("Play/Pause button pressed.") },
+            onSkip: { print("Skip button pressed.") }
+        )
     }
 }
