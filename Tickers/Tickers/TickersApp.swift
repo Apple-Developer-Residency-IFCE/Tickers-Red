@@ -11,7 +11,7 @@ import SwiftUI
 struct TickersApp: App {
     var body: some Scene {
         WindowGroup {
-            TimerView(durationInSecond: 15)
+           ContentView()
         }
     }
 }

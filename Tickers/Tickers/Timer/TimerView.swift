@@ -10,11 +10,9 @@ import SwiftUI
 struct TimerView: View {
     
     // MARK: - Properties
-    @State var isTimerRunning: Bool = true
+    @State private var durationInSecond: TimeInterval
+    @State private var isTimerRunning: Bool = false
     @State private var progressTimer: Double = 1.0
-    @State var durationInSecond: TimeInterval
-    let originalDuration: TimeInterval
-    
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     let color = Color(
@@ -29,15 +27,23 @@ struct TimerView: View {
         blue: 249 / 255
     )
     
-    let stepTimer: TimeInterval
+    var originalDuration: TimeInterval
+    var stepTimer: TimeInterval
+    let endTimerHandler: () -> Void
     
-    init(durationInSecond: TimeInterval) {
+    init(durationInSecond: TimeInterval, endTimerHandler: @escaping () -> Void) {
         self.durationInSecond = durationInSecond
         self.originalDuration = durationInSecond
         self.stepTimer = 1/(durationInSecond)
+        self.endTimerHandler = endTimerHandler
     }
     
     // MARK: -  Actions
+    func endTimer() {
+        configureTimer(false)
+        endTimerHandler()
+    }
+
     func configureTimer(_ toRunOrReload: Bool) {
         isTimerRunning = toRunOrReload
         if isTimerRunning {
@@ -58,12 +64,12 @@ struct TimerView: View {
                     Circle()
                         .trim(from: 0, to: progressTimer)
                         .stroke(color, lineWidth: 10)
-                    ballKnobView
                     Circle()
                         .fill(fadingColor)
                         .frame(width: 10, height: 10)
                         .offset(x: 5)
                         .opacity(1)
+                    ballKnobView
                 }
                 .padding()
                 .frame(height: geo.size.width)
@@ -80,11 +86,14 @@ struct TimerView: View {
                     durationInSecond -= 1
                     progressTimer -= stepTimer
                     if (progressTimer <= 0.0 || durationInSecond <= 0) {
-                        configureTimer(false)
+                        endTimer()
                     }
                 }
+            
                 .onAppear {
                     configureTimer(isTimerRunning)
+                    durationInSecond = originalDuration
+                    progressTimer = 1
                 }
             }
         }
@@ -141,6 +150,7 @@ struct TimerView: View {
         
                 Button {
                     print("Pulando o timer")
+                    endTimer()
                 } label: {
                     Image("skipRest")
                 }
@@ -151,7 +161,8 @@ struct TimerView: View {
 }
 
 struct TimerView_Previews: PreviewProvider {
+    @State static var timer: TimeInterval = 15
     static var previews: some View {
-        TimerView(durationInSecond: 5)
+        TimerView(durationInSecond: timer, endTimerHandler: { })
     }
 }
