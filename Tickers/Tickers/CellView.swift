@@ -12,13 +12,18 @@ struct CellView: View {
     var body: some View {
         HStack{
             Image("challengeBlue").padding(.leading, 15)
-            VStack{
-                Text("Primeira vez").tickerFont(size: 20, weight: .bold)
+            VStack(spacing: 0){
+                Text("Primeira vez").tickerFont(size: 16, weight: .bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 Text("Finalize o seu primeiro pomodoro do dia e ganhe 50 de xp.").tickerFont(size: 14, weight: .regular)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.trailing, 20)
-                ProgressView(value: progress).frame(maxWidth: .infinity).padding(.trailing, 30)
+                HStack{
+                    ProgressView(value: progress).frame(maxWidth: .infinity).padding(.trailing, 5)
+                    Text("0/1").tickerFont(size: 12, weight: .regular)
+                        .frame(alignment: .leading)
+                        .padding(.trailing, 20)
+                }
             }
         }
     }
