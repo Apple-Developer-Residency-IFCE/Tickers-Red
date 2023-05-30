@@ -8,29 +8,30 @@
 import SwiftUI
 
 struct CellView: View {
-    @State private var progress: Float = 0.5
+    var qtdTask: Int
+    var taskResolved: Int
+    var image: String = "challengeBlue"
+    var title: String
+    var description: String
+    
+    
     var body: some View {
         HStack{
-            Image("challengeBlue").padding(.leading, 15)
+            Image("\(image)").padding(.leading, 15)
             VStack(spacing: 0){
-                Text("Primeira vez").tickerFont(size: 16, weight: .bold)
+                Text("\(title)").tickerFont(size: 16, weight: .bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("Finalize o seu primeiro pomodoro do dia e ganhe 50 de xp.").tickerFont(size: 14, weight: .regular)
+                Text("\(description)").tickerFont(size: 14, weight: .regular)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.trailing, 20)
                 HStack{
-                    ProgressView(value: progress).frame(maxWidth: .infinity).padding(.trailing, 5)
-                    Text("0/1").tickerFont(size: 12, weight: .regular)
+                    ProgressView(value: Float(taskResolved)/Float(qtdTask)).frame(maxWidth: .infinity).padding(.trailing, 5)
+                    Text("\(taskResolved)/\(qtdTask)").tickerFont(size: 12, weight: .regular)
                         .frame(alignment: .leading)
                         .padding(.trailing, 20)
                 }
-            }
-        }
+            }.padding(5)
+        }.cornerRadius(20)
     }
 }
 
-struct CellView_Previews: PreviewProvider {
-    static var previews: some View {
-        CellView()
-    }
-}
