@@ -10,32 +10,27 @@ import SwiftUI
 struct CustomTabBarView: View {
     var body: some View {
         TabView {
-
             ContentView()
                 .tabItem {
-                    Image(systemName: "house.fill")
-                    Text("Home")
+                    Label("Home", systemImage: "house.fill")
                 }
             // https://www.hackingwithswift.com/quick-start/swiftui/adding-tabview-and-tabitem
             Text("Bookmark Tab")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
-                    Image(systemName: "bookmark.circle.fill")
-                    Text("Bookmark")
+                    Label("Bookmark", systemImage: "bookmark.circle.fill")
                 }
             
             Text("Video Tab")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
-                    Image(systemName: "video.circle.fill")
-                    Text("Video")
+                    Label("Video", systemImage: "video.circle.fill")
                 }
             
             Text("Profile Tab")
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .tabItem {
-                    Image(systemName: "person.crop.circle")
-                    Text("Profile")
+                    Label("Profile", systemImage: "person.crop.circle")
                 }
         } // : TabView
     }
