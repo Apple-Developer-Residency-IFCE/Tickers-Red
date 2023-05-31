@@ -15,10 +15,12 @@
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
 		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
+		645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
 		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
 		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
+		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +52,13 @@
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		645E0DE12A1EDE4D00293553 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBtView.swift; sourceTree = "<group>"; };
 		64EEA3E62A1ECAD70007F9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
+		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 		032134172A1D7AC4002FD592 /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
+				645E0DE62A1EDE7900293553 /* Timer */,
 				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
 				64EEA3E02A1EC93D0007F9CD /* Assets */,
 				032134182A1D7AC4002FD592 /* TickersApp.swift */,
@@ -141,6 +146,15 @@
 				032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */,
 			);
 			path = TickersUITests;
+			sourceTree = "<group>";
+		};
+		645E0DE62A1EDE7900293553 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
+				CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		64EEA3E02A1EC93D0007F9CD /* Assets */ = {
@@ -292,6 +306,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
+				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
@@ -455,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tickers/Info.plist;
@@ -486,7 +502,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tickers/Info.plist;
@@ -516,7 +532,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -536,7 +552,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -555,7 +571,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -574,7 +590,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
