@@ -13,12 +13,10 @@ struct OptionButton: View {
     
     var body: some View {
         Button(action: {
-            isSelected = true
+            isSelected.toggle()
         }) {
             HStack {
                 Image(isSelected ? "Checkbox" : "Uncheck")
-                    .resizable()
-                    .frame(width: 20, height: 20)
                 Text(title)
                     .foregroundColor(.black)
             }
@@ -26,37 +24,9 @@ struct OptionButton: View {
     }
 }
 
-struct RadioButton: View {
-    @State private var selectedOption: String = ""
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            OptionButton(title: "Claro", isSelected: Binding(
-                get: { self.selectedOption == "Opção 1" },
-                set: { newValue in
-                    if newValue {
-                        self.selectedOption = "Opção 1"
-                    }
-                }
-            ))
-            
-            Spacer()
-                .frame(height: 6)
-            
-            OptionButton(title: "Escuro", isSelected: Binding(
-                get: { self.selectedOption == "Opção 2" },
-                set: { newValue in
-                    if newValue {
-                        self.selectedOption = "Opção 2"
-                    }
-                }
-            ))
-        }
-    }
-}
-
-struct RadioButton_Previews: PreviewProvider {
+struct OptionButton_Previews: PreviewProvider {
     static var previews: some View {
-        RadioButton()
+        OptionButton(title: "RadioButton", isSelected: .constant(false))
+        
     }
 }
