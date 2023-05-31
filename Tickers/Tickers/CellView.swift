@@ -8,30 +8,36 @@
 import SwiftUI
 
 struct CellView: View {
-    var qtdTask: Int
-    var taskResolved: Int
+    let qtdTask: Int
+    let taskResolved: Int
     var image: String = "challengeBlue"
-    var title: String
-    var description: String
+    let title: String
+    let description: String
     
+    private let leadingPadding: CGFloat = 15
+    private let trailingPadding: CGFloat = 20
+    private let generalPadding: CGFloat = 5
+    private let cornerRadius: CGFloat = 20
     
     var body: some View {
         HStack{
-            Image("\(image)").padding(.leading, 15)
+            Image(image).padding(.leading, leadingPadding)
             VStack(spacing: 0){
-                Text("\(title)").tickerFont(size: 16, weight: .bold)
+                Text(title).tickerFont(size: 16, weight: .bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                Text("\(description)").tickerFont(size: 14, weight: .regular)
+                Text(description).tickerFont(size: 14, weight: .regular)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.trailing, 20)
+                    .padding(.trailing, trailingPadding)
                 HStack{
-                    ProgressView(value: Float(taskResolved)/Float(qtdTask)).frame(maxWidth: .infinity).padding(.trailing, 5)
+                    ProgressView(value: Float(taskResolved)/Float(qtdTask))
+                        .frame(maxWidth: .infinity)
+                        .padding(.trailing, generalPadding)
                     Text("\(taskResolved)/\(qtdTask)").tickerFont(size: 12, weight: .regular)
                         .frame(alignment: .leading)
-                        .padding(.trailing, 20)
+                        .padding(.trailing, trailingPadding)
                 }
-            }.padding(5)
-        }.cornerRadius(20)
+            }.padding(generalPadding)
+        }.cornerRadius(cornerRadius)
     }
 }
 
