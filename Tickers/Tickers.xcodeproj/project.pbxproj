@@ -14,6 +14,8 @@
 		0321342A2A1D7AC5002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134292A1D7AC5002FD592 /* TickersTests.swift */; };
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
+		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
+		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
 		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
 		645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
 		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
@@ -52,6 +54,8 @@
 		0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		645E0DE12A1EDE4D00293553 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBtView.swift; sourceTree = "<group>"; };
@@ -117,6 +121,8 @@
 				032134182A1D7AC4002FD592 /* TickersApp.swift */,
 				646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */,
 				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
+				642A62AC2A257D41002B83C7 /* MainTabView.swift */,
+				641C68622A2564D000EAAEE6 /* CellView.swift */,
 				64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
@@ -309,11 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
+				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
