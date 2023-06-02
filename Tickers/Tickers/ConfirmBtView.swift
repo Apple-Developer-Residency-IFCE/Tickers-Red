@@ -23,7 +23,7 @@ struct ConfirmBtn: View {
                 .foregroundColor(filled ? .white :.blue)
         }
         .onTapGesture {
-            print("doSomething!")
+            print("vomimatao!")
         }
     }
     
@@ -42,6 +42,6 @@ struct ConfirmBtn: View {
 
 struct ConfirmBtn_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmBtn(text: "Pular pomodoro", filled: true)
+        ConfirmBtn(text: "Pular pomodoro", filled: false)
     }
 }
