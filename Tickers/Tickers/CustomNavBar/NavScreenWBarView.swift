@@ -50,8 +50,6 @@ struct NavScreenWBarView_Previews: PreviewProvider {
     static var previews: some View {
         NavScreenWBarView {
             ContentView()
-                .customNavigationBlackText("Alo")
-                .customNavigationBlueText("Bodia")
         }
     }
 }
