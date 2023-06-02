@@ -10,8 +10,11 @@ import SwiftUI
 struct AppNavBarView: View {
     var body: some View {
         CustomNavView {
-//            ContentView()
             Text("Lucas")
+                .customNavigationBlackText("Oie, ")
+                .customNavigationBlueText("Caio")
+                .customNavBarMissionButtonHidden(false)
+                .customNavBarBackButtonHidden(true)
         }
     }
 }

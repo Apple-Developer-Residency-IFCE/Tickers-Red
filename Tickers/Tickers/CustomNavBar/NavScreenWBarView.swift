@@ -29,7 +29,7 @@ struct NavScreenWBarView<Content: View>: View {
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .onPreferenceChange(CustomNavBarBackButtonHiddenPrefKey.self, perform: { value in
-            self.showReturnButton = value
+            self.showReturnButton = !value
         })
         
         .onPreferenceChange(CustomNavBarBlackTextPrefKey.self, perform: { value in
@@ -40,8 +40,8 @@ struct NavScreenWBarView<Content: View>: View {
             self.textBlue = value
         })
         
-        .onPreferenceChange(CustomNavMissionsButtonHiddenPrefKey.self, perform: { value in
-            self.showReturnButton = !value
+        .onPreferenceChange(CustomNavBarMissionsButtonHiddenPrefKey.self, perform: { value in
+            self.showMissions = !value
         })
     }
 }
@@ -50,7 +50,6 @@ struct NavScreenWBarView_Previews: PreviewProvider {
     static var previews: some View {
         NavScreenWBarView {
             ContentView()
-                .customNavBarBackButtonHidden(false)
                 .customNavigationBlackText("Alo")
                 .customNavigationBlueText("Bodia")
         }

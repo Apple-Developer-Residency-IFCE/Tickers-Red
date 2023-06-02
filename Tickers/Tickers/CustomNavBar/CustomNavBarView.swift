@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomNavBar: View {
     @Environment(\.presentationMode) var presentationMode
+    
     let showReturnButton: Bool
     let textBlack: String
     let textBlue: String
@@ -42,7 +43,7 @@ struct CustomNavBar: View {
 struct CustomNavBarView_Previews: PreviewProvider {
     static var previews: some View {
         VStack{
-            CustomNavBar(showReturnButton: false, textBlack: "Teste Testando", textBlue: "oie", showMissions: true)
+            CustomNavBar(showReturnButton: true, textBlack: "Teste Testando", textBlue: "oie", showMissions: true)
             Spacer()
         }
     }
@@ -64,6 +65,5 @@ extension CustomNavBar {
         } label: {
             Image("missions")
         }
-
     }
 }

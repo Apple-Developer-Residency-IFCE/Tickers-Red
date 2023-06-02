@@ -20,7 +20,6 @@ struct CustomNavView<Content: View>: View {
             NavScreenWBarView {
                 content
             }
-            .navigationBarHidden(true)
         }
         .navigationViewStyle(StackNavigationViewStyle())
     }

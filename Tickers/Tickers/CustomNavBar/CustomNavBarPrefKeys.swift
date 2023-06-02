@@ -29,16 +29,6 @@ struct CustomNavBarBlueTextPrefKey: PreferenceKey {
 
 struct CustomNavBarBackButtonHiddenPrefKey: PreferenceKey {
     
-    static var defaultValue: Bool = true
-    
-    static func reduce(value: inout Bool, nextValue: () -> Bool) {
-        value = nextValue()
-    }
-    
-}
-
-struct CustomNavMissionsButtonHiddenPrefKey: PreferenceKey {
-    
     static var defaultValue: Bool = false
     
     static func reduce(value: inout Bool, nextValue: () -> Bool) {
@@ -47,7 +37,15 @@ struct CustomNavMissionsButtonHiddenPrefKey: PreferenceKey {
     
 }
 
-
+struct CustomNavBarMissionsButtonHiddenPrefKey: PreferenceKey {
+    
+    static var defaultValue: Bool = true
+    
+    static func reduce(value: inout Bool, nextValue: () -> Bool) {
+        value = nextValue()
+    }
+    
+}
 
 extension View {
     
@@ -63,8 +61,8 @@ extension View {
         preference(key: CustomNavBarBackButtonHiddenPrefKey.self, value: hidden)
     }
     
-    func customNavMissionButtonHidden(_ hidden: Bool) -> some View {
-        preference(key: CustomNavBarBackButtonHiddenPrefKey.self, value: hidden)
+    func customNavBarMissionButtonHidden(_ hidden: Bool) -> some View {
+        preference(key: CustomNavBarMissionsButtonHiddenPrefKey.self, value: hidden)
     }
 
 }
