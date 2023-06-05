@@ -7,9 +7,18 @@
 
 import SwiftUI
 
+struct Time: Codable{
+    var remainigTime: TimeInterval
+    var typeTimer: Bool
+}
+
+struct TimeList: Codable {
+    var time: [Time]
+}
+
 struct PomodoroView: View {
     @State private var timer: Timer? = nil
-    @State private var remainingTime: TimeInterval = 60
+    @State private var remainingTime: Time = Time(remainigTime: 60, typeTimer: true)
     @State private var isRunning: Bool = false
     @State private var progressTimer: Double = 1
     let tinerProgress: Double = 60
@@ -36,9 +45,9 @@ struct PomodoroView: View {
             onReset()
         } else {
             timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                if remainingTime > 0 {
+                if remainingTime.remainigTime > 0 {
                     progressTimer -= progress
-                    remainingTime -= 1
+                    remainingTime.remainigTime -= 1
                 } else {
                     progressTimer = 1
                     onReset()
@@ -62,7 +71,31 @@ struct PomodoroView: View {
                     .tickerFont(size: 22, weight: .bold)
                     .foregroundColor(color)
                     .padding(.bottom, -30)
-                TimerView(durationInSecond: remainingTime, isTimerRunning: isRunning, progressTimer: progressTimer, onReset: onReset, onPlayPause: onPlayPause, onSkip: onSkip)
+                TimerView(durationInSecond: remainingTime.remainigTime, isTimerRunning: isRunning, progressTimer: progressTimer, onReset: onReset, onPlayPause: onPlayPause, onSkip: onSkip)
+                HStack(spacing: 20){
+                    Image("football").padding(.bottom, -60).padding(.leading, 10)
+                    Image("babyCatAwake").padding(.bottom, 90).padding(.trailing, 50)
+                }.padding(.bottom, 10)
+                HStack(alignment: .bottom, spacing: 50){
+                    VStack(alignment: .center){
+                        Image("focusButton")
+                        Text("Foco")
+                            .tickerFont(size: 18, weight: .bold)
+                            .foregroundColor(color)
+                    }
+                    VStack(alignment: .center){
+                        Image("hourglassWPencil")
+                        Text("Definições")
+                            .tickerFont(size: 18, weight: .bold)
+                            .foregroundColor(color)
+                    }
+                    VStack(alignment: .center){
+                        Image("sounds")
+                        Text("Sons")
+                            .tickerFont(size: 18, weight: .bold)
+                            .foregroundColor(color)
+                    }
+                }
             }
         }
     }
