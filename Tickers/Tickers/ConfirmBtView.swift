@@ -23,7 +23,7 @@ struct ConfirmBtn: View {
                 .foregroundColor(filled ? .white :.blue)
         }
         .onTapGesture {
-            print("vomimatao!")
+            print("doSomething!")
         }
     }
     
