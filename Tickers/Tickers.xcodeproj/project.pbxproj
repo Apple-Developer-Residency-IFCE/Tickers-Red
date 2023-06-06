@@ -17,12 +17,17 @@
 		64541CDB2A29552000640E23 /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64541CDA2A29552000640E23 /* CustomNavView.swift */; };
 		64541CDD2A2958B700640E23 /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64541CDC2A2958B700640E23 /* CustomNavLink.swift */; };
 		64541CDF2A29635700640E23 /* CustomNavBarPrefKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64541CDE2A29635700640E23 /* CustomNavBarPrefKeys.swift */; };
+		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
+		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
+		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
+		645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
 		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
 		64C99E402A294A85006BE5AD /* NavScreenWBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64C99E3F2A294A85006BE5AD /* NavScreenWBarView.swift */; };
 		64E1F6922A2576DD00077DF4 /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E1F6912A2576DD00077DF4 /* CustomNavBarView.swift */; };
 		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
+		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +61,10 @@
 		64541CDA2A29552000640E23 /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
 		64541CDC2A2958B700640E23 /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
 		64541CDE2A29635700640E23 /* CustomNavBarPrefKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPrefKeys.swift; sourceTree = "<group>"; };
+		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		645E0DE12A1EDE4D00293553 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBtView.swift; sourceTree = "<group>"; };
 		64C99E3F2A294A85006BE5AD /* NavScreenWBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavScreenWBarView.swift; sourceTree = "<group>"; };
 		64E1F6912A2576DD00077DF4 /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
@@ -63,6 +72,8 @@
 		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
+
+		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,14 +125,18 @@
 			isa = PBXGroup;
 			children = (
 				640868722A2803AE0037E752 /* CustomNavBar */,
+				645E0DE62A1EDE7900293553 /* Timer */,
 				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
 				64EEA3E02A1EC93D0007F9CD /* Assets */,
 				032134182A1D7AC4002FD592 /* TickersApp.swift */,
 				646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */,
 				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
+				642A62AC2A257D41002B83C7 /* MainTabView.swift */,
+				641C68622A2564D000EAAEE6 /* CellView.swift */,
 				64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
+				643BA2F02A200CBC00B8DA69 /* RadioButton.swift */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -161,6 +176,13 @@
 				64541CDC2A2958B700640E23 /* CustomNavLink.swift */,
 			);
 			path = CustomNavBar;
+		645E0DE62A1EDE7900293553 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
+				CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		64EEA3E02A1EC93D0007F9CD /* Assets */ = {
@@ -312,10 +334,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
+				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
+				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
+				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				64541CDF2A29635700640E23 /* CustomNavBarPrefKeys.swift in Sources */,
 				64541CDD2A2958B700640E23 /* CustomNavLink.swift in Sources */,
 				64541CDB2A29552000640E23 /* CustomNavView.swift in Sources */,
+				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
 				64C99E402A294A85006BE5AD /* NavScreenWBarView.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
@@ -479,7 +506,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tickers/Info.plist;
@@ -510,7 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tickers/Info.plist;
@@ -540,7 +567,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -560,7 +587,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -579,7 +606,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -598,7 +625,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 62NRBAKMQ3;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
