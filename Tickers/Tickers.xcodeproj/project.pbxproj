@@ -16,13 +16,15 @@
 		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };
 		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
 		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
-		645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
 		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
 		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
-		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
-		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
+		DDB478D52A2FFA0D00C895DA /* CustomNavBarPrefKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB478D32A2FFA0D00C895DA /* CustomNavBarPrefKeys.swift */; };
+		DDB478D62A2FFA0D00C895DA /* NavScreenWBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB478D12A2FFA0D00C895DA /* NavScreenWBarView.swift */; };
+		DDB478D72A2FFA0D00C895DA /* CustomNavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB478D42A2FFA0D00C895DA /* CustomNavBarView.swift */; };
+		DDB478D82A2FFA0D00C895DA /* CustomNavLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB478D22A2FFA0D00C895DA /* CustomNavLink.swift */; };
+		DDB478D92A2FFA0D00C895DA /* CustomNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB478D02A2FFA0D00C895DA /* CustomNavView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,14 +57,16 @@
 		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
-		645E0DE12A1EDE4D00293553 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBtView.swift; sourceTree = "<group>"; };
 		64EEA3E62A1ECAD70007F9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
-
-		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
+		DDB478D02A2FFA0D00C895DA /* CustomNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavView.swift; sourceTree = "<group>"; };
+		DDB478D12A2FFA0D00C895DA /* NavScreenWBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavScreenWBarView.swift; sourceTree = "<group>"; };
+		DDB478D22A2FFA0D00C895DA /* CustomNavLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavLink.swift; sourceTree = "<group>"; };
+		DDB478D32A2FFA0D00C895DA /* CustomNavBarPrefKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarPrefKeys.swift; sourceTree = "<group>"; };
+		DDB478D42A2FFA0D00C895DA /* CustomNavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 				032134282A1D7AC5002FD592 /* TickersTests */,
 				032134322A1D7AC5002FD592 /* TickersUITests */,
 				032134162A1D7AC4002FD592 /* Products */,
+				DDB3CA632A314E6C0085AADA /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,8 +118,7 @@
 		032134172A1D7AC4002FD592 /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
-				645E0DE62A1EDE7900293553 /* Timer */,
-				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
+				DDB478DB2A2FFA5100C895DA /* CustomNavBar */,
 				64EEA3E02A1EC93D0007F9CD /* Assets */,
 				032134182A1D7AC4002FD592 /* MainTickersApp.swift */,
 				642A62AC2A257D41002B83C7 /* MainTabView.swift */,
@@ -150,15 +154,6 @@
 			path = TickersUITests;
 			sourceTree = "<group>";
 		};
-		645E0DE62A1EDE7900293553 /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
-				CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */,
-			);
-			path = Timer;
-			sourceTree = "<group>";
-		};
 		64EEA3E02A1EC93D0007F9CD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +170,28 @@
 				64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DDB3CA632A314E6C0085AADA /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				641C68622A2564D000EAAEE6 /* CellView.swift */,
+				643BA2F02A200CBC00B8DA69 /* RadioButton.swift */,
+				646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		DDB478DB2A2FFA5100C895DA /* CustomNavBar */ = {
+			isa = PBXGroup;
+			children = (
+				DDB478D32A2FFA0D00C895DA /* CustomNavBarPrefKeys.swift */,
+				DDB478D42A2FFA0D00C895DA /* CustomNavBarView.swift */,
+				DDB478D22A2FFA0D00C895DA /* CustomNavLink.swift */,
+				DDB478D02A2FFA0D00C895DA /* CustomNavView.swift */,
+				DDB478D12A2FFA0D00C895DA /* NavScreenWBarView.swift */,
+			);
+			path = CustomNavBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,17 +326,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
-				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
-				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
-				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
-				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
-				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
+				DDB478D52A2FFA0D00C895DA /* CustomNavBarPrefKeys.swift in Sources */,
+				DDB478D92A2FFA0D00C895DA /* CustomNavView.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
-				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
+				DDB478D82A2FFA0D00C895DA /* CustomNavLink.swift in Sources */,
+				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
+				DDB478D72A2FFA0D00C895DA /* CustomNavBarView.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
+				DDB478D62A2FFA0D00C895DA /* NavScreenWBarView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
