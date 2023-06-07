@@ -41,3 +41,8 @@ struct CellView: View {
     }
 }
 
+struct CellView_Previews: PreviewProvider {
+    static var previews: some View {
+        CellView(qtdTask: 2, taskResolved: 1, image: "challengePink", title: "Seilaman", description: "seilacarai faz ai a task")
+    }
+}
