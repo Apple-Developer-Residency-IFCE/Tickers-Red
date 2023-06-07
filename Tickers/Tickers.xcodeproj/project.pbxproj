@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134182A1D7AC4002FD592 /* TickersApp.swift */; };
-		0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0321341A2A1D7AC4002FD592 /* ContentView.swift */; };
+		032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134182A1D7AC4002FD592 /* MainTickersApp.swift */; };
 		0321341D2A1D7AC4002FD592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0321341C2A1D7AC4002FD592 /* Assets.xcassets */; };
 		032134202A1D7AC4002FD592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0321341F2A1D7AC4002FD592 /* Preview Assets.xcassets */; };
 		0321342A2A1D7AC5002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134292A1D7AC5002FD592 /* TickersTests.swift */; };
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
+		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };
 		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
-		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
 		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
 		645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
 		646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
@@ -24,6 +23,12 @@
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
+		DD427F602A3133520040A006 /* CardPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F5F2A3133520040A006 /* CardPetView.swift */; };
+		DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F692A3136670040A006 /* DefinitionsView.swift */; };
+		DD427F6C2A3136730040A006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
+		DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6D2A3136820040A006 /* MissionsView.swift */; };
+		DD427F702A31368E0040A006 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6F2A31368E0040A006 /* FocusView.swift */; };
+		DD427F722A3138C70040A006 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F712A3138C70040A006 /* empty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +50,7 @@
 
 /* Begin PBXFileReference section */
 		032134152A1D7AC4002FD592 /* Tickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		032134182A1D7AC4002FD592 /* TickersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersApp.swift; sourceTree = "<group>"; };
-		0321341A2A1D7AC4002FD592 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		032134182A1D7AC4002FD592 /* MainTickersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTickersApp.swift; sourceTree = "<group>"; };
 		0321341C2A1D7AC4002FD592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0321341F2A1D7AC4002FD592 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		032134252A1D7AC5002FD592 /* TickersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +58,8 @@
 		0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		645E0DE12A1EDE4D00293553 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmBtView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,12 @@
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
+		DD427F5F2A3133520040A006 /* CardPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPetView.swift; sourceTree = "<group>"; };
+		DD427F692A3136670040A006 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
+		DD427F6B2A3136730040A006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DD427F6D2A3136820040A006 /* MissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsView.swift; sourceTree = "<group>"; };
+		DD427F6F2A31368E0040A006 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
+		DD427F712A3138C70040A006 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,19 +125,15 @@
 		032134172A1D7AC4002FD592 /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
-				645E0DE62A1EDE7900293553 /* Timer */,
-				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
+				DD427F4D2A300A210040A006 /* Scenes */,
+				DD427F4A2A300A0B0040A006 /* Models */,
+				DD427F492A3008F80040A006 /* UIComponents */,
 				64EEA3E02A1EC93D0007F9CD /* Assets */,
-				032134182A1D7AC4002FD592 /* TickersApp.swift */,
-				646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */,
-				0321341A2A1D7AC4002FD592 /* ContentView.swift */,
+				032134182A1D7AC4002FD592 /* MainTickersApp.swift */,
 				642A62AC2A257D41002B83C7 /* MainTabView.swift */,
-				641C68622A2564D000EAAEE6 /* CellView.swift */,
-				64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */,
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
+				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
-				643BA2F02A200CBC00B8DA69 /* RadioButton.swift */,
-				CE0CFDD72A2941DE002F167F /* CustomTextField.swift */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -177,10 +183,115 @@
 		64EEA3E12A1EC9560007F9CD /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */,
 				64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */,
 				64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DD427F492A3008F80040A006 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F542A3130B70040A006 /* CardPetView */,
+				DD427F502A3130500040A006 /* MissionCellView */,
+				DD427F512A31305E0040A006 /* ConfirmBtnView */,
+				DD427F522A31306E0040A006 /* RadioButton */,
+				DD427F532A31307E0040A006 /* CustomTextField */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DD427F4A2A300A0B0040A006 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F712A3138C70040A006 /* empty.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD427F4D2A300A210040A006 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F642A3134D60040A006 /* Definitions */,
+				DD427F632A3133FC0040A006 /* Home */,
+				DD427F622A3133BA0040A006 /* MissionsScreen */,
+				DD427F612A3133700040A006 /* FocusScreen */,
+				645E0DE62A1EDE7900293553 /* Timer */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		DD427F502A3130500040A006 /* MissionCellView */ = {
+			isa = PBXGroup;
+			children = (
+				641C68622A2564D000EAAEE6 /* CellView.swift */,
+			);
+			path = MissionCellView;
+			sourceTree = "<group>";
+		};
+		DD427F512A31305E0040A006 /* ConfirmBtnView */ = {
+			isa = PBXGroup;
+			children = (
+				646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */,
+			);
+			path = ConfirmBtnView;
+			sourceTree = "<group>";
+		};
+		DD427F522A31306E0040A006 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				643BA2F02A200CBC00B8DA69 /* RadioButton.swift */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
+		DD427F532A31307E0040A006 /* CustomTextField */ = {
+			isa = PBXGroup;
+			children = (
+				CE0CFDD72A2941DE002F167F /* CustomTextField.swift */,
+			);
+			path = CustomTextField;
+			sourceTree = "<group>";
+		};
+		DD427F542A3130B70040A006 /* CardPetView */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F5F2A3133520040A006 /* CardPetView.swift */,
+			);
+			path = CardPetView;
+			sourceTree = "<group>";
+		};
+		DD427F612A3133700040A006 /* FocusScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F6F2A31368E0040A006 /* FocusView.swift */,
+			);
+			path = FocusScreen;
+			sourceTree = "<group>";
+		};
+		DD427F622A3133BA0040A006 /* MissionsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F6D2A3136820040A006 /* MissionsView.swift */,
+			);
+			path = MissionsScreen;
+			sourceTree = "<group>";
+		};
+		DD427F632A3133FC0040A006 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F6B2A3136730040A006 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DD427F642A3134D60040A006 /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				DD427F692A3136670040A006 /* DefinitionsView.swift */,
+			);
+			path = Definitions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,14 +426,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
+				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
+				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
+				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
-				0321341B2A1D7AC4002FD592 /* ContentView.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
-				032134192A1D7AC4002FD592 /* TickersApp.swift in Sources */,
+				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
+				DD427F722A3138C70040A006 /* empty.swift in Sources */,
+				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 			);
