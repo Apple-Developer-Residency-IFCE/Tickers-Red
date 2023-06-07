@@ -52,10 +52,10 @@ struct TimerView: View {
             VStack(spacing: 15) {
                 ZStack(alignment: .trailing) {
                     Circle()
-                        .stroke(fadingColor, lineWidth: 10)
+                        .stroke(fadingColor, lineWidth: 5)
                     Circle()
                         .trim(from: 0, to: CGFloat(progressTimer))
-                        .stroke(color, lineWidth: 10)
+                        .stroke(color, lineWidth: 5)
                     Circle()
                         .fill(fadingColor)
                         .frame(width: 10, height: 10)
@@ -65,7 +65,7 @@ struct TimerView: View {
                 }
                 .padding()
                 .frame(height: geo.size.width)
-                .rotationEffect(.degrees(90))
+                .rotationEffect(.degrees(270))
                 .rotation3DEffect(
                     .degrees(180),
                     axis: (x: 0, y: 1, z: 0)
@@ -76,7 +76,7 @@ struct TimerView: View {
                 }
             }
         }
-        .padding(40)
+        .padding(50)
         
     } //: View
     
