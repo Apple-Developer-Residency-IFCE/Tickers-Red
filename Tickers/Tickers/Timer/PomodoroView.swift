@@ -7,25 +7,28 @@
 
 import SwiftUI
 
-struct Time: Codable{
+struct Time {
+    var timer: Timer?
     var remainigTime: TimeInterval
     var typeTimer: Bool
 }
 
-struct TimeList: Codable {
+struct TimeList {
     var time: [Time]
 }
 
 struct PomodoroView: View {
-    @State private var timer: Timer? = nil
-    @State private var remainingTime: [Time] = [Time(remainigTime: 1800, typeTimer: true), Time(remainigTime: 300, typeTimer: false)]
+    @State var timeList: TimeList? = TimeList(time: [
+        Time(remainigTime: 1800, typeTimer: true),
+        Time(remainigTime: 300, typeTimer: false)
+    ])
     @State private var isRunning: Bool = false
     @State private var progressTimer: Double = 1
     let timerProgress: Double = 1800
     @State var count: Int = 0;
     
     var progress: Double {
-        timerProgress/(3600 * (timerProgress))
+        timerProgress/(3600 * ( timerProgress <= 60 ? 1 : (timerProgress)))
     }
     
     private let color = Color(
@@ -35,20 +38,21 @@ struct PomodoroView: View {
     )
     
     func onReset() {
-        timer?.invalidate()
-        timer = nil
+        timeList?.time[0].timer?.invalidate()
+        timeList?.time[0].timer = nil
         isRunning = false
     }
+    
     
     func onPlayPause() {
         
         if isRunning {
             onReset()
         } else {
-            timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                if remainingTime[count].remainigTime > 0 {
+            timeList?.time[0].timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+                if ((timeList?.time[0].remainigTime)! > 0) {
                     progressTimer -= progress
-                    remainingTime[count].remainigTime -= 1
+                    timeList?.time[0].remainigTime -= 1
                 } else {
                     progressTimer = 1
                 }
@@ -58,7 +62,11 @@ struct PomodoroView: View {
     }
     
     func onSkip() -> Void {
+        if (timeList!.time.count > (count + 1)) {
             count += 1
+        }else{
+            count -= 1
+        }
         
     }
     
@@ -69,12 +77,12 @@ struct PomodoroView: View {
                 .padding(.bottom, -50)
                 .padding(.top, 380)
             VStack {
-                 Text(remainingTime[count].typeTimer ? "Pomodoro" : "Pausa")
+                Text(timeList!.time[count].typeTimer ? "Pomodoro" : "Pausa")
                     .tickerFont(size: 22, weight: .bold)
                     .foregroundColor(color)
                     .padding(.bottom, -30)
-                TimerView(durationInSecond: remainingTime[count].remainigTime, isTimerRunning: isRunning, progressTimer: progressTimer, onReset: onReset, onPlayPause: onPlayPause, onSkip: onSkip)
-                if(remainingTime[count].typeTimer){
+                TimerView(durationInSecond: timeList!.time[count].remainigTime, isTimerRunning: isRunning, progressTimer: progressTimer, onReset: onReset, onPlayPause: onPlayPause, onSkip: onSkip)
+                if(timeList!.time[count].typeTimer){
                     HStack(spacing: 20){
                         Image("football").padding(.bottom, -60).padding(.leading, 10)
                         Image("babyCatAwake").padding(.bottom, 90).padding(.trailing, 50)
