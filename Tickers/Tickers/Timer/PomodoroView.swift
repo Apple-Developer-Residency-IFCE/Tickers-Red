@@ -18,17 +18,16 @@ struct TimeList {
 }
 
 struct PomodoroView: View {
-    @State var timeList: TimeList? = TimeList(time: [
-        Time(remainigTime: 1800, typeTimer: true),
-        Time(remainigTime: 300, typeTimer: false)
-    ])
+    @State var timeList: TimeList?
     @State private var isRunning: Bool = false
-    @State private var progressTimer: Double = 1
-    let timerProgress: Double = 1800
+    @State private var progressTimer: Float = 1.0
     @State var count: Int = 0;
+    let listTime: TimeList
     
-    var progress: Double {
-        timerProgress/(3600 * ( timerProgress <= 60 ? 1 : (timerProgress)))
+    
+    init(listTime: TimeList){
+        self.listTime = listTime
+        self._timeList = State(initialValue: listTime)
     }
     
     private let color = Color(
@@ -37,35 +36,48 @@ struct PomodoroView: View {
         blue: 235 / 255
     )
     
-    func onReset() {
-        timeList?.time[0].timer?.invalidate()
-        timeList?.time[0].timer = nil
+    func reset(){
+        timeList?.time[count].timer?.invalidate()
+        timeList?.time[count].timer = nil
         isRunning = false
     }
     
+    func onReset() {
+        timeList?.time[count].remainigTime = listTime.time[count].remainigTime
+        reset()
+    }
     
     func onPlayPause() {
         
-        if isRunning {
-            onReset()
-        } else {
-            timeList?.time[0].timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-                if ((timeList?.time[0].remainigTime)! > 0) {
-                    progressTimer -= progress
-                    timeList?.time[0].remainigTime -= 1
+        if !isRunning {
+            let totalTime = timeList?.time[count].remainigTime // Tempo total inicial
+            timeList?.time[count].timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
+                if ((timeList?.time[count].remainigTime)! > 0) {
+                    timeList?.time[count].remainigTime -= 1
+                    let remainingTime = timeList?.time[count].remainigTime
+                    progressTimer = (1 - (Float(totalTime!) - Float(remainingTime!)) / Float(totalTime!)) // Calcula o progresso com base no valor atual do timerValue (60 segundos)
                 } else {
-                    progressTimer = 1
+                    progressTimer = 1.0
                 }
             }
             isRunning = true
+        } else {
+            reset()
         }
     }
     
     func onSkip() -> Void {
         if (timeList!.time.count > (count + 1)) {
+            
+            reset()
             count += 1
+            progressTimer = 1.0
+            
         }else{
+            
+            reset()
             count -= 1
+            progressTimer = 1.0
         }
         
     }
@@ -121,6 +133,9 @@ struct PomodoroView: View {
 
 struct PomodoroView_Previews: PreviewProvider {
     static var previews: some View {
-        PomodoroView()
+        PomodoroView(listTime: TimeList(time: [
+            Time(remainigTime: 1500, typeTimer: true),
+            Time(remainigTime: 300, typeTimer: false)
+        ]))
     }
 }

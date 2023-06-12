@@ -24,7 +24,7 @@ struct TimerView: View {
     
     private let durationInSecond: TimeInterval
     private let isTimerRunning: Bool
-    private let progressTimer: Double
+    private let progressTimer: Float
     
     private let onReset: () -> Void
     private let onPlayPause: () -> Void
@@ -33,7 +33,7 @@ struct TimerView: View {
     init(
         durationInSecond: TimeInterval,
         isTimerRunning: Bool,
-        progressTimer: Double,
+        progressTimer: Float,
         onReset: @escaping () -> Void,
         onPlayPause: @escaping () -> Void,
         onSkip: @escaping () -> Void
@@ -97,7 +97,7 @@ struct TimerView: View {
                     alignment: .center
                 )
                 .offset(x: knobGeo.size.height / 2)
-                .rotationEffect(.degrees(progressTimer * 360))
+                .rotationEffect(.degrees(Double(progressTimer * 360)))
         }
     }  //: View
     
@@ -120,7 +120,7 @@ struct TimerView: View {
                     onPlayPause()
                 } label: {
                     Image(isTimerRunning ? "pauseWatch" : "playButton")
-                        .padding(.bottom, 10)
+                        .padding(5).padding(.bottom, 10)
                 }
         
                 Button {
