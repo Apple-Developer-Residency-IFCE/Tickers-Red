@@ -7,6 +7,12 @@
 
 import SwiftUI
 
-struct PomodoroModel {
-    
+struct Time {
+    var timer: Timer?
+    var remainigTime: TimeInterval
+    var typeTimer: Bool
+}
+
+struct TimeList {
+    var time: [Time]
 }

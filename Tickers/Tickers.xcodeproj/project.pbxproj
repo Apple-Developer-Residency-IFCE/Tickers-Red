@@ -23,8 +23,9 @@
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
 		7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
+		7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
+		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
-		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
 		DD427F602A3133520040A006 /* CardPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F5F2A3133520040A006 /* CardPetView.swift */; };
 		DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F692A3136670040A006 /* DefinitionsView.swift */; };
 		DD427F6C2A3136730040A006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
@@ -71,8 +72,9 @@
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
 		7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		7D77AD2E2A391C21000D356E /* TimerInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
+		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
 		DD427F5F2A3133520040A006 /* CardPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPetView.swift; sourceTree = "<group>"; };
 		DD427F692A3136670040A006 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
 		DD427F6B2A3136730040A006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -171,9 +173,10 @@
 			isa = PBXGroup;
 			children = (
 				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
-				CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */,
 				640E307C2A281749007C6AC0 /* PomodoroView.swift */,
 				7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */,
+				7D77AD2E2A391C21000D356E /* TimerInterval.swift */,
+				7D77AD302A392120000D356E /* PomodoroViewModel.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -435,18 +438,16 @@
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
+				7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
-				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
-				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
 				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
-				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
@@ -455,6 +456,7 @@
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
+				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
