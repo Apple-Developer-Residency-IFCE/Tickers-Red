@@ -8,13 +8,22 @@
 import SwiftUI
 
 
-struct NavBarMainScreenModifier: ViewModifier {
+struct NavBarWithMissions: ViewModifier {
     @Environment(\.presentationMode) var presentationMode
+    var blackText: String
+    var blueText: String
     
     func body(content: Content) -> some View {
         content
             .navigationBarBackButtonHidden(true)
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    HStack{
+                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                            .foregroundColor(.blue)
+                    }
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
                         Text("go to missions!")
@@ -26,8 +35,10 @@ struct NavBarMainScreenModifier: ViewModifier {
     }
 }
 
-struct NavBarSecondaryScreenModifer: ViewModifier {
+struct NavBarWithBackButton: ViewModifier {
     @Environment(\.presentationMode) var presentationMode
+    var blackText: String
+    var blueText: String
     
     func body(content: Content) -> some View {
         content
@@ -40,16 +51,23 @@ struct NavBarSecondaryScreenModifer: ViewModifier {
                         Image("returnArrow")
                     }
                 }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    HStack{
+                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                            .foregroundColor(.blue)
+                    }
+                }
             }
     }
 }
 
 extension View {
-    func navBarMainScreen() -> some View {
-        self.modifier(NavBarMainScreenModifier())
+    func navBarWithMissions(blackText: String = "", blueText: String = "") -> some View {
+        self.modifier(NavBarWithMissions(blackText: blackText, blueText: blueText))
     }
     
-    func navBarSecondaryScreen() -> some View {
-        modifier(NavBarSecondaryScreenModifer())
+    func navBarWithBackButton(blackText: String = "", blueText: String = "") -> some View {
+        self.modifier(NavBarWithBackButton(blackText: blackText, blueText: blueText))
     }
 }
