@@ -26,9 +26,6 @@ struct SoundsSheetView: View {
             .opacity(buttonIsHidden ? 0 : 1)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        #if DEBUG
-        .background(Color(uiColor: .secondarySystemBackground))
-        #endif
         .bottomSheet(isPresented: $showingSounds) {
             VStack(alignment: .leading) {
                 HStack(spacing: 0) {
