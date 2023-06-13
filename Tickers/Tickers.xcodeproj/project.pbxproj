@@ -34,8 +34,6 @@
 		DD427F702A31368E0040A006 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6F2A31368E0040A006 /* FocusView.swift */; };
 		DD427F722A3138C70040A006 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F712A3138C70040A006 /* empty.swift */; };
 		DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */; };
-		DDB3CA662A314FB80085AADA /* CustomNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB3CA652A314FB80085AADA /* CustomNavBar.swift */; };
-		DDB3CA682A3150610085AADA /* NavStart.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB3CA672A3150610085AADA /* NavStart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +85,6 @@
 		DD427F6F2A31368E0040A006 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		DD427F712A3138C70040A006 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarModifiers.swift; sourceTree = "<group>"; };
-		DDB3CA652A314FB80085AADA /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
-		DDB3CA672A3150610085AADA /* NavStart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavStart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,8 +320,6 @@
 		DDB3CA642A314F9E0085AADA /* CustomNavBar */ = {
 			isa = PBXGroup;
 			children = (
-				DDB3CA652A314FB80085AADA /* CustomNavBar.swift */,
-				DDB3CA672A3150610085AADA /* NavStart.swift */,
 				DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */,
 			);
 			path = CustomNavBar;
@@ -466,8 +460,6 @@
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
-				DDB3CA682A3150610085AADA /* NavStart.swift in Sources */,
-				DDB3CA662A314FB80085AADA /* CustomNavBar.swift in Sources */,
 				CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
 				CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */,
