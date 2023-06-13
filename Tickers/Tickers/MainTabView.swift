@@ -9,24 +9,26 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        TabView {
-            Image("babyCatAwake")
-                .tabItem {
-                    Label("Home", image: "HomeIcon")
-                }
-            Text("Tela de Timer ⏱")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem {
-                    Label("", image: "TimerIcon")
-                }
-            
-            Text("Tela de Perfil")
-                .font(.system(size: 30, weight: .bold, design: .rounded))
-                .tabItem {
-                    Label("Perfil", image: "configurationGear")
-                }
-
-        } // : TabView
+        NavigationView{
+            TabView {
+                Image("babyCatAwake")
+                    .tabItem {
+                        Label("Home", image: "HomeIcon")
+                    }
+                Text("Tela de Timer ⏱")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Label("", image: "TimerIcon")
+                    }
+                
+                Text("Tela de Perfil")
+                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                    .tabItem {
+                        Label("Perfil", image: "configurationGear")
+                    }
+            } // : TabView
+            .navBarWithMissions(blackText: "Bem vindo,", blueText: "Fulaninho")
+        }
     }
 }
 
