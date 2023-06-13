@@ -11,10 +11,10 @@ import SwiftUI
 struct TickersApp: App {
     var body: some Scene {
         WindowGroup {
-           PomodoroView(listTime: TimeList(time: [
+           PomodoroView(listTime: [
             Time(remainigTime: 1800, typeTimer: true),
             Time(remainigTime: 300, typeTimer: false)
-        ]))
+        ])
         }
     }
 }

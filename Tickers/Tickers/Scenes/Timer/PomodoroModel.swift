@@ -12,7 +12,3 @@ struct Time {
     var remainigTime: TimeInterval
     var typeTimer: Bool
 }
-
-struct TimeList {
-    var time: [Time]
-}

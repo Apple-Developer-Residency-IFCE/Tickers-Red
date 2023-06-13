@@ -13,8 +13,8 @@ enum TickerFontWeight: String {
     case bold = "Nunito-Bold"
 }
 
-extension Text {
-    func tickerFont(size: CGFloat, weight: TickerFontWeight) -> Text {
+extension View {
+    func tickerFont(size: CGFloat, weight: TickerFontWeight) -> some View {
         return self.font(.custom(weight.rawValue, size: size))
     }
 }
