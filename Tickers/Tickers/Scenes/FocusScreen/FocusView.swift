@@ -7,9 +7,27 @@
 
 import SwiftUI
 
+struct SnoreView: View {
+    var body: some View {
+        HStack {
+            VStack {
+                Image("snore(1)")
+                Image("snore(3)")
+            }
+            ZStack {
+                Image("snore(2)")
+            }
+        }
+    }
+}
+
 struct FocusView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // Chamar a extension TimeInterval aq
+            SnoreView()
+            Image("babyCatAsleepFocus")
+        }
     }
 }
 
