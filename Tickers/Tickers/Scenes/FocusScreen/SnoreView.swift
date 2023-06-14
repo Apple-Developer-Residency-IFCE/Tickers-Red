@@ -8,27 +8,38 @@
 import SwiftUI
 
 struct SnoreView: View {
+    
     @State private var yOffset: CGFloat = 0
     @State private var xOffset: CGFloat = 0
-
+    
+    private let snores = ["snore(1)", "snore(3)", "snore(2)"]
+    
     var body: some View {
         HStack(spacing: 0) {
             VStack {
-                Image("snore(1)")
-                    .offset(x: xOffset * 1.5, y: yOffset * 0.7)
-                Image("snore(3)")
-                    .offset(x: xOffset * 1.5, y: yOffset * 1.1)
+                ForEach(0..<2) { index in
+                    snoreImage(named: snores[index], x: xOffset * 1.5, y: yOffset * (index == 0 ? 0.7 : 1.1))
+                }
             }
             ZStack {
-                Image("snore(2)")
-                    .offset(x: xOffset * 1.1, y: yOffset)
+                snoreImage(named: snores[2], x: xOffset * 1.1, y: yOffset)
             }
         }
         .onAppear {
-            withAnimation(.snore) {
-                yOffset = 40
-                xOffset = 10
-            }
+            animateImages()
+        }
+    }
+    
+    // MARK: - Functions
+    private func snoreImage(named name: String, x: CGFloat, y: CGFloat) -> some View {
+        Image(name)
+            .offset(x: x, y: y)
+    }
+    
+    private func animateImages() {
+        withAnimation(.snore) {
+            yOffset = 40
+            xOffset = 10
         }
     }
 }
