@@ -10,7 +10,7 @@ import SwiftUI
 struct ProgressBarView: View {
     var actualProgress: Int
     var totalProgress: Int
-    init(_ actualProgress: Int,_ totalProgress: Int) {
+    init(actualProgress: Int,totalProgress: Int) {
         self.actualProgress = actualProgress
         self.totalProgress = totalProgress
     }
@@ -19,7 +19,7 @@ struct ProgressBarView: View {
         HStack {
             Image("levelUpClock")
             ProgressView(value: Double(actualProgress), total: Double (totalProgress))
-                .frame(width: 68)
+                .frame(width: 55)
             Text("\(actualProgress)/\(totalProgress)")
                 .font(.custom("Nunito-Bold", size: 12))
                 .foregroundColor(Color("Grey3"))
@@ -30,6 +30,6 @@ struct ProgressBarView: View {
 
 struct ProgressBarView_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressBarView(1, 2)
+        ProgressBarView(actualProgress: 1, totalProgress: 2)
     }
 }

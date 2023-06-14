@@ -12,7 +12,7 @@ struct EggLockView: View {
     
     var body: some View {
         RoundedRectangle(cornerRadius: 20)
-            .fill(Color("BackgroundColor"))
+            .fill(Color("White"))
             .frame(width: 160, height: 176)
             .overlay {
                 ZStack {
