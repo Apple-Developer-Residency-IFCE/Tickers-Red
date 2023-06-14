@@ -22,9 +22,24 @@ struct SnoreView: View {
 }
 
 struct FocusView: View {
+
+    // MARK: - Properties
+    private let color = Color(
+        red: 59 / 255,
+        green: 129 / 255,
+        blue: 235 / 255
+    )
+    let durationInSecond: TimeInterval
+
+    init(durationInSecond: TimeInterval) {
+        self.durationInSecond = durationInSecond
+    }
+    
     var body: some View {
         VStack {
-            // Chamar a extension TimeInterval aq
+            Text("\(durationInSecond.timeString)")
+                .tickerFont(size: 90, weight: .bold)
+                .foregroundColor(color)
             SnoreView()
             Image("babyCatAsleepFocus")
         }
@@ -32,7 +47,8 @@ struct FocusView: View {
 }
 
 struct FocusView_Previews: PreviewProvider {
+    @State static var timer: TimeInterval = 15
     static var previews: some View {
-        FocusView()
+        FocusView(durationInSecond: timer)
     }
 }
