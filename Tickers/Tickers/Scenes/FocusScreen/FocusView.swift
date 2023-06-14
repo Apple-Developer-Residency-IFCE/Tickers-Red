@@ -7,20 +7,6 @@
 
 import SwiftUI
 
-struct SnoreView: View {
-    var body: some View {
-        HStack {
-            VStack {
-                Image("snore(1)")
-                Image("snore(3)")
-            }
-            ZStack {
-                Image("snore(2)")
-            }
-        }
-    }
-}
-
 struct FocusView: View {
 
     // MARK: - Properties
@@ -35,6 +21,7 @@ struct FocusView: View {
         self.durationInSecond = durationInSecond
     }
     
+    // MARK: - View
     var body: some View {
         VStack {
             Text("\(durationInSecond.timeString)")
@@ -46,6 +33,7 @@ struct FocusView: View {
     }
 }
 
+// MARK: - Preview
 struct FocusView_Previews: PreviewProvider {
     @State static var timer: TimeInterval = 15
     static var previews: some View {
