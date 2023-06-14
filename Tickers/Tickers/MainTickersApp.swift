@@ -12,8 +12,8 @@ struct TickersApp: App {
     var body: some Scene {
         WindowGroup {
            PomodoroView(listTime: [
-            Time(remainigTime: 1800, typeTimer: true),
-            Time(remainigTime: 300, typeTimer: false)
+            Time(remainigTime: 1800, isPomodoro: true),
+            Time(remainigTime: 300, isPomodoro: false)
         ])
         }
     }

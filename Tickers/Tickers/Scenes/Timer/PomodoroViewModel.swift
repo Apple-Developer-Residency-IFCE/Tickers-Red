@@ -20,7 +20,7 @@ class PomodoroViewModel: ObservableObject {
         self.timeList = timeList
     }
     
-    func reset(){
+    func reset() {
         timeList[count].timer?.invalidate()
         timeList[count].timer = nil
         isRunning = false
@@ -50,7 +50,7 @@ class PomodoroViewModel: ObservableObject {
         }
     }
     
-    func onSkip() -> Void {
+    func onSkip() {
         if (timeList.count > (count + 1)) {
             reset()
             count += 1

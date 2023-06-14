@@ -7,15 +7,8 @@
 
 import SwiftUI
 
-
-
 struct PomodoroView: View {
-//    @State var timeList: [Time]
-//    @State private var isRunning: Bool = false
-//    @State private var progressTimer: Float = 1.0
-//    @State var count: Int
     @ObservedObject var viewModel: PomodoroViewModel
-    
     
     init(listTime: [Time]){
         self.viewModel = PomodoroViewModel(timeList: listTime)
@@ -34,7 +27,7 @@ struct PomodoroView: View {
                 .padding(.bottom, -50)
                 .padding(.top, 380)
             VStack {
-                Text(viewModel.timeList[viewModel.count].typeTimer ? "Pomodoro" : "Pausa")
+                Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
                     .tickerFont(size: 22, weight: .bold)
                     .foregroundColor(color)
                     .padding(.bottom, -30)
@@ -42,12 +35,12 @@ struct PomodoroView: View {
                 tickersPomodoroView
                 footerView
             }
-        }
+        } // ZStack
     }
     
     private var tickersPomodoroView: some View {
         VStack{
-            if(viewModel.timeList[viewModel.count].typeTimer){
+            if(viewModel.timeList[viewModel.count].isPomodoro){
                 HStack(spacing: 20){
                     Image("football").padding(.bottom, -60).padding(.leading, 10)
                     Image("babyCatAwake").padding(.bottom, 90).padding(.trailing, 50)
@@ -58,7 +51,7 @@ struct PomodoroView: View {
                     Image("babyCatAsleepTimer").padding(.bottom, 40)
                 }.padding(.bottom, 10)
             }
-        }
+        } // VStack
     }
     
     private var footerView: some View {
@@ -86,13 +79,11 @@ struct PomodoroView: View {
     
 }
 
-
-
 struct PomodoroView_Previews: PreviewProvider {
     static var previews: some View {
         PomodoroView(listTime: [
-            Time(remainigTime: 1500, typeTimer: true),
-            Time(remainigTime: 300, typeTimer: false)
+            Time(remainigTime: 1500, isPomodoro: true),
+            Time(remainigTime: 300, isPomodoro: false)
         ])
     }
 }

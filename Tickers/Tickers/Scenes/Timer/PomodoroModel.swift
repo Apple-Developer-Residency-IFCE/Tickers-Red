@@ -10,5 +10,5 @@ import SwiftUI
 struct Time {
     var timer: Timer?
     var remainigTime: TimeInterval
-    var typeTimer: Bool
+    var isPomodoro: Bool
 }
