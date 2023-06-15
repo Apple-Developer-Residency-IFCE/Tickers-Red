@@ -13,6 +13,7 @@
 		0321342A2A1D7AC5002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134292A1D7AC5002FD592 /* TickersTests.swift */; };
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
+		640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E307C2A281749007C6AC0 /* PomodoroView.swift */; };
 		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };
 		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
 		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
@@ -21,13 +22,15 @@
 		64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */; };
 		64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */; };
 		64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
+		7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
+		7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
+		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CE1D2C842A3151AA00B71AF1 /* SoundsSheatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */; };
 		CE6044F22A394D900032C30A /* SnoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6044F12A394D900032C30A /* SnoreView.swift */; };
 		CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F6F2A325A60004B4F68 /* RoundedCornerShape.swift */; };
 		CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F712A325AA9004B4F68 /* View+Ext.swift */; };
 		CEA49F742A326008004B4F68 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F732A326008004B4F68 /* BottomSheet.swift */; };
-		CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */; };
 		DD427F602A3133520040A006 /* CardPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F5F2A3133520040A006 /* CardPetView.swift */; };
 		DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F692A3136670040A006 /* DefinitionsView.swift */; };
 		DD427F6C2A3136730040A006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
@@ -64,6 +67,7 @@
 		0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		640E307C2A281749007C6AC0 /* PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroView.swift; sourceTree = "<group>"; };
 		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -73,13 +77,15 @@
 		64EEA3E72A1ECB0E0007F9CD /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		64EEA3E92A1ECB1B0007F9CD /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 		64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerFont.swift; sourceTree = "<group>"; };
+		7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		7D77AD2E2A391C21000D356E /* TimerInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
+		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsSheatView.swift; sourceTree = "<group>"; };
 		CE6044F12A394D900032C30A /* SnoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoreView.swift; sourceTree = "<group>"; };
 		CEA49F6F2A325A60004B4F68 /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
 		CEA49F712A325AA9004B4F68 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		CEA49F732A326008004B4F68 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
-		CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Ext.swift"; sourceTree = "<group>"; };
 		DD427F5F2A3133520040A006 /* CardPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPetView.swift; sourceTree = "<group>"; };
 		DD427F692A3136670040A006 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
 		DD427F6B2A3136730040A006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -179,7 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
-				CECB7C9B2A215CDC0080D582 /* TimeInterval+Ext.swift */,
+				640E307C2A281749007C6AC0 /* PomodoroView.swift */,
+				7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */,
+				7D77AD2E2A391C21000D356E /* TimerInterval.swift */,
+				7D77AD302A392120000D356E /* PomodoroViewModel.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -466,12 +475,17 @@
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
+				7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */,
 				CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
-				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
+				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
+				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
+				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
+				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
+				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
@@ -481,6 +495,8 @@
 				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
+				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
+				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,6 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
@@ -656,6 +673,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.Tickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -667,6 +685,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Tickers/Preview Content\"";
@@ -687,6 +706,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.Tickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
