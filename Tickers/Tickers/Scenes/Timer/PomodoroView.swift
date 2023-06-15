@@ -43,8 +43,10 @@ struct PomodoroView: View {
 //                        .padding(.bottom, -30)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "book.closed")
+                    Image(systemName: "plus")
                         .foregroundColor(color)
+                        .font(.system(size: 25))
+                        .rotationEffect(.degrees(45))
                         .onTapGesture {
                             dismiss()
                         }
