@@ -14,8 +14,6 @@
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
 		35A4BC9F2A390CA6003EBF52 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4BC9E2A390CA6003EBF52 /* ProgressBarView.swift */; };
-		35A4BCA12A390CC0003EBF52 /* EggLockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4BCA02A390CC0003EBF52 /* EggLockView.swift */; };
-		35A4BCA32A390CD8003EBF52 /* TickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4BCA22A390CD8003EBF52 /* TickerView.swift */; };
 		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };
 		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
 		643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
@@ -62,8 +60,6 @@
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		35A4BC9E2A390CA6003EBF52 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
-		35A4BCA02A390CC0003EBF52 /* EggLockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggLockView.swift; sourceTree = "<group>"; };
-		35A4BCA22A390CD8003EBF52 /* TickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerView.swift; sourceTree = "<group>"; };
 		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		643BA2F02A200CBC00B8DA69 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -173,8 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				35A4BC9E2A390CA6003EBF52 /* ProgressBarView.swift */,
-				35A4BCA02A390CC0003EBF52 /* EggLockView.swift */,
-				35A4BCA22A390CD8003EBF52 /* TickerView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -446,12 +440,10 @@
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
-				35A4BCA12A390CC0003EBF52 /* EggLockView.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				35A4BC9F2A390CA6003EBF52 /* ProgressBarView.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
-				35A4BCA32A390CD8003EBF52 /* TickerView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				CECB7C9C2A215CDC0080D582 /* TimeInterval+Ext.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
