@@ -34,6 +34,8 @@
 		DD427F702A31368E0040A006 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6F2A31368E0040A006 /* FocusView.swift */; };
 		DD427F722A3138C70040A006 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F712A3138C70040A006 /* empty.swift */; };
 		DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */; };
+		DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837B2A3BD725009D5A3A /* TickerModel.swift */; };
+		DD67837E2A3BD8CF009D5A3A /* TickersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837D2A3BD8CF009D5A3A /* TickersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		DD427F6F2A31368E0040A006 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		DD427F712A3138C70040A006 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarModifiers.swift; sourceTree = "<group>"; };
+		DD67837B2A3BD725009D5A3A /* TickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerModel.swift; sourceTree = "<group>"; };
+		DD67837D2A3BD8CF009D5A3A /* TickersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -305,6 +309,8 @@
 			isa = PBXGroup;
 			children = (
 				DD427F6B2A3136730040A006 /* HomeView.swift */,
+				DD67837B2A3BD725009D5A3A /* TickerModel.swift */,
+				DD67837D2A3BD8CF009D5A3A /* TickersViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -459,11 +465,13 @@
 			files = (
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
+				DD67837E2A3BD8CF009D5A3A /* TickersViewModel.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
 				CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
+				DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,

@@ -24,19 +24,6 @@ let tick7 = mockTick(id:7 , imagT: "babyCatAwake", imagE: "eggGreen", islock: tr
 
 let tickers = [tick1, tick2, tick3, tick4, tick5, tick6]
 
-//var stack: ([mockTick], [mockTick]) {
-//    var rightStack: [mockTick] = []
-//    var leftStack: [mockTick] =  []
-//    for ticker in tickers{
-//        if ticker.id.isMultiple(of: 2){
-//            rightStack.append(ticker)
-//        } else {
-//            leftStack.append(ticker)
-//        }
-//    }
-//    return (leftStack, rightStack)
-//}
-
 struct HomeView: View {
     
     let columns = [
