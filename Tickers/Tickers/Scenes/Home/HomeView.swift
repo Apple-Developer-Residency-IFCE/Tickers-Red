@@ -23,40 +23,55 @@ let tick6 = mockTick(id:6 , imagT: "babyCatAwake", imagE: "eggGreen", islock: tr
 let tick7 = mockTick(id:7 , imagT: "babyCatAwake", imagE: "eggGreen", islock: true)
 
 let tickers = [tick1, tick2, tick3, tick4, tick5, tick6]
-var stack: ([mockTick], [mockTick]) {
-    var rightStack: [mockTick] = []
-    var leftStack: [mockTick] =  []
-    for ticker in tickers{
-        if ticker.id.isMultiple(of: 2){
-            rightStack.append(ticker)
-        } else {
-            leftStack.append(ticker)
-        }
-    }
-    return (leftStack, rightStack)
-}
+
+//var stack: ([mockTick], [mockTick]) {
+//    var rightStack: [mockTick] = []
+//    var leftStack: [mockTick] =  []
+//    for ticker in tickers{
+//        if ticker.id.isMultiple(of: 2){
+//            rightStack.append(ticker)
+//        } else {
+//            leftStack.append(ticker)
+//        }
+//    }
+//    return (leftStack, rightStack)
+//}
 
 struct HomeView: View {
+    
+    let columns = [
+            GridItem(.flexible()),
+            GridItem(.flexible())
+        ]
 
     var body: some View {
+        
+        
         NavigationView{
             TabView {
                 ZStack{
-                    Color(uiColor: .lightGray)
-                    HStack(alignment: .top){
-                        VStack{
-                            ForEach(stack.0) { ticker in
-                                Image(ticker.imagT)
-                            }
-                        }
+                    Color(red: 245, green: 245, blue: 245)
+                    
+                    VStack(alignment: .leading){
+                        Text("Seus tickers").tickerFont(size: 20, weight: .bold)
+                            .foregroundColor(.blue)
+                            .padding(.leading, 20)
                         
-                        VStack{
-                            ForEach(stack.1) { ticker in
-                                Image(ticker.imagT)
-                            }
-                        }
-                    }
-                }
+                        ScrollView{
+                            LazyVGrid(columns: columns, spacing: 12) {
+                                ForEach(tickers) { ticker in
+                                    ZStack{
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .frame(width: 160, height: 175)
+                                        Image(ticker.imagT)
+                                    }//trocar por cardpet
+                                }
+                            }//Vgrid
+                            .padding(.horizontal)
+                        }//scrollView
+                        Divider()
+                    }//Vstack
+                } //zStack
                 
                 .tabItem {
                     Label("Home", image: "HomeIcon")
@@ -78,7 +93,7 @@ struct HomeView: View {
                     }
             } // : TabView
             .navBarWithMissions(blackText: "Bem vindo,", blueText: "Fulaninho")
-        }
+        }//navView
     }
 }
 
