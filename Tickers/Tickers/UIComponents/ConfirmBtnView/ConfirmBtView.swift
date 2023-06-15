@@ -42,6 +42,6 @@ struct ConfirmBtn: View {
 
 struct ConfirmBtn_Previews: PreviewProvider {
     static var previews: some View {
-        ConfirmBtn(text: "Pular pomodoro", filled: true)
+            ConfirmBtn(text: "Pular pomodoro", filled: false)
     }
 }

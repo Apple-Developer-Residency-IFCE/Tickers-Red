@@ -1,8 +1,8 @@
 //
-//  TimeInterval+Ext.swift
+//  TimerInterval.swift
 //  Tickers
 //
-//  Created by Alley Pereira on 26/05/23.
+//  Created by Oliver Santos on 13/06/23.
 //
 
 import Foundation
