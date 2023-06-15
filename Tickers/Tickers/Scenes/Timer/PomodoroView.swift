@@ -9,6 +9,7 @@ import SwiftUI
 
 struct PomodoroView: View {
     @ObservedObject var viewModel: PomodoroViewModel
+    @Environment(\.dismiss) var dismiss
     
     init(listTime: [Time]){
         self.viewModel = PomodoroViewModel(timeList: listTime)
@@ -21,19 +22,33 @@ struct PomodoroView: View {
     )
     
     var body: some View {
-        ZStack{
-            Image("ellipse")
-                .resizable()
-                .padding(.bottom, -50)
-                .padding(.top, 380)
-            VStack {
-                Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
-                    .tickerFont(size: 22, weight: .bold)
-                    .foregroundColor(color)
-                    .padding(.bottom, -30)
-                TimerView(durationInSecond: viewModel.timeList[viewModel.count].remainigTime, isTimerRunning: viewModel.isRunning, progressTimer: viewModel.progressTimer, onReset: viewModel.onReset, onPlayPause: viewModel.onPlayPause, onSkip: viewModel.onSkip)
-                tickersPomodoroView
-                footerView
+        NavigationView {
+            ZStack{
+                Image("ellipse")
+                    .resizable()
+                    .padding(.bottom, -50)
+                    .padding(.top, 380)
+                VStack {
+                    TimerView(durationInSecond: viewModel.timeList[viewModel.count].remainigTime, isTimerRunning: viewModel.isRunning, progressTimer: viewModel.progressTimer, onReset: viewModel.onReset, onPlayPause: viewModel.onPlayPause, onSkip: viewModel.onSkip)
+                    tickersPomodoroView
+                    footerView
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
+                        .tickerFont(size: 22, weight: .bold)
+                        .foregroundColor(color)
+//                        .padding(.bottom, -30)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image(systemName: "book.closed")
+                        .foregroundColor(color)
+                        .onTapGesture {
+                            dismiss()
+                        }
+                }
             }
         } // ZStack
     }
