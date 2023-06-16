@@ -10,12 +10,6 @@ import SwiftUI
 struct TimerView: View {
     
     // MARK: - Properties
-    private let color = Color(
-        red: 59 / 255,
-        green: 129 / 255,
-        blue: 235 / 255
-    )
-    
     private let fadingColor = Color(
         red: 213 / 255,
         green: 224 / 255,
@@ -55,7 +49,7 @@ struct TimerView: View {
                         .stroke(fadingColor, lineWidth: 5)
                     Circle()
                         .trim(from: 0, to: CGFloat(progressTimer))
-                        .stroke(color, lineWidth: 5)
+                        .stroke(Color.customBlue, lineWidth: 5)
                     Circle()
                         .fill(fadingColor)
                         .frame(width: 10, height: 10)
@@ -84,7 +78,7 @@ struct TimerView: View {
     private var ballKnobView: some View {
         GeometryReader { knobGeo in
             Circle()
-                .fill(color)
+                .fill(Color.customBlue)
                 .frame(width: 20, height: 20)
                 .overlay(
                     Circle()
@@ -107,7 +101,7 @@ struct TimerView: View {
         VStack(spacing: 20) {
             Text("\(durationInSecond.timeString)")
                 .font(.system(size: 60, weight: .medium, design: .rounded))
-                .foregroundColor(color)
+                .foregroundColor(Color.customBlue)
             HStack(alignment: .bottom, spacing: 20) {
 
                 Button {
