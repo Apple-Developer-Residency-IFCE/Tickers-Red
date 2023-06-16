@@ -10,11 +10,12 @@ import SwiftUI
 struct ConfirmBtn: View {
     var text: String
     var filled: Bool
+    var sizeTextBtn: Int = 24
     
     var body: some View {
         ZStack{
             Text(text)
-                .tickerFont(size: 24, weight: .bold)
+                .tickerFont(size: CGFloat(sizeTextBtn), weight: .bold)
                 .padding([.bottom, .top], 11)
                 .padding([.leading, .trailing], 20)
                 .background{
