@@ -13,6 +13,7 @@
 		0321342A2A1D7AC5002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134292A1D7AC5002FD592 /* TickersTests.swift */; };
 		032134342A1D7AC5002FD592 /* TickersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134332A1D7AC5002FD592 /* TickersUITests.swift */; };
 		032134362A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */; };
+		35A4BC9F2A390CA6003EBF52 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4BC9E2A390CA6003EBF52 /* ProgressBarView.swift */; };
 		640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E307C2A281749007C6AC0 /* PomodoroView.swift */; };
 		641C68632A2564D000EAAEE6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641C68622A2564D000EAAEE6 /* CellView.swift */; };
 		642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
@@ -67,6 +68,7 @@
 		0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TickersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		032134332A1D7AC5002FD592 /* TickersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITests.swift; sourceTree = "<group>"; };
 		032134352A1D7AC5002FD592 /* TickersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		35A4BC9E2A390CA6003EBF52 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		640E307C2A281749007C6AC0 /* PomodoroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroView.swift; sourceTree = "<group>"; };
 		641C68622A2564D000EAAEE6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		642A62AC2A257D41002B83C7 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -181,6 +183,14 @@
 			path = TickersUITests;
 			sourceTree = "<group>";
 		};
+		35A4BC9D2A390C86003EBF52 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				35A4BC9E2A390CA6003EBF52 /* ProgressBarView.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		645E0DE62A1EDE7900293553 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
@@ -291,6 +301,7 @@
 		DD427F542A3130B70040A006 /* CardPetView */ = {
 			isa = PBXGroup;
 			children = (
+				35A4BC9D2A390C86003EBF52 /* SubViews */,
 				DD427F5F2A3133520040A006 /* CardPetView.swift */,
 			);
 			path = CardPetView;
@@ -479,6 +490,7 @@
 				CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
+				35A4BC9F2A390CA6003EBF52 /* ProgressBarView.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
