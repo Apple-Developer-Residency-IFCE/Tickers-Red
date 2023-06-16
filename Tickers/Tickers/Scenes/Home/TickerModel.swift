@@ -7,7 +7,8 @@
 
 import SwiftUI
 
-struct Ticker {
+struct Ticker: Identifiable {
+    var id: Int
     var isLocked: Bool
     var actualProgress: Int
     var totalProgress: Int
@@ -19,7 +20,4 @@ struct Ticker {
 
 struct Tickers {
     var tickers: [Ticker]
-    init(tickers: [Ticker]) {
-        self.tickers = tickers
-    }
 }
