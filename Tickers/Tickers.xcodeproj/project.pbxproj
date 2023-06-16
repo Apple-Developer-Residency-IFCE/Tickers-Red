@@ -32,6 +32,8 @@
 		CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F712A325AA9004B4F68 /* View+Ext.swift */; };
 		CEA49F742A326008004B4F68 /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F732A326008004B4F68 /* BottomSheet.swift */; };
 		CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4A2A3BCB5C00F54695 /* PopupView.swift */; };
+		CED2AA4D2A3D085D00F54695 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4C2A3D085D00F54695 /* Color+Ext.swift */; };
+		CED2AA502A3D09B800F54695 /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4F2A3D09B800F54695 /* PopupContentView.swift */; };
 		DD427F602A3133520040A006 /* CardPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F5F2A3133520040A006 /* CardPetView.swift */; };
 		DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F692A3136670040A006 /* DefinitionsView.swift */; };
 		DD427F6C2A3136730040A006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
@@ -88,6 +90,8 @@
 		CEA49F712A325AA9004B4F68 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 		CEA49F732A326008004B4F68 /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
 		CED2AA4A2A3BCB5C00F54695 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
+		CED2AA4C2A3D085D00F54695 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		CED2AA4F2A3D09B800F54695 /* PopupContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContentView.swift; sourceTree = "<group>"; };
 		DD427F5F2A3133520040A006 /* CardPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPetView.swift; sourceTree = "<group>"; };
 		DD427F692A3136670040A006 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
 		DD427F6B2A3136730040A006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 				0321341C2A1D7AC4002FD592 /* Assets.xcassets */,
 				64EEA3E62A1ECAD70007F9CD /* Info.plist */,
 				0321341E2A1D7AC4002FD592 /* Preview Content */,
+				CED2AA4E2A3D086500F54695 /* Extensions */,
 			);
 			path = Tickers;
 			sourceTree = "<group>";
@@ -228,8 +233,17 @@
 			isa = PBXGroup;
 			children = (
 				CED2AA4A2A3BCB5C00F54695 /* PopupView.swift */,
+				CED2AA4F2A3D09B800F54695 /* PopupContentView.swift */,
 			);
 			path = PopupView;
+			sourceTree = "<group>";
+		};
+		CED2AA4E2A3D086500F54695 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CED2AA4C2A3D085D00F54695 /* Color+Ext.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		DD427F492A3008F80040A006 /* UIComponents */ = {
@@ -494,6 +508,7 @@
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
+				CED2AA502A3D09B800F54695 /* PopupContentView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
@@ -509,6 +524,7 @@
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
 				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
+				CED2AA4D2A3D085D00F54695 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
