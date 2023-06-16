@@ -18,6 +18,7 @@ struct ConfirmBtn: View {
                 .tickerFont(size: CGFloat(sizeTextBtn), weight: .bold)
                 .padding([.bottom, .top], 11)
                 .padding([.leading, .trailing], 20)
+                .frame(maxWidth: .infinity)
                 .background{
                     rectangleBuilder(filled: filled)
                 }
