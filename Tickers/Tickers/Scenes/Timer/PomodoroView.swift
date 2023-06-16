@@ -15,12 +15,6 @@ struct PomodoroView: View {
         self.viewModel = PomodoroViewModel(timeList: listTime)
     }
     
-    private let color = Color(
-        red: 59 / 255,
-        green: 129 / 255,
-        blue: 235 / 255
-    )
-    
     var body: some View {
         NavigationView {
             ZStack{
@@ -39,12 +33,12 @@ struct PomodoroView: View {
                 ToolbarItem(placement: .principal) {
                     Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
                         .tickerFont(size: 22, weight: .bold)
-                        .foregroundColor(color)
+                        .foregroundColor(.customBlue)
 //                        .padding(.bottom, -30)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "book.closed")
-                        .foregroundColor(color)
+                        .foregroundColor(.customBlue)
                         .onTapGesture {
                             dismiss()
                         }
@@ -75,19 +69,19 @@ struct PomodoroView: View {
                 Image("focusButton")
                 Text("Foco")
                     .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(color)
+                    .foregroundColor(.customBlue)
             }
             VStack(alignment: .center){
                 Image("hourglassWPencil")
                 Text("Definições")
                     .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(color)
+                    .foregroundColor(.customBlue)
             }
             VStack(alignment: .center){
                 Image("sounds")
                 Text("Sons")
                     .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(color)
+                    .foregroundColor(.customBlue)
             }
         } // HStack
     }
