@@ -9,13 +9,13 @@ import SwiftUI
 
 struct CardPetView: View {
     
-    var isLocked:Bool
+    let isLocked:Bool
     
-    var actualProgress: Int
-    var totalProgress: Int
-    var tickerLevel: Int
-    var tickerImage: String
-    var tickerEgg: String
+    let actualProgress: Int
+    let totalProgress: Int
+    let tickerLevel: Int
+    let tickerImage: String
+    let tickerEgg: String
     @State var tickerName: String
     
     var body: some View {

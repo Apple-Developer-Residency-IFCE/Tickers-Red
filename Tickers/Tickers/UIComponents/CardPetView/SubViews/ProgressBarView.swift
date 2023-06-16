@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ProgressBarView: View {
-    var actualProgress: Int
-    var totalProgress: Int
+    let actualProgress: Int
+    let totalProgress: Int
     init(actualProgress: Int,totalProgress: Int) {
         self.actualProgress = actualProgress
         self.totalProgress = totalProgress
