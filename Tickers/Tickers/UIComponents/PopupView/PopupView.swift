@@ -37,24 +37,26 @@ struct PopupView: View {
         ZStack {
             Color.black.opacity(0.4)
             
-            VStack {
+            VStack(spacing: 20) {
                 Text(titleText)
-                    .tickerFont(size: 20, weight: .bold)
+                    .tickerFont(size: 22, weight: .bold)
                     .foregroundColor(color)
-                    .padding()
-                    .padding([.leading, .trailing], 20)
+                    .padding([.leading, .trailing], 50)
+                    .multilineTextAlignment(.center)
                 
                 Text(contentText)
                     .tickerFont(size: 15, weight: .regular)
-                    .padding([.leading, .trailing], 20)
+                    .padding([.leading, .trailing], 60)
                 
-                ConfirmBtn(text: cancelButtonText, filled: false, sizeTextBtn: 18)
-                ConfirmBtn(text: confirmButtonText, filled: true)
-                    .padding(.bottom)
+                VStack {
+                    ConfirmBtn(text: cancelButtonText, filled: false, sizeTextBtn: 20)
+                    ConfirmBtn(text: confirmButtonText, filled: true, sizeTextBtn: 20)
+                }
+                .frame(width: 240)
             } //: VStack
+            .padding(.vertical, 40)
             .background(Color.white)
             .cornerRadius(20)
-            .padding()
         } //: ZStack
         .edgesIgnoringSafeArea(.all)
     } //: View
