@@ -13,18 +13,18 @@ struct CardPetView: View {
     
     var actualProgress: Int
     var totalProgress: Int
-    @State var tickerName: String
     var tickerLevel: Int
     var tickerImage: String
     var tickerEgg: String
+    @State var tickerName: String
     
     var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color("White"))
+                .fill(Color(.white))
                 .frame(width: 160, height: 176)
                 .overlay {
-                    cardPet(isLocked:true)
+                    cardPet(isLocked:isLocked)
                 }
         }
     }
@@ -40,7 +40,7 @@ struct CardPetView: View {
             VStack {
                 HStack {
                     Text(tickerName)
-                        .font(.custom("Nunito-Bold", size: 12))
+                        .tickerFont(size: 12, weight: .bold)
                         .foregroundColor(Color("Blue2"))
                     Image("pencilWhite")
                         .padding([.leading], -4)
@@ -62,14 +62,14 @@ struct CardPetView: View {
 
                 HStack{
                     Text("Lvl.")
-                        .font(.custom("Nunito-Bold", size: 12))
+                        .tickerFont(size: 12, weight: .bold)
                         .foregroundColor(Color("MainBlue"))
 
                     Spacer()
                         .frame(width: 1)
 
                     Text(String(tickerLevel))
-                        .font(.custom("Nunito-Bold", size: 12))
+                        .tickerFont(size: 12, weight: .bold)
                 }
                 .foregroundColor(Color("MainBlue"))
 
@@ -87,6 +87,6 @@ struct CardPetView: View {
 struct CardPetView_Previews: PreviewProvider {
     static var previews: some View {
         
-        CardPetView(isLocked: true, actualProgress: 1, totalProgress: 1, tickerName: "Ticker", tickerLevel: 1, tickerImage: "babyCatAwake", tickerEgg: "eggPink")
+        CardPetView(isLocked: false, actualProgress: 10, totalProgress: 100, tickerLevel: 10, tickerImage: "babyCatAwake", tickerEgg: "eggYellow", tickerName: "Ticker")
     }
 }
