@@ -24,6 +24,7 @@ struct HomeView: View {
                     Color(red: 245, green: 245, blue: 245)
                     
                     VStack(alignment: .leading){
+                        Divider()
                         Text("Seus tickers").tickerFont(size: 20, weight: .bold)
                             .foregroundColor(.blue)
                             .padding(.leading, 20)
