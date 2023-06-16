@@ -21,7 +21,7 @@ struct ProgressBarView: View {
             ProgressView(value: Double(actualProgress), total: Double (totalProgress))
                 .frame(width: 55)
             Text("\(actualProgress)/\(totalProgress)")
-                .font(.custom("Nunito-Bold", size: 12))
+                .tickerFont(size: 12, weight: .bold)
                 .foregroundColor(Color("Grey3"))
             
         }
