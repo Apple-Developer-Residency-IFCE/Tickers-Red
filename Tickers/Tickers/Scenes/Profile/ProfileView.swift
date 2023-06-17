@@ -7,11 +7,31 @@
 
 import SwiftUI
 
+struct radion {
+    var isSelected: Bool
+}
+
 struct ProfileView: View {
     @State private var name = ""
-    @State private var isSelectedOne = true
-    @State private var isSelectedTwo = false
-    @State private var isSelectedTree = false
+    @State private var listRadion: [radion] = [radion(isSelected: true), radion(isSelected: false), radion(isSelected: false)]
+    
+    
+    func updateBools(selectedBool: inout Bool, bool1: inout Bool, bool2: inout Bool) {
+        if selectedBool {
+            bool1 = false
+            bool2 = false
+        }
+    }
+    
+    func updateBools(selectedIndex: Int, bools: inout [Bool]) {
+        for index in 0..<bools.count {
+            if index == selectedIndex {
+                bools[index] = true
+            } else {
+                bools[index] = false
+            }
+        }
+    }
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -43,9 +63,9 @@ struct ProfileView: View {
         VStack(alignment: .leading) {
             Text("Modo Escuro").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
             Text("Altera a aparência do app para o modo escolhido").tickerFont(size: 13, weight: .regular)
-            OptionButton(title: "Claro", isSelected: $isSelectedOne)
-            OptionButton(title: "Escuro", isSelected: $isSelectedTwo)
-            OptionButton(title: "Seguir o padrão do Sistema", isSelected: $isSelectedTree)
+            OptionButton(title: "Claro", isSelected: $listRadion[0].isSelected)
+            OptionButton(title: "Escuro", isSelected: $listRadion[1].isSelected)
+            OptionButton(title: "Seguir o padrão do Sistema", isSelected: $listRadion[2].isSelected)
         }.padding(.horizontal ,30).padding(.vertical, 12)
     }
 }
