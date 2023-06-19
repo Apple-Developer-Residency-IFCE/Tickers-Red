@@ -32,6 +32,7 @@ struct NavBarWithMissions: ViewModifier {
                     }
                 }
             }
+            .padding(.top, 18)
     }
 }
 
@@ -59,6 +60,7 @@ struct NavBarWithBackButton: ViewModifier {
                     }
                 }
             }
+            .padding(.top, 18)
     }
 }
 
