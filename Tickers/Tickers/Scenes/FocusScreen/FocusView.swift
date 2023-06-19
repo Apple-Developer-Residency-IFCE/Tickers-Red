@@ -8,13 +8,56 @@
 import SwiftUI
 
 struct FocusView: View {
+    
+    // MARK: - Properties
+    private let color = Color(
+        red: 59 / 255,
+        green: 129 / 255,
+        blue: 235 / 255
+    )
+    let durationInSecond: TimeInterval
+
+    @State private var yOffset: CGFloat = 0
+    
+    init(durationInSecond: TimeInterval) {
+        self.durationInSecond = durationInSecond
+    }
+    
+    // MARK: - View
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            durationText
+            animatedSnoreView
+            sleepingCatImage
+        }
+    }
+    
+    // MARK: - Functions
+    private var durationText: some View {
+        Text("\(durationInSecond.timeString)")
+            .tickerFont(size: 90, weight: .bold)
+            .foregroundColor(color)
+    }
+    
+    private var animatedSnoreView: some View {
+        SnoreView()
+            .onAppear {
+                withAnimation(.snore) {
+                    yOffset = 20
+                }
+            }
+    }
+    
+    private var sleepingCatImage: some View {
+        Image("babyCatAsleepFocus")
+            .offset(y: yOffset)
     }
 }
 
+// MARK: - Preview
 struct FocusView_Previews: PreviewProvider {
+    @State static var timer: TimeInterval = 15
     static var previews: some View {
-        FocusView()
+        FocusView(durationInSecond: timer)
     }
 }
