@@ -63,9 +63,9 @@ struct ProfileView: View {
         VStack(alignment: .leading) {
             Text("Modo Escuro").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
             Text("Altera a aparência do app para o modo escolhido").tickerFont(size: 13, weight: .regular)
-            OptionButton(title: "Claro", isSelected: $listRadion[0].isSelected)
-            OptionButton(title: "Escuro", isSelected: $listRadion[1].isSelected)
-            OptionButton(title: "Seguir o padrão do Sistema", isSelected: $listRadion[2].isSelected)
+//            OptionButton(title: "Claro", isSelected: $listRadion[0].isSelected)
+//            OptionButton(title: "Escuro", isSelected: $listRadion[1].isSelected)
+//            OptionButton(title: "Seguir o padrão do Sistema", isSelected: $listRadion[2].isSelected)
         }.padding(.horizontal ,30).padding(.vertical, 12)
     }
 }
