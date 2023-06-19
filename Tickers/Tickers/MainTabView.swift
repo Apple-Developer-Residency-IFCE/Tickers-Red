@@ -16,7 +16,7 @@ struct MainTabView: View {
     var body: some View {
         NavigationView{
             TabView(selection: $currentScene) {
-                Image("babyCatAwake")
+                HomeView(tickersViewModel: TickersViewModel())
                     .tabItem {
                         Label("Home", image: "HomeIcon")
                     }
