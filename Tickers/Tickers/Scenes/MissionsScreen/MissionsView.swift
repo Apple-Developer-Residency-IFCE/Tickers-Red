@@ -23,18 +23,19 @@ struct MissionsView: View {
                         ForEach(missionsViewModel.missions, id: \.id) { mission in
                             MissionCellView(taskTotal: mission.taskTotal, taskResolved: mission.taskResolved, color: mission.color, title: mission.title, description: mission.description)
                         }
+                        .padding(.bottom, 8)
                     }//Vgrid
                     .padding(.horizontal)
                 }//scrollView
                 Divider()
                     .padding(.bottom, 10)
                     .padding(.top, -7)
-            }
+            }//Vstack
             .background{
                 Color("BackgroundColor")
                     .padding(.bottom, 10)
             }
-        }
+        }//NavView
         .navBarWithBackButton(blackText: "Missões")
     }
 }

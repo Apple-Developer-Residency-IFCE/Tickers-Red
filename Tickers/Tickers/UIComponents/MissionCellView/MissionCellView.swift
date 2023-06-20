@@ -45,7 +45,8 @@ struct MissionCellView: View {
                         .tint(color)
                         .background(color.opacity(0.4))
                         .frame(height: 10)
-                        .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                        .scaleEffect(y: 1.5)
+                        .clipShape(RoundedRectangle(cornerRadius: 50))
                     
                     Text("\(taskResolved)/\(taskTotal)").tickerFont(size: 12, weight: .regular)
                         .frame(alignment: .leading)

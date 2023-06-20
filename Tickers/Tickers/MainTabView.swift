@@ -14,7 +14,7 @@ struct MainTabView: View {
     @State var oldScene: Int = 0
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             TabView(selection: $currentScene) {
                 HomeView(tickersViewModel: TickersViewModel())
                     .tabItem {
@@ -24,17 +24,17 @@ struct MainTabView: View {
                     .onAppear {
                         oldScene = currentScene
                     }
-                Text("Tela de Timer ⏱")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                
+                Text("")
                     .onAppear {
                         isPresenting = true
                         currentScene = oldScene
                     }
                     .fullScreenCover(isPresented: $isPresenting, content: {
-                            PomodoroView(listTime: [
-                                Time(remainigTime: 1500, isPomodoro: true),
-                                Time(remainigTime: 300, isPomodoro: false)
-                            ])
+                        PomodoroView(listTime: [
+                            Time(remainigTime: 1500, isPomodoro: true),
+                            Time(remainigTime: 300, isPomodoro: false)
+                        ])
                     })
                     .tabItem {
                         Label("", image: "TimerIcon")
