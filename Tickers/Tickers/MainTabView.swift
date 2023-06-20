@@ -41,7 +41,7 @@ struct MainTabView: View {
                     }
                     .tag(1)
                 
-                Text("Tela de Perfil")
+                ProfileView()
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .tabItem {
                         Label("Perfil", image: "configurationGear")

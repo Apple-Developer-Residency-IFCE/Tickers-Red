@@ -7,12 +7,35 @@
 
 import SwiftUI
 
+enum Appearence: String, CaseIterable {
+    case light, dark, system
+    
+    var description: String {
+        switch self {
+        case .light:
+            return "Claro"
+        case .dark:
+            return "Escuro"
+        case .system:
+            return "Seguir o padrão do Sistema"
+        }
+    }
+    
+    var toColorScheme: ColorScheme? {
+        switch self {
+        case .light:
+            return .light
+        case .dark:
+            return .dark
+        case .system:
+            return .none
+        }
+    }
+}
 
 struct ProfileView: View {
-    @State private var name = ""
-    @State private var showingSounds = false
-    @State private var buttonIsHidden = false
-    @State private var selectedOption: String?
+    @AppStorage("preferredAppearence") var preferredAppearence: Appearence?
+    @AppStorage("Name") var name: String = ""
     
     let options = ["Claro", "Escuro", "Seguir o padrão do Sistema"]
     
@@ -46,28 +69,14 @@ struct ProfileView: View {
         VStack(alignment: .leading) {
             Text("Temas").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
             Text("Altera a aparência do app para o modo escolhido").tickerFont(size: 13, weight: .regular)
-            ForEach(options, id: \.self) { option in
-                OptionButton(title: option, isSelected: self.binding(for: option))
+            ForEach(Appearence.allCases, id: \.self) { option in
+                OptionButton(title: option.description, isSelected: option == (preferredAppearence ?? .system))
                     .onTapGesture {
-                        selectedOption = option
+                        preferredAppearence = option
                     }
             } //: ForEach
         }.padding(.horizontal ,30).padding(.vertical, 12)
     }
-    
-    
-    private func binding(for option: String) -> Binding<Bool> {
-        Binding<Bool>(
-            get: { self.selectedOption == option },
-            set: { newValue in
-                if newValue {
-                    self.selectedOption = option
-                } else if self.selectedOption == option {
-                    self.selectedOption = nil
-                }
-            }
-        )
-    }//: func
 }
 
 struct ProfileView_Previews: PreviewProvider {
