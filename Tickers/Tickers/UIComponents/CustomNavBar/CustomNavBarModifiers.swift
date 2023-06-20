@@ -20,7 +20,7 @@ struct NavBarWithMissions: ViewModifier {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack{
                         Text(blackText).tickerFont(size: 20, weight: .bold)
-                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                        Text(blueText).tickerFont(size: 20, weight: .bold)
                             .foregroundColor(.blue)
                     }
                 }
@@ -32,6 +32,7 @@ struct NavBarWithMissions: ViewModifier {
                     }
                 }
             }
+            .padding(.top, 18)
     }
 }
 
@@ -54,11 +55,12 @@ struct NavBarWithBackButton: ViewModifier {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack{
                         Text(blackText).tickerFont(size: 20, weight: .bold)
-                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                        Text(blueText).tickerFont(size: 20, weight: .bold)
                             .foregroundColor(.blue)
                     }
                 }
             }
+            .padding(.top, 18)
     }
 }
 
