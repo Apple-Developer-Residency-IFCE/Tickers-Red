@@ -31,7 +31,6 @@ struct MissionCellView: View {
                 .padding(.leading, leadingPadding)
             
             VStack(spacing: 0){
-                
                 Text(title).tickerFont(size: 16, weight: .bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 
@@ -40,7 +39,6 @@ struct MissionCellView: View {
                     .padding(.trailing, trailingPadding)
                 
                 HStack{
-                    
                     ProgressView(value: Float(taskResolved)/Float(taskTotal))
                         .tint(color)
                         .background(color.opacity(0.4))
