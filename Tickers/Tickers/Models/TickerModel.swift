@@ -17,7 +17,3 @@ struct Ticker: Identifiable {
     var tickerEgg: String
     var tickerName: String
 }
-
-struct Tickers {
-    var tickers: [Ticker]
-}

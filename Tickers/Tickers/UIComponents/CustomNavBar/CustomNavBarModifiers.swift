@@ -26,7 +26,7 @@ struct NavBarWithMissions: ViewModifier {
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        Text("go to missions!")
+                        MissionsView(missionsViewModel: MissionsViewModel())
                     } label: {
                         Image("missions")
                     }
