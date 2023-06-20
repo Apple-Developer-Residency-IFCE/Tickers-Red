@@ -7,31 +7,14 @@
 
 import SwiftUI
 
-struct radion {
-    var isSelected: Bool
-}
 
 struct ProfileView: View {
     @State private var name = ""
-    @State private var listRadion: [radion] = [radion(isSelected: true), radion(isSelected: false), radion(isSelected: false)]
+    @State private var showingSounds = false
+    @State private var buttonIsHidden = false
+    @State private var selectedOption: String?
     
-    
-    func updateBools(selectedBool: inout Bool, bool1: inout Bool, bool2: inout Bool) {
-        if selectedBool {
-            bool1 = false
-            bool2 = false
-        }
-    }
-    
-    func updateBools(selectedIndex: Int, bools: inout [Bool]) {
-        for index in 0..<bools.count {
-            if index == selectedIndex {
-                bools[index] = true
-            } else {
-                bools[index] = false
-            }
-        }
-    }
+    let options = ["Claro", "Escuro", "Seguir o padrão do Sistema"]
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -61,13 +44,30 @@ struct ProfileView: View {
     
     private var theme: some View {
         VStack(alignment: .leading) {
-            Text("Modo Escuro").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
+            Text("Temas").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
             Text("Altera a aparência do app para o modo escolhido").tickerFont(size: 13, weight: .regular)
-//            OptionButton(title: "Claro", isSelected: $listRadion[0].isSelected)
-//            OptionButton(title: "Escuro", isSelected: $listRadion[1].isSelected)
-//            OptionButton(title: "Seguir o padrão do Sistema", isSelected: $listRadion[2].isSelected)
+            ForEach(options, id: \.self) { option in
+                OptionButton(title: option, isSelected: self.binding(for: option))
+                    .onTapGesture {
+                        selectedOption = option
+                    }
+            } //: ForEach
         }.padding(.horizontal ,30).padding(.vertical, 12)
     }
+    
+    
+    private func binding(for option: String) -> Binding<Bool> {
+        Binding<Bool>(
+            get: { self.selectedOption == option },
+            set: { newValue in
+                if newValue {
+                    self.selectedOption = option
+                } else if self.selectedOption == option {
+                    self.selectedOption = nil
+                }
+            }
+        )
+    }//: func
 }
 
 struct ProfileView_Previews: PreviewProvider {
