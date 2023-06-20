@@ -12,6 +12,7 @@ class PomodoroViewModel: ObservableObject {
     @Published var count: Int = 0
     @Published var isRunning: Bool = false
     @Published var progressTimer: Float = 1.0
+    @Published var isShowingPopup: Bool = false
     
     let listTime: [Time]
     
@@ -61,7 +62,10 @@ class PomodoroViewModel: ObservableObject {
             count -= 1
             progressTimer = 1.0
         }
-        
     }
-}
+    
+    func isCurrentTimerRest() -> Bool {
+        return timeList[count].isRest
+    }
 
+}

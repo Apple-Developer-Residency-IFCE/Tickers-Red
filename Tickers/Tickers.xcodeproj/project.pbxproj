@@ -28,6 +28,7 @@
 		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CE1D2C842A3151AA00B71AF1 /* SoundsSheatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */; };
+		CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */; };
 		CE6044F22A394D900032C30A /* SnoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6044F12A394D900032C30A /* SnoreView.swift */; };
 		CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F6F2A325A60004B4F68 /* RoundedCornerShape.swift */; };
 		CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA49F712A325AA9004B4F68 /* View+Ext.swift */; };
@@ -87,6 +88,7 @@
 		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsSheatView.swift; sourceTree = "<group>"; };
+		CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPopupFactory.swift; sourceTree = "<group>"; };
 		CE6044F12A394D900032C30A /* SnoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoreView.swift; sourceTree = "<group>"; };
 		CEA49F6F2A325A60004B4F68 /* RoundedCornerShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerShape.swift; sourceTree = "<group>"; };
 		CEA49F712A325AA9004B4F68 /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
@@ -206,6 +208,7 @@
 				7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */,
 				7D77AD2E2A391C21000D356E /* TimerInterval.swift */,
 				7D77AD302A392120000D356E /* PomodoroViewModel.swift */,
+				CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */,
 			);
 			path = Timer;
 			sourceTree = "<group>";
@@ -524,6 +527,7 @@
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
+				CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */,
 				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,

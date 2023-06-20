@@ -9,10 +9,13 @@ import SwiftUI
 
 struct PomodoroView: View {
     @ObservedObject var viewModel: PomodoroViewModel
+    @ObservedObject var popupFactory: PomodoroPopupFactory
     @Environment(\.dismiss) var dismiss
     
-    init(listTime: [Time]){
-        self.viewModel = PomodoroViewModel(timeList: listTime)
+    init(listTime: [Time]) {
+        let vm = PomodoroViewModel(timeList: listTime)
+        self.viewModel = vm
+        self.popupFactory = PomodoroPopupFactory(viewModel: vm)
     }
     
     var body: some View {
@@ -23,9 +26,20 @@ struct PomodoroView: View {
                     .padding(.bottom, -50)
                     .padding(.top, 380)
                 VStack {
-                    TimerView(durationInSecond: viewModel.timeList[viewModel.count].remainigTime, isTimerRunning: viewModel.isRunning, progressTimer: viewModel.progressTimer, onReset: viewModel.onReset, onPlayPause: viewModel.onPlayPause, onSkip: viewModel.onSkip)
+                    TimerView(
+                        durationInSecond: viewModel.timeList[viewModel.count].remainigTime,
+                        isTimerRunning: viewModel.isRunning,
+                        progressTimer: viewModel.progressTimer,
+                        onReset: { popupFactory.show(.reset) },
+                        onPlayPause: {  },
+                        onSkip: { popupFactory.show(.skip) }
+                    )
                     tickersPomodoroView
                     footerView
+                }
+                
+                if viewModel.isShowingPopup {
+                    popupFactory.make()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -34,7 +48,6 @@ struct PomodoroView: View {
                     Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
                         .tickerFont(size: 22, weight: .bold)
                         .foregroundColor(.customBlue)
-//                        .padding(.bottom, -30)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "book.closed")
@@ -42,6 +55,7 @@ struct PomodoroView: View {
                         .onTapGesture {
                             dismiss()
                         }
+                    
                 }
             }
         } // ZStack
@@ -91,8 +105,8 @@ struct PomodoroView: View {
 struct PomodoroView_Previews: PreviewProvider {
     static var previews: some View {
         PomodoroView(listTime: [
-            Time(remainigTime: 1500, isPomodoro: true),
-            Time(remainigTime: 300, isPomodoro: false)
+            Time(remainigTime: 1500, isPomodoro: true, isRest: true),
+            Time(remainigTime: 300, isPomodoro: false, isRest: false)
         ])
     }
 }

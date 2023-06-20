@@ -11,6 +11,8 @@ struct ConfirmBtn: View {
     var text: String
     var filled: Bool
     var sizeTextBtn: Int = 24
+
+    var action: () -> Void
     
     var body: some View {
         ZStack{
@@ -25,7 +27,7 @@ struct ConfirmBtn: View {
                 .foregroundColor(filled ? .white :.blue)
         }
         .onTapGesture {
-            print("doSomething!")
+            action()
         }
     }
     
@@ -44,6 +46,8 @@ struct ConfirmBtn: View {
 
 struct ConfirmBtn_Previews: PreviewProvider {
     static var previews: some View {
-            ConfirmBtn(text: "Pular pomodoro", filled: false)
+        ConfirmBtn(text: "Pular pomodoro", filled: false) {
+            print("Do something!")
+        }
     }
 }
