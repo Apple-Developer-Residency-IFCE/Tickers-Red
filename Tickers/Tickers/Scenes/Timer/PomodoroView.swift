@@ -86,11 +86,13 @@ struct PomodoroView: View {
     
     private var footerView: some View {
         HStack(alignment: .bottom, spacing: 50){
-            VStack(alignment: .center){
-                Image("focusButton")
-                Text("Foco")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(.customBlue)
+            NavigationLink(destination: FocusView(durationInSecond: viewModel.timeList[viewModel.count].remainigTime)) {
+                VStack(alignment: .center){
+                    Image("focusButton")
+                    Text("Foco")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(.customBlue)
+                }
             }
             VStack(alignment: .center){
                 Image("hourglassWPencil")
