@@ -20,24 +20,27 @@ struct FocusView: View {
     
     // MARK: - View
     var body: some View {
-        ZStack {
-            if isPresented {
-                FocusContentView(durationInSecond: durationInSecond)
-                    .animation(.easeInOut(duration: 0.5), value: isPresented)
+        NavigationView{
+            ZStack {
+                if isPresented {
+                    FocusContentView(durationInSecond: durationInSecond)
+                        .animation(.easeInOut(duration: 0.5), value: isPresented)
+                }
             }
-        }
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            .onAppear {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                    withAnimation {
+                        self.isPresented = true
+                    }
+                }
+            }
+            .onDisappear {
                 withAnimation {
-                    self.isPresented = true
+                    self.isPresented = false
                 }
             }
         }
-        .onDisappear {
-            withAnimation {
-                self.isPresented = false
-            }
-        }
+        .navBarWithBackButton()
     }
 }
 
