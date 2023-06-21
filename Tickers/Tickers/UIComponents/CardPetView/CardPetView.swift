@@ -40,7 +40,7 @@ struct CardPetView: View {
             VStack {
                 HStack {
                     Text(tickerName)
-                        .tickerFont(size: 12, weight: .bold)
+                        .tickerFont(size: 18, weight: .bold)
                         .foregroundColor(Color("Blue2"))
                     Image("pencilWhite")
                         .padding([.leading], -4)

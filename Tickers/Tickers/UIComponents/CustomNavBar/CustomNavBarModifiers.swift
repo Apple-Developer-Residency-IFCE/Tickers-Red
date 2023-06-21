@@ -20,18 +20,19 @@ struct NavBarWithMissions: ViewModifier {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack{
                         Text(blackText).tickerFont(size: 20, weight: .bold)
-                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                        Text(blueText).tickerFont(size: 20, weight: .bold)
                             .foregroundColor(.blue)
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
-                        Text("go to missions!")
+                        MissionsView(missionsViewModel: MissionsViewModel())
                     } label: {
                         Image("missions")
                     }
                 }
             }
+            .padding(.top, 18)
     }
 }
 
@@ -54,11 +55,12 @@ struct NavBarWithBackButton: ViewModifier {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack{
                         Text(blackText).tickerFont(size: 20, weight: .bold)
-                        Text(blackText).tickerFont(size: 20, weight: .bold)
+                        Text(blueText).tickerFont(size: 20, weight: .bold)
                             .foregroundColor(.blue)
                     }
                 }
             }
+            .padding(.top, 18)
     }
 }
 

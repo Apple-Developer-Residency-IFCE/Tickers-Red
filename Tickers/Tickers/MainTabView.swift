@@ -14,9 +14,9 @@ struct MainTabView: View {
     @State var oldScene: Int = 0
     
     var body: some View {
-        NavigationView{
+        NavigationView {
             TabView(selection: $currentScene) {
-                Image("babyCatAwake")
+                HomeView(tickersViewModel: TickersViewModel())
                     .tabItem {
                         Label("Home", image: "HomeIcon")
                     }
@@ -24,8 +24,8 @@ struct MainTabView: View {
                     .onAppear {
                         oldScene = currentScene
                     }
-                Text("Tela de Timer ⏱")
-                    .font(.system(size: 30, weight: .bold, design: .rounded))
+                
+                Text("")
                     .onAppear {
                         isPresenting = true
                         currentScene = oldScene
