@@ -10,20 +10,24 @@ import SwiftUI
 struct ConfirmBtn: View {
     var text: String
     var filled: Bool
+    var sizeTextBtn: Int = 24
+
+    var action: () -> Void
     
     var body: some View {
         ZStack{
             Text(text)
-                .tickerFont(size: 24, weight: .bold)
+                .tickerFont(size: CGFloat(sizeTextBtn), weight: .bold)
                 .padding([.bottom, .top], 11)
                 .padding([.leading, .trailing], 20)
+                .frame(maxWidth: .infinity)
                 .background{
                     rectangleBuilder(filled: filled)
                 }
                 .foregroundColor(filled ? .white :.blue)
         }
         .onTapGesture {
-            print("doSomething!")
+            action()
         }
     }
     
@@ -42,6 +46,8 @@ struct ConfirmBtn: View {
 
 struct ConfirmBtn_Previews: PreviewProvider {
     static var previews: some View {
-            ConfirmBtn(text: "Pular pomodoro", filled: false)
+        ConfirmBtn(text: "Pular pomodoro", filled: false) {
+            print("Do something!")
+        }
     }
 }

@@ -11,4 +11,5 @@ struct Time {
     var timer: Timer?
     var remainigTime: TimeInterval
     var isPomodoro: Bool
+    var isRest: Bool
 }

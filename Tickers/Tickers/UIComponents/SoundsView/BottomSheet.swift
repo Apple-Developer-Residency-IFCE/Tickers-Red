@@ -48,3 +48,24 @@ struct BottomSheet<SheetContent: View>: ViewModifier {
         }
     }
 }
+
+struct ContentView: View {
+    @State private var isPresented = false
+    
+    var body: some View {
+        Text("Main Content")
+            .padding()
+            .bottomSheet(isPresented: $isPresented) {
+                Text("Sheet Content")
+            }.background(Color.gray)
+            .onTapGesture {
+                isPresented.toggle()
+            }
+    }
+}
+
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}

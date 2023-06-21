@@ -10,11 +10,6 @@ import SwiftUI
 struct FocusView: View {
     
     // MARK: - Properties
-    private let color = Color(
-        red: 59 / 255,
-        green: 129 / 255,
-        blue: 235 / 255
-    )
     let durationInSecond: TimeInterval
 
     @State private var yOffset: CGFloat = 0
@@ -36,7 +31,7 @@ struct FocusView: View {
     private var durationText: some View {
         Text("\(durationInSecond.timeString)")
             .tickerFont(size: 90, weight: .bold)
-            .foregroundColor(color)
+            .foregroundColor(.customBlue)
     }
     
     private var animatedSnoreView: some View {

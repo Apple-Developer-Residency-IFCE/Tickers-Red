@@ -9,17 +9,14 @@ import SwiftUI
 
 struct PomodoroView: View {
     @ObservedObject var viewModel: PomodoroViewModel
+    @ObservedObject var popupFactory: PomodoroPopupFactory
     @Environment(\.dismiss) var dismiss
     
-    init(listTime: [Time]){
-        self.viewModel = PomodoroViewModel(timeList: listTime)
+    init(listTime: [Time]) {
+        let vm = PomodoroViewModel(timeList: listTime)
+        self.viewModel = vm
+        self.popupFactory = PomodoroPopupFactory(viewModel: vm)
     }
-    
-    private let color = Color(
-        red: 59 / 255,
-        green: 129 / 255,
-        blue: 235 / 255
-    )
     
     var body: some View {
         NavigationView {
@@ -29,9 +26,26 @@ struct PomodoroView: View {
                     .padding(.bottom, -50)
                     .padding(.top, 380)
                 VStack {
-                    TimerView(durationInSecond: viewModel.timeList[viewModel.count].remainigTime, isTimerRunning: viewModel.isRunning, progressTimer: viewModel.progressTimer, onReset: viewModel.onReset, onPlayPause: viewModel.onPlayPause, onSkip: viewModel.onSkip)
+                    TimerView(
+                        durationInSecond: viewModel.timeList[viewModel.count].remainigTime,
+                        isTimerRunning: viewModel.isRunning,
+                        progressTimer: viewModel.progressTimer,
+                        onReset: { popupFactory.show(.reset) },
+                        onPlayPause: { viewModel.onPlayPause() },
+                        onSkip: {
+                            if viewModel.isCurrentTimerRest() {
+                                popupFactory.show(.skipRest)
+                            } else {
+                                popupFactory.show(.skipPomo)
+                            }
+                        }
+                    )
                     tickersPomodoroView
                     footerView
+                }
+                
+                if viewModel.isShowingPopup {
+                    popupFactory.make()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -39,12 +53,11 @@ struct PomodoroView: View {
                 ToolbarItem(placement: .principal) {
                     Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
                         .tickerFont(size: 22, weight: .bold)
-                        .foregroundColor(color)
-//                        .padding(.bottom, -30)
+                        .foregroundColor(.customBlue)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "book.closed")
-                        .foregroundColor(color)
+                        .foregroundColor(.customBlue)
                         .onTapGesture {
                             dismiss()
                         }
@@ -75,19 +88,19 @@ struct PomodoroView: View {
                 Image("focusButton")
                 Text("Foco")
                     .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(color)
+                    .foregroundColor(.customBlue)
             }
             VStack(alignment: .center){
                 Image("hourglassWPencil")
                 Text("Definições")
                     .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(color)
+                    .foregroundColor(.customBlue)
             }
             VStack(alignment: .center){
                 Image("sounds")
                 Text("Sons")
                     .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(color)
+                    .foregroundColor(.customBlue)
             }
         } // HStack
     }
@@ -97,8 +110,8 @@ struct PomodoroView: View {
 struct PomodoroView_Previews: PreviewProvider {
     static var previews: some View {
         PomodoroView(listTime: [
-            Time(remainigTime: 1500, isPomodoro: true),
-            Time(remainigTime: 300, isPomodoro: false)
+            Time(remainigTime: 1500, isPomodoro: true, isRest: true),
+            Time(remainigTime: 300, isPomodoro: false, isRest: false)
         ])
     }
 }

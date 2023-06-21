@@ -31,10 +31,10 @@ struct MainTabView: View {
                         currentScene = oldScene
                     }
                     .fullScreenCover(isPresented: $isPresenting, content: {
-                        PomodoroView(listTime: [
-                            Time(remainigTime: 1500, isPomodoro: true),
-                            Time(remainigTime: 300, isPomodoro: false)
-                        ])
+                            PomodoroView(listTime: [
+                                Time(remainigTime: 1500, isPomodoro: true, isRest: false),
+                                Time(remainigTime: 300, isPomodoro: false, isRest: true)
+                            ])
                     })
                     .tabItem {
                         Label("", image: "TimerIcon")
