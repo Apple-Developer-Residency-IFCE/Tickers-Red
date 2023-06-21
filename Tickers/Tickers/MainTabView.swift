@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State var isPresenting: Bool = false
+    @AppStorage("Name") var name: String = ""
     
+    @State var isPresenting: Bool = false
     @State var currentScene: Int = 0
     @State var oldScene: Int = 0
     
     var body: some View {
         NavigationView{
             TabView(selection: $currentScene) {
-                Image("babyCatAwake")
+                HomeView(tickersViewModel: TickersViewModel())
                     .tabItem {
                         Label("Home", image: "HomeIcon")
                     }
@@ -51,7 +52,7 @@ struct MainTabView: View {
                     }
                     .tag(2)
             } // : TabView
-            .navBarWithMissions(blackText: "Bem vindo,", blueText: "Fulaninho")
+            .navBarWithMissions(blackText: "Bem vindo,", blueText: name)
         }
     }
 }

@@ -9,11 +9,11 @@ import SwiftUI
 
 @main
 struct TickersApp: App {
-    @AppStorage("preferredAppearence") var preferredAppearence: Appearence?
+    @AppStorage("themeSelected") var themeSelected: Theme?
     
     var body: some Scene {
         WindowGroup {
-           MainTabView()
+            MainTabView().preferredColorScheme(themeSelected?.toColorScheme)
         }
     }
 }

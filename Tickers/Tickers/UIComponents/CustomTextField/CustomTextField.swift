@@ -20,8 +20,8 @@ struct CustomTextField: View {
             TextField(placeholder, text: $text)
                 .padding()
                 .background(RoundedRectangle(cornerRadius: 22).stroke(Color(red: 203 / 255, green: 200 / 255, blue: 200 / 255), lineWidth: 0.6))
-                .foregroundColor(Color.black)
-                .font(.custom(font.rawValue, size: fontSize))
+                .foregroundColor(Color("TextColor"))
+                .tickerFont(size: fontSize, weight: font)
         }
     }
 }

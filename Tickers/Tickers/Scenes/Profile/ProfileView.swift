@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-enum Appearence: String, CaseIterable {
+enum Theme: String, CaseIterable {
     case light, dark, system
     
-    var description: String {
+    var title: String {
         switch self {
         case .light:
             return "Claro"
@@ -34,7 +34,7 @@ enum Appearence: String, CaseIterable {
 }
 
 struct ProfileView: View {
-    @AppStorage("preferredAppearence") var preferredAppearence: Appearence?
+    @AppStorage("themeSelected") var themeSelected: Theme?
     @AppStorage("Name") var name: String = ""
     
     let options = ["Claro", "Escuro", "Seguir o padrão do Sistema"]
@@ -61,7 +61,7 @@ struct ProfileView: View {
         VStack(alignment: .leading)  {
             Text("Seu nome").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
             Text("Define como os Tickers chamarão você").tickerFont(size: 13, weight: .regular)
-            CustomTextField(text: $name, placeholder: "Escreva aqui seu nome.", font: .bold, fontSize: 16).padding(.bottom, 15)
+            CustomTextField(text: $name, placeholder: "Escreva aqui seu nome.", font: .regular, fontSize: 16).padding(.bottom, 15)
         }.padding(.leading, 30).padding(.trailing, 30).padding(.top, 12)
     }
     
@@ -69,10 +69,10 @@ struct ProfileView: View {
         VStack(alignment: .leading) {
             Text("Temas").tickerFont(size: 20, weight: .bold).foregroundColor(.blue)
             Text("Altera a aparência do app para o modo escolhido").tickerFont(size: 13, weight: .regular)
-            ForEach(Appearence.allCases, id: \.self) { option in
-                OptionButton(title: option.description, isSelected: option == (preferredAppearence ?? .system))
+            ForEach(Theme.allCases, id: \.self) { option in
+                OptionButton(title: option.title, isSelected: option == (themeSelected ?? .system))
                     .onTapGesture {
-                        preferredAppearence = option
+                        themeSelected = option
                     }
             } //: ForEach
         }.padding(.horizontal ,30).padding(.vertical, 12)

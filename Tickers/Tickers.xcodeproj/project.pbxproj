@@ -38,8 +38,9 @@
 		DD427F6C2A3136730040A006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
 		DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6D2A3136820040A006 /* MissionsView.swift */; };
 		DD427F702A31368E0040A006 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6F2A31368E0040A006 /* FocusView.swift */; };
-		DD427F722A3138C70040A006 /* empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F712A3138C70040A006 /* empty.swift */; };
 		DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */; };
+		DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837B2A3BD725009D5A3A /* TickerModel.swift */; };
+		DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +96,9 @@
 		DD427F6B2A3136730040A006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD427F6D2A3136820040A006 /* MissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsView.swift; sourceTree = "<group>"; };
 		DD427F6F2A31368E0040A006 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
-		DD427F712A3138C70040A006 /* empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = empty.swift; sourceTree = "<group>"; };
 		DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarModifiers.swift; sourceTree = "<group>"; };
+		DD67837B2A3BD725009D5A3A /* TickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerModel.swift; sourceTree = "<group>"; };
+		DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,7 +261,7 @@
 		DD427F4A2A300A0B0040A006 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				DD427F712A3138C70040A006 /* empty.swift */,
+				DD67837B2A3BD725009D5A3A /* TickerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				DD427F6B2A3136730040A006 /* HomeView.swift */,
+				DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -494,12 +497,14 @@
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
 				CE6044F22A394D900032C30A /* SnoreView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
+				DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* CellView.swift in Sources */,
 				7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */,
 				CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
+				DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				35A4BC9F2A390CA6003EBF52 /* ProgressBarView.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
@@ -510,7 +515,6 @@
 				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				CEA49F742A326008004B4F68 /* BottomSheet.swift in Sources */,
-				DD427F722A3138C70040A006 /* empty.swift in Sources */,
 				CE1D2C842A3151AA00B71AF1 /* SoundsSheatView.swift in Sources */,
 				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,

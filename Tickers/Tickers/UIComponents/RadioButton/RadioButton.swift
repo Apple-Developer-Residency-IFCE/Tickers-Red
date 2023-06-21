@@ -16,7 +16,8 @@ struct OptionButton: View {
         HStack {
             Image(isSelected ? "Checkbox" : "Uncheck")
             Text(title)
-                .foregroundColor(.black)
+                .foregroundColor(Color("TextColor"))
+                .tickerFont(size: 16, weight: .regular)
         }
     }
 }
