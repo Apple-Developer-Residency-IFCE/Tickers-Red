@@ -31,8 +31,14 @@ struct PomodoroView: View {
                         isTimerRunning: viewModel.isRunning,
                         progressTimer: viewModel.progressTimer,
                         onReset: { popupFactory.show(.reset) },
-                        onPlayPause: {  },
-                        onSkip: { popupFactory.show(.skip) }
+                        onPlayPause: { viewModel.onPlayPause() },
+                        onSkip: {
+                            if viewModel.isCurrentTimerRest() {
+                                popupFactory.show(.skipRest)
+                            } else {
+                                popupFactory.show(.skipPomo)
+                            }
+                        }
                     )
                     tickersPomodoroView
                     footerView
@@ -55,7 +61,6 @@ struct PomodoroView: View {
                         .onTapGesture {
                             dismiss()
                         }
-                    
                 }
             }
         } // ZStack

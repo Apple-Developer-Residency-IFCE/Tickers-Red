@@ -11,7 +11,8 @@ class PomodoroPopupFactory: ObservableObject {
     
     enum PopupKind {
         case reset
-        case skip
+        case skipPomo
+        case skipRest
     }
     
     @ObservedObject var viewModel: PomodoroViewModel
@@ -24,15 +25,13 @@ class PomodoroPopupFactory: ObservableObject {
     }
     
     func make() -> some View {
-        if viewModel.isCurrentTimerRest() {
+        switch popupToShow {
+        case .reset:
+            return onResetAlert()
+        case .skipRest:
             return onSkipRestAlert()
-        } else {
-            switch popupToShow {
-            case .reset:
-                return onResetAlert()
-            case .skip:
-                return onSkipAlert()
-            }
+        case .skipPomo:
+            return onSkipPomoAlert()
         }
     }
     
@@ -63,13 +62,13 @@ class PomodoroPopupFactory: ObservableObject {
             cancelButtonText: "Não, me leve de volta",
             confirmButtonText: "Pular pausa",
             confirmButtonAction: {
-                self.viewModel.isCurrentTimerRest() // not working correctly :(
+                self.viewModel.onSkip()
             },
             cancelButtonAction: { }
         )
     }
     
-    func onSkipAlert() -> PopupView {
+    func onSkipPomoAlert() -> PopupView {
         PopupView(
             isShowing: $viewModel.isShowingPopup,
             titleText: "Você tem certeza que quer pular para o descanso?",

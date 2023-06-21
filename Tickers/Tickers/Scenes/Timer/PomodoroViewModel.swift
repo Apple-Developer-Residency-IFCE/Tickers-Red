@@ -53,19 +53,19 @@ class PomodoroViewModel: ObservableObject {
     
     func onSkip() {
         if (timeList.count > (count + 1)) {
-            reset()
+            onReset()
             count += 1
             progressTimer = 1.0
             
-        }else{
-            reset()
+        } else{
+            onReset()
             count -= 1
             progressTimer = 1.0
         }
     }
     
     func isCurrentTimerRest() -> Bool {
-        return timeList[count].isRest
+        return listTime[count].isRest
     }
 
 }
