@@ -23,7 +23,7 @@ struct FocusView: View {
         ZStack {
             if isPresented {
                 FocusContentView(durationInSecond: durationInSecond)
-                    .animation(.easeInOut(duration: 0.5), value: isPresented) // Definindo animação
+                    .animation(.easeInOut(duration: 0.5), value: isPresented)
             }
         }
         .onAppear {
