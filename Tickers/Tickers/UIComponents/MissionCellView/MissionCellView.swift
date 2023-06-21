@@ -33,10 +33,12 @@ struct MissionCellView: View {
             VStack(spacing: 0){
                 Text(title).tickerFont(size: 16, weight: .bold)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(Color("TextColor"))
                 
                 Text(description).tickerFont(size: 14, weight: .regular)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.trailing, trailingPadding)
+                    .foregroundColor(Color("TextColor"))
                 
                 HStack{
                     ProgressView(value: Float(taskResolved)/Float(taskTotal))
@@ -48,6 +50,7 @@ struct MissionCellView: View {
                     
                     Text("\(taskResolved)/\(taskTotal)").tickerFont(size: 12, weight: .regular)
                         .frame(alignment: .leading)
+                        .foregroundColor(Color("TextColor"))
                         .padding(.trailing, trailingPadding)
                 }
             }
@@ -55,7 +58,7 @@ struct MissionCellView: View {
         }
         .background{
             RoundedRectangle(cornerRadius: cornerRadius)
-                .foregroundColor(.white)
+                .foregroundColor(Color("ContainerColor"))
         }
     }
 }

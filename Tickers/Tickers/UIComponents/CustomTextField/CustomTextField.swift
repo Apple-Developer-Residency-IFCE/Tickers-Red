@@ -19,11 +19,10 @@ struct CustomTextField: View {
         HStack {
             TextField(placeholder, text: $text)
                 .padding()
-                .background(RoundedRectangle(cornerRadius: 10).stroke(Color(red: 203 / 255, green: 200 / 255, blue: 200 / 255), lineWidth: 2))
-                .foregroundColor(Color.black)
-                .font(.custom(font.rawValue, size: fontSize))
+                .background(RoundedRectangle(cornerRadius: 22).stroke(Color(red: 203 / 255, green: 200 / 255, blue: 200 / 255), lineWidth: 0.6))
+                .foregroundColor(Color("TextColor"))
+                .tickerFont(size: fontSize, weight: font)
         }
-        .padding([.leading, .trailing])
     }
 }
 

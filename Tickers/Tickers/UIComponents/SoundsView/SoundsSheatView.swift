@@ -45,7 +45,7 @@ struct SoundsSheetView: View {
                 }
                 Divider()
                 ForEach(options, id: \.self) { option in
-                    OptionButton(title: option, isSelected: self.binding(for: option))
+                    OptionButton(title: option, isSelected: option == selectedOption)
                         .onTapGesture {
                             selectedOption = option
                         }
@@ -56,19 +56,19 @@ struct SoundsSheetView: View {
         } //: BottonSheet
     } //: BodyView
     
-    // MARK: - Function of binding
-    private func binding(for option: String) -> Binding<Bool> {
-        Binding<Bool>(
-            get: { self.selectedOption == option },
-            set: { newValue in
-                if newValue {
-                    self.selectedOption = option
-                } else if self.selectedOption == option {
-                    self.selectedOption = nil
-                }
-            }
-        )
-    }//: func
+//    // MARK: - Function of binding
+//    private func binding(for option: String) -> Binding<Bool> {
+//        Binding<Bool>(
+//            get: { self.selectedOption == option },
+//            set: { newValue in
+//                if newValue {
+//                    self.selectedOption = option
+//                } else if self.selectedOption == option {
+//                    self.selectedOption = nil
+//                }
+//            }
+//        )
+//    }//: func
 }
 
 // MARK: - Preview

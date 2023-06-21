@@ -7,26 +7,24 @@
 
 import SwiftUI
 
+
 struct OptionButton: View {
     let title: String
-    @Binding var isSelected: Bool
+    var isSelected: Bool
     
     var body: some View {
-        Button(action: {
-            isSelected.toggle()
-        }) {
-            HStack {
-                Image(isSelected ? "Checkbox" : "Uncheck")
-                Text(title)
-                    .foregroundColor(.black)
-            }
+        HStack {
+            Image(isSelected ? "Checkbox" : "Uncheck")
+            Text(title)
+                .foregroundColor(Color("TextColor"))
+                .tickerFont(size: 16, weight: .regular)
         }
     }
 }
 
 struct OptionButton_Previews: PreviewProvider {
     static var previews: some View {
-        OptionButton(title: "RadioButton", isSelected: .constant(false))
+        OptionButton(title: "teste", isSelected: true)
         
     }
 }

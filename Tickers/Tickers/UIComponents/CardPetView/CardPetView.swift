@@ -21,7 +21,7 @@ struct CardPetView: View {
     var body: some View {
         VStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(Color(.white))
+                .fill(Color("ContainerColor"))
                 .frame(width: 160, height: 176)
                 .overlay {
                     cardPet(isLocked:isLocked)

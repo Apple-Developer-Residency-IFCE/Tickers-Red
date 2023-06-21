@@ -56,8 +56,10 @@ struct PomodoroView: View {
                         .foregroundColor(.customBlue)
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "book.closed")
-                        .foregroundColor(.customBlue)
+                    Image(systemName: "plus")
+                        .foregroundColor(Color("MainBlue"))
+                        .font(.system(size: 25))
+                        .rotationEffect(.degrees(45))
                         .onTapGesture {
                             dismiss()
                         }

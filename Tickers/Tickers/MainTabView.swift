@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct MainTabView: View {
-    @State var isPresenting: Bool = false
+    @AppStorage("Name") var name: String = ""
     
+    @State var isPresenting: Bool = false
     @State var currentScene: Int = 0
     @State var oldScene: Int = 0
     
@@ -41,7 +42,7 @@ struct MainTabView: View {
                     }
                     .tag(1)
                 
-                Text("Tela de Perfil")
+                ProfileView()
                     .font(.system(size: 30, weight: .bold, design: .rounded))
                     .tabItem {
                         Label("Perfil", image: "configurationGear")
@@ -51,7 +52,7 @@ struct MainTabView: View {
                     }
                     .tag(2)
             } // : TabView
-            .navBarWithMissions(blackText: "Bem vindo,", blueText: "Fulaninho")
+            .navBarWithMissions(blackText: "Bem vindo,", blueText: name)
         }
     }
 }
