@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PomodoroView: View {
+    @State private var isPresented = false
     @ObservedObject var viewModel: PomodoroViewModel
     @ObservedObject var popupFactory: PomodoroPopupFactory
     @Environment(\.dismiss) var dismiss
@@ -43,7 +44,12 @@ struct PomodoroView: View {
                     tickersPomodoroView
                     footerView
                 }
-                
+                if isPresented {
+                    ZStack{
+                        SoundsModalView(isPresented: $isPresented)
+                            .transition(.move(edge: .bottom))
+                    }
+                }
                 if viewModel.isShowingPopup {
                     popupFactory.make()
                 }
@@ -101,10 +107,14 @@ struct PomodoroView: View {
                     .foregroundColor(.customBlue)
             }
             VStack(alignment: .center){
-                Image("sounds")
-                Text("Sons")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(.customBlue)
+                VStack{
+                    Image("sounds")
+                    Text("Sons")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(.customBlue)
+                }.onTapGesture {
+                    isPresented = true
+                }
             }
         } // HStack
     }

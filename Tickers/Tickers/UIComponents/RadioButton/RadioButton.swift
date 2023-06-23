@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct OptionButton: View {
     let title: String
     var isSelected: Bool
