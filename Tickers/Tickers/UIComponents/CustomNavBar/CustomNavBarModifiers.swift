@@ -24,13 +24,13 @@ struct NavBarWithMissions: ViewModifier {
                             .foregroundColor(.blue)
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    NavigationLink {
-                        MissionsView(missionsViewModel: MissionsViewModel())
-                    } label: {
-                        Image("missions")
-                    }
-                }
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    NavigationLink {
+//                        MissionsView(missionsViewModel: MissionsViewModel())
+//                    } label: {
+//                        Image("missions")
+//                    }
+//                }
             }
             .padding(.top, 18)
     }

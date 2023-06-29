@@ -28,7 +28,6 @@ struct HomeView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .padding(.leading)
             .background(Color("BackgroundColor"))
-            .navigationBarTitle("Home")
         } //: Nav
     }
     
@@ -38,6 +37,7 @@ struct HomeView: View {
         ShowAllButtonView(title: title)
         ScrollView(.horizontal) {
           LazyHStack(spacing: 15) {
+            // Precisará ser modificado para aceitar o card de conquistas
             ForEach(tickers) { ticker in
               CardPetView(
                 isLocked: ticker.isLocked,
