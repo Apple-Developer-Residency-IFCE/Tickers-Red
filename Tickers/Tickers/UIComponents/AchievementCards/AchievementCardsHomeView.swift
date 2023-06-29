@@ -7,24 +7,24 @@
 
 import SwiftUI
 
-struct AchievementCardsView: View {
+struct AchievementCardsHomeView: View {
     
-    let isLocked :Bool
-    let title :String
-    let subTitle :String
+    let isLocked: Bool
+    let title: String
+    let subTitle: String
     
     var body: some View {
         
         VStack {
-            AchievementCard(isLocked: isLocked)
+            achievementCard(isLocked: isLocked)
         }
     }
     
-    @ViewBuilder func AchievementCard (isLocked :Bool) -> some View {
+    @ViewBuilder func achievementCard (isLocked :Bool) -> some View {
         if isLocked {
             VStack {
                 RoundedRectangle(cornerRadius: 20)
-                    .fill(Color("AchievLockCard"))
+                    .fill(Color("ContainerColor"))
                     .frame(width: 143, height: 173)
                     .overlay {
                         
@@ -36,9 +36,11 @@ struct AchievementCardsView: View {
                             
                             Text(title)
                                 .tickerFont(size: 14, weight: .bold)
+                                .foregroundColor(Color("AchievLock"))
                             Text(subTitle)
                                 .tickerFont(size: 12, weight: .bold)
                                 .multilineTextAlignment(.center)
+                                .foregroundColor(Color("AchievLock"))
                     }
                     .padding(.bottom, 10)
                 }
@@ -73,7 +75,7 @@ struct AchievementCardsView: View {
 
 struct AchievementCardsView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementCardsView(isLocked: true, title: "Hora do Foco", subTitle: "Concluiu seu primeiro Pomodoro")
+        AchievementCardsHomeView(isLocked: false, title: "Hora do Foco", subTitle: "Concluiu seu primeiro Pomodoro")
     }
 }
 
