@@ -21,7 +21,7 @@ struct ProgressBarAchievement: View {
             
             Text("\(taskResolved)/\(taskTotal)").tickerFont(size: 12, weight: .regular)
                 .frame(alignment: .leading)
-                .foregroundColor(Color("TextColor"))
+                .foregroundColor(Color("AchievIncompleted"))
                 .padding(.trailing, 20)
         }
     }
