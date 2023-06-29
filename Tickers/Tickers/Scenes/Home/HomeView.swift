@@ -11,52 +11,49 @@ struct HomeView: View {
     
     // MARK: - Proprieties
     @ObservedObject var tickersViewModel: TickersViewModel
-    private let columns = [
-        GridItem(.flexible()),
-        GridItem(.flexible())
-    ]
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading, spacing: 0) {
+            VStack(alignment: .leading, spacing: 10) {
                 Divider()
-                createScrollView(title: "Escolha um Ticker para cuidar", tickers: tickersViewModel.tickers)
-                    .padding(.bottom, 20)
-                
-                createScrollView(title: "Conquistas", tickers: tickersViewModel.tickers)
-                    .padding(.bottom, 20)
+                createScrollView(
+                  title: "Escolha um Ticker para cuidar",
+                  tickers: tickersViewModel.tickers
+                )
+                createScrollView(
+                  title: "Conquistas",
+                  tickers: tickersViewModel.tickers
+                )
             } //: VStack
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .padding(.leading)
-            .background( Color("BackgroundColor"))
+            .background(Color("BackgroundColor"))
             .navigationBarTitle("Home")
         } //: Nav
     }
     
     // MARK: - ScrollView
     private func createScrollView(title: String, tickers: [Ticker]) -> some View {
+      VStack(spacing: 0) {
+        ShowAllButtonView(title: title)
         ScrollView(.horizontal) {
-            LazyHStack(spacing: 15) {
-                ForEach(tickers) { ticker in
-                    CardPetView(
-                        isLocked: ticker.isLocked,
-                        actualProgress: ticker.actualProgress,
-                        totalProgress: ticker.totalProgress,
-                        tickerLevel: ticker.tickerLevel,
-                        tickerImage: ticker.tickerImage,
-                        tickerEgg: ticker.tickerEgg,
-                        tickerName: ticker.tickerName
-                    )
-                } //: ForEach
-            } //: LazyHStack
-            
-            .background(.pink.opacity(0.5)) // DEBUG
+          LazyHStack(spacing: 15) {
+            ForEach(tickers) { ticker in
+              CardPetView(
+                isLocked: ticker.isLocked,
+                actualProgress: ticker.actualProgress,
+                totalProgress: ticker.totalProgress,
+                tickerLevel: ticker.tickerLevel,
+                tickerImage: ticker.tickerImage,
+                tickerEgg: ticker.tickerEgg,
+                tickerName: ticker.tickerName
+              )
+            } //: ForEach
+          } //: LazyHStack
+          .padding()
         } //: ScrollView
-        .overlay(
-            ShowAllButtonView(title: title)
-                .background(.green.opacity(0.7)) // DEBUG
-                .frame(maxWidth: .infinity, alignment: .leading),
-            alignment: .topLeading
-        ) //: overlay
+      } //: VStack
+      .fixedSize(horizontal: false, vertical: true)
     } //: createScrollView
 }
 

@@ -28,7 +28,6 @@ struct ShowAllButtonView: View {
                     .foregroundColor(.blue)
             }
         }
-        .background(.orange) // DEBUG
         .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 20))
     }
 }
