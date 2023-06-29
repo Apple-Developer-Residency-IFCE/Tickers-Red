@@ -46,8 +46,7 @@ struct PomodoroView: View {
                 }
                 if isPresented {
                     ZStack{
-                        SoundsModalView(isPresented: $isPresented)
-                            .transition(.move(edge: .bottom))
+                        // tela de sound
                     }
                 }
                 if viewModel.isShowingPopup {

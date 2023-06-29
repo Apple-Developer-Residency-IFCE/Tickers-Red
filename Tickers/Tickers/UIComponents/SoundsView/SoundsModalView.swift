@@ -8,65 +8,42 @@
 import SwiftUI
 
 struct SoundsSheet: View {
-    @State private var isPresented = false
-    
-    var body: some View {
-        VStack {
-            Button("Apresentar") {
-                isPresented = true
-            }
-            if isPresented {
-                SoundsModalView(isPresented: $isPresented)
-                    .transition(.move(edge: .bottom))
-            }
-        }.edgesIgnoringSafeArea(.all)
-    }
-}
-
-// MARK: SoundsSheetView
-struct SoundsModalView: View {
-    @Binding var isPresented: Bool
-    
-    @State private var selectedOption: String?
+    let sounds: [Sound] = [
+        Sound(title: "Chuva", isPause: true, isDownload: false),
+        Sound(title: "Tempestade", isPause: false, isDownload: true),
+        Sound(title: "Água Corrente", isPause: false, isDownload: true),
+        Sound(title: "Lo-fi", isPause: false, isDownload: true)
+    ]
     
     let options = ["Chuva", "Tempestade", "Água Corrente", "Lo-fi"]
     
     var body: some View {
-        VStack(alignment: .leading) {
-            HStack(spacing: 0) {
-                Image("sounds")
-                    .padding(.leading, 20)
-                    .padding(.trailing, 15)
-                Text("Sons")
-                    .foregroundColor(.blue)
+        NavigationView {
+            VStack(alignment: .leading) {
+                Divider()
+                HStack(spacing: 0) {
+                    Image("sounds")
+                        .padding(.leading, 20)
+                        .padding(.trailing, 15)
+                    Text("Sons")
+                        .foregroundColor(.blue)
+                }
+                .padding(.top, 15)
+                .padding(.bottom, 5)
+                ForEach(sounds, id: \.self) { sounds in
+                    Text(".\(sounds.title)")
+                } //: ForEach
                 Spacer()
-                Image("exitGray")
-                    .padding(.trailing, 20)
-                    .onTapGesture {
-                        withAnimation {
-                            isPresented = false
-                        }
-                    }
-            }
-            .padding(.top, 15)
-            .padding(.bottom, 5)
-            Divider()
-            ForEach(options, id: \.self) { option in
-                OptionButton(title: option, isSelected: option == selectedOption)
-                    .padding(.leading, 20)
-                    .onTapGesture {
-                        selectedOption = option
-                    }
-            } //: ForEach
-            Spacer()
-        } //: VStack
-        .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height / 2)
-        .background(Color.white)
-        .ignoresSafeArea()
-        .cornerRadius(20)
-        .shadow(radius: 10)
-        .padding(.bottom, -(UIScreen.main.bounds.width))
+            } //: VStack
+            .navBarWithBackButton(blackText: "Pomodoro")
+        }
     }
+}
+
+struct Sound: Hashable {
+    let title: String
+    let isPause: Bool
+    let isDownload: Bool
 }
 
 // MARK: - Preview
