@@ -28,7 +28,6 @@ struct HomeView: View {
                         }
                     }
                     .padding(.trailing, 10)
-                    .background(Color.orange)
                 }
                 .padding(.bottom, 50)
                 
@@ -41,13 +40,12 @@ struct HomeView: View {
                         }
                     }
                     .padding(.trailing, 10)
-                    .background(Color.orange)
                 }
                 .padding(.bottom, 50)
             }
             
             .padding(.leading)
-            .background(Color.pink.opacity(0.5))
+            .background( Color("BackgroundColor"))
             .navigationBarTitle("Home")
         }
     }
