@@ -53,7 +53,7 @@ struct AchievementCardView: View {
 
 struct AchievementCardView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementCardView(isCompleted: true, isProgressive: false, taskTotal: 5, taskResolved: 1, title: "Hora do Foco", description: "Completou um total de 5 horas em foco.")
+        AchievementCardView(isCompleted: false, isProgressive: true, taskTotal: 5, taskResolved: 1, title: "Hora do Foco", description: "Completou um total de 5 horas em foco.")
     }
 }
 
