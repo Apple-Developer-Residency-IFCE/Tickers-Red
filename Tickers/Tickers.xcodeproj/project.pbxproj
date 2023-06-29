@@ -29,6 +29,9 @@
 		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
 		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
 		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
+		C82D8B462A4E0EB300C2FE27 /* AchievementsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B452A4E0EB300C2FE27 /* AchievementsScreenView.swift */; };
+		C82D8B482A4E129600C2FE27 /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B472A4E129600C2FE27 /* AchievementModel.swift */; };
+		C82D8B4A2A4E132C00C2FE27 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B492A4E132C00C2FE27 /* AchievementViewModel.swift */; };
 		CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CE1D2C842A3151AA00B71AF1 /* SoundsSheatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */; };
@@ -96,6 +99,9 @@
 		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
 		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
 		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
+		C82D8B452A4E0EB300C2FE27 /* AchievementsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsScreenView.swift; sourceTree = "<group>"; };
+		C82D8B472A4E129600C2FE27 /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
+		C82D8B492A4E132C00C2FE27 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		CE06F2F62A4290BD00960E76 /* FocusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusContentView.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsSheatView.swift; sourceTree = "<group>"; };
@@ -253,13 +259,22 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		C82D8B3E2A4E041E00C2FE27 /* AchievementCard */ = {
+		C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */ = {
 			isa = PBXGroup;
 			children = (
 				C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */,
 				C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */,
 			);
-			path = AchievementCard;
+			path = AchievementCardView;
+			sourceTree = "<group>";
+		};
+		C82D8B442A4E0E9300C2FE27 /* AchievementsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C82D8B452A4E0EB300C2FE27 /* AchievementsScreenView.swift */,
+				C82D8B492A4E132C00C2FE27 /* AchievementViewModel.swift */,
+			);
+			path = AchievementsScreen;
 			sourceTree = "<group>";
 		};
 		CE6A1A742A3140F100D52FF4 /* SoundsView */ = {
@@ -293,7 +308,7 @@
 		DD427F492A3008F80040A006 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				C82D8B3E2A4E041E00C2FE27 /* AchievementCard */,
+				C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */,
 				CED2AA492A3BCB4D00F54695 /* PopupView */,
 				DDB3CA642A314F9E0085AADA /* CustomNavBar */,
 				CE6A1A742A3140F100D52FF4 /* SoundsView */,
@@ -311,6 +326,7 @@
 			children = (
 				DD67837B2A3BD725009D5A3A /* TickerModel.swift */,
 				DD20AE682A425173002FB30D /* MissionModel.swift */,
+				C82D8B472A4E129600C2FE27 /* AchievementModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -318,6 +334,7 @@
 		DD427F4D2A300A210040A006 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C82D8B442A4E0E9300C2FE27 /* AchievementsScreen */,
 				7D19EE6E2A3BC347004CAC44 /* Profile */,
 				DD427F642A3134D60040A006 /* Definitions */,
 				DD427F632A3133FC0040A006 /* Home */,
@@ -554,8 +571,10 @@
 				DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */,
+				C82D8B4A2A4E132C00C2FE27 /* AchievementViewModel.swift in Sources */,
 				CEA49F722A325AA9004B4F68 /* View+Ext.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* MissionCellView.swift in Sources */,
+				C82D8B482A4E129600C2FE27 /* AchievementModel.swift in Sources */,
 				7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */,
 				DD20AE672A4250C0002FB30D /* MissionsVIewModel.swift in Sources */,
 				CEA49F702A325A60004B4F68 /* RoundedCornerShape.swift in Sources */,
@@ -566,6 +585,7 @@
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
 				C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */,
 				7D19EE702A3BC3BE004CAC44 /* ProfileView.swift in Sources */,
+				C82D8B462A4E0EB300C2FE27 /* AchievementsScreenView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				CED2AA502A3D09B800F54695 /* PopupContentView.swift in Sources */,
