@@ -73,9 +73,9 @@ struct AchievementCardsHomeView: View {
 }
 
 
-struct AchievementCardsView_Previews: PreviewProvider {
+struct AchievementCardsHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        AchievementCardsHomeView(isLocked: false, title: "Hora do Foco", subTitle: "Concluiu seu primeiro Pomodoro")
+        AchievementCardsHomeView(isLocked: true, title: "Hora do Foco", subTitle: "Concluiu seu primeiro Pomodoro")
     }
 }
 

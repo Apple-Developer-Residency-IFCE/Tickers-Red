@@ -255,12 +255,12 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
-		B7205A612A4CE8D700FBFADD /* AchievementCards */ = {
+		B7205A612A4CE8D700FBFADD /* AchievementHomeCards */ = {
 			isa = PBXGroup;
 			children = (
 				B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */,
 			);
-			path = AchievementCards;
+			path = AchievementHomeCards;
 			sourceTree = "<group>";
 		};
 		C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */ = {
@@ -303,7 +303,7 @@
 		DD427F492A3008F80040A006 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				B7205A612A4CE8D700FBFADD /* AchievementCards */,
+				B7205A612A4CE8D700FBFADD /* AchievementHomeCards */,
 				C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */,
 				CED2AA492A3BCB4D00F54695 /* PopupView */,
 				DDB3CA642A314F9E0085AADA /* CustomNavBar */,
