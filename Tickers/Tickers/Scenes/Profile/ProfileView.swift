@@ -71,9 +71,9 @@ struct ProfileView: View {
             Text("Altera a aparência do app para o modo escolhido").tickerFont(size: 13, weight: .regular)
             ForEach(Theme.allCases, id: \.self) { option in
                 OptionButton(title: option.title, isSelected: option == (themeSelected ?? .system))
-//                    .onTapGesture {
-//                        themeSelected = option
-//                    }
+                    .onTapGesture {
+                        themeSelected = option
+                    }
             } //: ForEach
         }.padding(.horizontal ,30).padding(.vertical, 12)
     }

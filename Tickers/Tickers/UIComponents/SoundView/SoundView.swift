@@ -22,7 +22,9 @@ struct SoundView: View {
                     Text("\(sounds.title)")
                         .padding(.leading, 20)
                     Spacer()
-                    Image(sounds.isPlay ? "playSound" : "pauseSound")
+                    Image(sounds.isPlay ? "pauseSound" : "playSound").onTapGesture {
+                        soundViewModel.selectMusicOption(sounds)
+                    }
                     Image(sounds.isDownload ? "downloadSound" : "cancelSound")
                         .padding(.trailing, 20)
                 }//: HStack
@@ -37,13 +39,12 @@ struct SoundView: View {
 }
 
 struct SoundView_Previews: PreviewProvider {
-    
     static var previews: some View {
         SoundView(sounds: [
-            Sound(title: "Chuva", isPlay: true, isDownload: false),
-            Sound(title: "Tempestade", isPlay: false, isDownload: true),
-            Sound(title: "Água Corrente", isPlay: false, isDownload: true),
-            Sound(title: "Lo-fi", isPlay: false, isDownload: true)
+            Sound(id: 0, title: "Chuva", isDownload: false),
+            Sound(id: 1, title: "Tempestade", isDownload: true),
+            Sound(id: 2, title: "Água Corrente", isDownload: true),
+            Sound(id: 3, title: "Lo-fi", isDownload: true)
         ])
     }
 }

@@ -9,13 +9,11 @@ import SwiftUI
 
 struct SoundsView: View {
     @State var sounds: [Sound] = [
-        Sound(title: "Chuva", isPlay: false, isDownload: false),
-        Sound(title: "Tempestade", isPlay: true, isDownload: true),
-        Sound(title: "Água Corrente", isPlay: true, isDownload: true),
-        Sound(title: "Lo-fi", isPlay: true, isDownload: true)
+        Sound(id: 0, title: "Chuva", isDownload: false),
+        Sound(id: 1, title: "Tempestade", isDownload: true),
+        Sound(id: 2, title: "Água Corrente", isDownload: true),
+        Sound(id: 3, title: "Lo-fi", isDownload: true)
     ]
-    
-    let options = ["Chuva", "Tempestade", "Água Corrente", "Lo-fi"]
     
     var body: some View {
         NavigationView {
@@ -55,12 +53,6 @@ struct SoundsView: View {
         .padding(.top, 10)
         .padding(.bottom, 10)
     }
-}
-
-struct Sound: Hashable {
-    let title: String
-    let isPlay: Bool
-    let isDownload: Bool
 }
 
 // MARK: - Preview
