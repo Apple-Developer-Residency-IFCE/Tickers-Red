@@ -8,6 +8,13 @@
 import SwiftUI
 
 struct PomodoroView: View {
+    @State var sounds: [Sound] = [
+        Sound(title: "Chuva", isPlay: false, isDownload: false),
+        Sound(title: "Tempestade", isPlay: true, isDownload: true),
+        Sound(title: "Água Corrente", isPlay: true, isDownload: true),
+        Sound(title: "Lo-fi", isPlay: true, isDownload: true)
+    ]
+    
     @State private var isPresented = false
     @ObservedObject var viewModel: PomodoroViewModel
     @ObservedObject var popupFactory: PomodoroPopupFactory
@@ -43,14 +50,6 @@ struct PomodoroView: View {
                     )
                     tickersPomodoroView
                     footerView
-                }
-                if isPresented {
-                    ZStack{
-                        // tela de sound
-                    }
-                }
-                if viewModel.isShowingPopup {
-                    popupFactory.make()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -105,17 +104,15 @@ struct PomodoroView: View {
                     .tickerFont(size: 18, weight: .bold)
                     .foregroundColor(.customBlue)
             }
-            VStack(alignment: .center){
-                VStack{
+            NavigationLink(destination: SoundsView(sounds: sounds)){
+                VStack(alignment: .center){
                     Image("sounds")
                     Text("Sons")
                         .tickerFont(size: 18, weight: .bold)
                         .foregroundColor(.customBlue)
-                }.onTapGesture {
-                    isPresented = true
                 }
-            }
-        } // HStack
+            } // HStack
+        }
     }
     
 }
