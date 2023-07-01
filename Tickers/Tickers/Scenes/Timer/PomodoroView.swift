@@ -94,11 +94,13 @@ struct PomodoroView: View {
                         .foregroundColor(.customBlue)
                 }
             }
-            VStack(alignment: .center){
-                Image("hourglassWPencil")
-                Text("Definições")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(.customBlue)
+            NavigationLink(destination: DefinitionsView()){
+                VStack(alignment: .center){
+                    Image("hourglassWPencil")
+                    Text("Definições")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(.customBlue)
+                }
             }
             VStack(alignment: .center){
                 Image("sounds")

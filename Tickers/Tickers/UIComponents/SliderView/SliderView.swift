@@ -10,11 +10,10 @@ import SwiftUI
 struct SliderView: View {
     @Binding var valorAtual: Float
     let step: Float = 1
-    let title: String = ""
-    let minValue: Float = 0
-    let maxValue: Float = 1
-    let valueType: String = ""
-
+    var title: String
+    var minValue: Float
+    var maxValue: Float
+    let valueType: String
 
     var body: some View {
         VStack(spacing: -20) {
@@ -66,3 +65,4 @@ struct SliderView: View {
         }
     }
 }
+
