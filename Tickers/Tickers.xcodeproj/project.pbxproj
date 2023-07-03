@@ -215,7 +215,6 @@
 			children = (
 				645E0DE12A1EDE4D00293553 /* TimerView.swift */,
 				640E307C2A281749007C6AC0 /* PomodoroView.swift */,
-				7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */,
 				7D77AD2E2A391C21000D356E /* TimerInterval.swift */,
 				7D77AD302A392120000D356E /* PomodoroViewModel.swift */,
 				CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */,
@@ -262,7 +261,6 @@
 			children = (
 				CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */,
 				7D555AE42A4E269900FAF0FE /* SoundViewModel.swift */,
-				7D47306C2A4F91F4008C8ABB /* SoundModel.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -302,6 +300,8 @@
 		DD427F4A2A300A0B0040A006 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */,
+				7D47306C2A4F91F4008C8ABB /* SoundModel.swift */,
 				DD67837B2A3BD725009D5A3A /* TickerModel.swift */,
 				DD20AE682A425173002FB30D /* MissionModel.swift */,
 			);
