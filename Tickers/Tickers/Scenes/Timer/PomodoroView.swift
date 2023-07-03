@@ -8,6 +8,14 @@
 import SwiftUI
 
 struct PomodoroView: View {
+    @State var sounds: [Sound] = [
+        Sound(id: 0, title: "Chuva", isDownload: false),
+        Sound(id: 1, title: "Tempestade", isDownload: true),
+        Sound(id: 2, title: "Água Corrente", isDownload: true),
+        Sound(id: 3, title: "Lo-fi", isDownload: true)
+    ]
+    
+    @State private var isPresented = false
     @ObservedObject var viewModel: PomodoroViewModel
     @ObservedObject var popupFactory: PomodoroPopupFactory
     @Environment(\.dismiss) var dismiss
@@ -42,10 +50,6 @@ struct PomodoroView: View {
                     )
                     tickersPomodoroView
                     footerView
-                }
-                
-                if viewModel.isShowingPopup {
-                    popupFactory.make()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -94,19 +98,23 @@ struct PomodoroView: View {
                         .foregroundColor(.customBlue)
                 }
             }
-            VStack(alignment: .center){
-                Image("hourglassWPencil")
-                Text("Definições")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(.customBlue)
+            NavigationLink(destination: DefinitionsView()){
+                VStack(alignment: .center){
+                    Image("hourglassWPencil")
+                    Text("Definições")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(.customBlue)
+                }
             }
-            VStack(alignment: .center){
-                Image("sounds")
-                Text("Sons")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(.customBlue)
-            }
-        } // HStack
+            NavigationLink(destination: SoundsView(sounds: sounds)){
+                VStack(alignment: .center){
+                    Image("sounds")
+                    Text("Sons")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(.customBlue)
+                }
+            } // HStack
+        }
     }
     
 }

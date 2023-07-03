@@ -13,7 +13,8 @@ struct TickersApp: App {
     
     var body: some Scene {
         WindowGroup {
-            MainTabView().preferredColorScheme(themeSelected?.toColorScheme)
+            DefinitionsView()
+//            MainTabView().preferredColorScheme(themeSelected?.toColorScheme)
         }
     }
 }
