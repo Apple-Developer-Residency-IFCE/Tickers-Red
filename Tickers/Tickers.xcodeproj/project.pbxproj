@@ -44,13 +44,14 @@
 		DD20AE672A4250C0002FB30D /* MissionsVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20AE662A4250C0002FB30D /* MissionsVIewModel.swift */; };
 		DD20AE692A425173002FB30D /* MissionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20AE682A425173002FB30D /* MissionModel.swift */; };
 		DD427F602A3133520040A006 /* CardPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F5F2A3133520040A006 /* CardPetView.swift */; };
-		DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F692A3136670040A006 /* DefinitionsView.swift */; };
 		DD427F6C2A3136730040A006 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
 		DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6D2A3136820040A006 /* MissionsView.swift */; };
 		DD427F702A31368E0040A006 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6F2A31368E0040A006 /* FocusView.swift */; };
 		DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */; };
 		DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837B2A3BD725009D5A3A /* TickerModel.swift */; };
 		DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */; };
+		DD6CA1702A46666E00FE5F0C /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6CA16F2A46666E00FE5F0C /* SliderView.swift */; };
+		DDB062E72A4646E900483761 /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB062E62A4646E900483761 /* DefinitionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,13 +113,14 @@
 		DD20AE662A4250C0002FB30D /* MissionsVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsVIewModel.swift; sourceTree = "<group>"; };
 		DD20AE682A425173002FB30D /* MissionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionModel.swift; sourceTree = "<group>"; };
 		DD427F5F2A3133520040A006 /* CardPetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardPetView.swift; sourceTree = "<group>"; };
-		DD427F692A3136670040A006 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
 		DD427F6B2A3136730040A006 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		DD427F6D2A3136820040A006 /* MissionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsView.swift; sourceTree = "<group>"; };
 		DD427F6F2A31368E0040A006 /* FocusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
 		DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBarModifiers.swift; sourceTree = "<group>"; };
 		DD67837B2A3BD725009D5A3A /* TickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerModel.swift; sourceTree = "<group>"; };
 		DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DD6CA16F2A46666E00FE5F0C /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		DDB062E62A4646E900483761 /* DefinitionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -303,6 +305,7 @@
 		DD427F492A3008F80040A006 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				DD6CA16E2A46665800FE5F0C /* SliderView */,
 				B7205A612A4CE8D700FBFADD /* AchievementHomeCards */,
 				C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */,
 				CED2AA492A3BCB4D00F54695 /* PopupView */,
@@ -411,9 +414,17 @@
 		DD427F642A3134D60040A006 /* Definitions */ = {
 			isa = PBXGroup;
 			children = (
-				DD427F692A3136670040A006 /* DefinitionsView.swift */,
+				DDB062E62A4646E900483761 /* DefinitionsView.swift */,
 			);
 			path = Definitions;
+			sourceTree = "<group>";
+		};
+		DD6CA16E2A46665800FE5F0C /* SliderView */ = {
+			isa = PBXGroup;
+			children = (
+				DD6CA16F2A46666E00FE5F0C /* SliderView.swift */,
+			);
+			path = SliderView;
 			sourceTree = "<group>";
 		};
 		DDB3CA642A314F9E0085AADA /* CustomNavBar */ = {
@@ -589,12 +600,14 @@
 				CEA49F742A326008004B4F68 /* BottomSheet.swift in Sources */,
 				CE1D2C842A3151AA00B71AF1 /* SoundsSheatView.swift in Sources */,
 				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
+				DD6CA1702A46666E00FE5F0C /* SliderView.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
 				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
 				CED2AA4D2A3D085D00F54695 /* Color+Ext.swift in Sources */,
+				DDB062E72A4646E900483761 /* DefinitionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
