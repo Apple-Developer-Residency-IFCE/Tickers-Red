@@ -30,6 +30,9 @@
 		7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
 		7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
 		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
+		B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
+		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
+		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
 		CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CE1D2C842A3151AA00B71AF1 /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */; };
@@ -95,6 +98,9 @@
 		7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		7D77AD2E2A391C21000D356E /* TimerInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
 		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
+		B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCardsHomeView.swift; sourceTree = "<group>"; };
+		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
+		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
 		CE06F2F62A4290BD00960E76 /* FocusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusContentView.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
@@ -249,6 +255,31 @@
 			sourceTree = "<group>";
 		};
 		7D555AE62A4F913700FAF0FE /* SoundView */ = {
+				isa = PBXGroup;
+			children = (
+				7D555AE22A4E102300FAF0FE /* SoundView.swift */,
+			);
+			path = SoundView;
+			sourceTree = "<group>";
+		};
+		B7205A612A4CE8D700FBFADD /* AchievementHomeCards */ = {
+			isa = PBXGroup;
+			children = (
+				B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */,
+			);
+			path = AchievementHomeCards;
+			sourceTree = "<group>";
+		};
+		C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */ = {
+			isa = PBXGroup;
+			children = (
+				C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */,
+				C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */,
+			);
+			path = AchievementCardView;
+			sourceTree = "<group>";
+		};
+		CE6A1A742A3140F100D52FF4 /* SoundsView */ = {
 			isa = PBXGroup;
 			children = (
 				7D555AE22A4E102300FAF0FE /* SoundView.swift */,
@@ -286,6 +317,8 @@
 			isa = PBXGroup;
 			children = (
 				7D555AE62A4F913700FAF0FE /* SoundView */,
+				B7205A612A4CE8D700FBFADD /* AchievementHomeCards */,
+				C82D8B3E2A4E041E00C2FE27 /* AchievementCardView */,
 				CED2AA492A3BCB4D00F54695 /* PopupView */,
 				DDB3CA642A314F9E0085AADA /* CustomNavBar */,
 				DD427F542A3130B70040A006 /* CardPetView */,
@@ -541,6 +574,7 @@
 			files = (
 				DD20AE692A425173002FB30D /* MissionModel.swift in Sources */,
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
+				C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */,
 				CE6044F22A394D900032C30A /* SnoreView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
 				CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */,
@@ -556,6 +590,7 @@
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				35A4BC9F2A390CA6003EBF52 /* ProgressBarView.swift in Sources */,
 				DD427F6A2A3136670040A006 /* DefinitionsView.swift in Sources */,
+				C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */,
 				7D19EE702A3BC3BE004CAC44 /* ProfileView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
@@ -570,6 +605,7 @@
 				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
 				7D555AE52A4E269900FAF0FE /* SoundViewModel.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
+				B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
 				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
