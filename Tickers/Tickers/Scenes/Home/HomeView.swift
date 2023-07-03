@@ -7,23 +7,40 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct HomeView<T: Identifiable>: View {
     
-    // MARK: - Proprieties
+    // MARK: - Properties
     @ObservedObject var tickersViewModel: TickersViewModel
+    @ObservedObject var achievementViewModel: AchievementHomeViewModel
     
     var body: some View {
         NavigationView {
             VStack(alignment: .leading, spacing: 10) {
                 Divider()
                 createScrollView(
-                  title: "Escolha um Ticker para cuidar",
-                  tickers: tickersViewModel.tickers
-                )
+                    title: "Escolha um Ticker para cuidar",
+                    items: tickersViewModel.tickers
+                ) { item in
+                    CardPetView(
+                        isLocked: item.isLocked,
+                        actualProgress: item.actualProgress,
+                        totalProgress: item.totalProgress,
+                        tickerLevel: item.tickerLevel,
+                        tickerImage: item.tickerImage,
+                        tickerEgg: item.tickerEgg,
+                        tickerName: item.tickerName
+                    )
+                }
                 createScrollView(
-                  title: "Conquistas",
-                  tickers: tickersViewModel.tickers
-                )
+                    title: "Conquistas",
+                    items: achievementViewModel.achievements
+                ) { item in
+                    AchievementCardsHomeView(
+                        isLocked: item.isLocked,
+                        title: item.title,
+                        subTitle: item.subtitle
+                    )
+                }
             } //: VStack
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .padding(.leading)
@@ -32,34 +49,33 @@ struct HomeView: View {
     }
     
     // MARK: - ScrollView
-    private func createScrollView(title: String, tickers: [Ticker]) -> some View {
-      VStack(spacing: 0) {
-        ShowAllButtonView(title: title)
-        ScrollView(.horizontal) {
-          LazyHStack(spacing: 15) {
-            // Precisará ser modificado para aceitar o card de conquistas
-            ForEach(tickers) { ticker in
-              CardPetView(
-                isLocked: ticker.isLocked,
-                actualProgress: ticker.actualProgress,
-                totalProgress: ticker.totalProgress,
-                tickerLevel: ticker.tickerLevel,
-                tickerImage: ticker.tickerImage,
-                tickerEgg: ticker.tickerEgg,
-                tickerName: ticker.tickerName
-              )
-            } //: ForEach
-          } //: LazyHStack
-          .padding()
-        } //: ScrollView
-      } //: VStack
-      .fixedSize(horizontal: false, vertical: true)
+    private func createScrollView<Item, Content: View>(
+        title: String,
+        items: [Item],
+        @ViewBuilder content: @escaping  (Item) -> Content
+    ) -> some View where Item: Identifiable {
+        VStack(spacing: 0) {
+            ShowAllButtonView(title: title)
+            ScrollView(.horizontal) {
+                LazyHStack(spacing: 15) {
+                    ForEach(items) { item in
+                        content(item)
+                    }
+                } //: LazyHStack
+                .padding()
+            } //: ScrollView
+        } //: VStack
+        .fixedSize(horizontal: false, vertical: true)
     } //: createScrollView
 }
+
 
 // MARK: - PreviewProvider
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(tickersViewModel: TickersViewModel())
+        HomeView<Ticker>(
+            tickersViewModel: TickersViewModel(),
+            achievementViewModel: AchievementHomeViewModel()
+        )
     }
 }

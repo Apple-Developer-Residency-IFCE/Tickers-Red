@@ -33,6 +33,7 @@
 		CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CE1255132A4D01BF006F748F /* ShowAllButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1255122A4D01BF006F748F /* ShowAllButtonView.swift */; };
+		CE1255152A537C31006F748F /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1255142A537C31006F748F /* AchievementModel.swift */; };
 		CE1D2C842A3151AA00B71AF1 /* SoundsSheatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */; };
 		CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */; };
 		CE6044F22A394D900032C30A /* SnoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6044F12A394D900032C30A /* SnoreView.swift */; };
@@ -102,6 +103,7 @@
 		CE06F2F62A4290BD00960E76 /* FocusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusContentView.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1255122A4D01BF006F748F /* ShowAllButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllButtonView.swift; sourceTree = "<group>"; };
+		CE1255142A537C31006F748F /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsSheatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsSheatView.swift; sourceTree = "<group>"; };
 		CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPopupFactory.swift; sourceTree = "<group>"; };
 		CE6044F12A394D900032C30A /* SnoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoreView.swift; sourceTree = "<group>"; };
@@ -407,6 +409,7 @@
 				DD427F6B2A3136730040A006 /* HomeView.swift */,
 				CE1255122A4D01BF006F748F /* ShowAllButtonView.swift */,
 				DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */,
+				CE1255142A537C31006F748F /* AchievementModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
 				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
 				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
+				CE1255152A537C31006F748F /* AchievementModel.swift in Sources */,
 				CED2AA4D2A3D085D00F54695 /* Color+Ext.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
