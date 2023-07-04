@@ -20,9 +20,14 @@ struct ShowAllButtonView: View {
             Text(title)
                 .tickerFont(size: 16, weight: .bold)
             Spacer()
-            Button(action: {
-                // Ação pro botão "Ver tudo"
-            }) {
+            NavigationLink {
+                if (title == "Conquistas") {
+                    AchievementsScreenView()
+                }
+                else {
+                    ProfileView()
+                }
+            } label: {
                 Text("Ver tudo")
                     .tickerFont(size: 16, weight: .bold)
                     .foregroundColor(.blue)
