@@ -2,10 +2,10 @@
 //  AchievementModel.swift
 //  Tickers
 //
-//  Created by Julia Morales on 29/06/23.
+//  Created by Julia Morales on 04/07/23.
 //
 
-import SwiftUI
+import Foundation
 
 struct AchievementModel: Hashable {
     let isCompleted: Bool
@@ -14,5 +14,4 @@ struct AchievementModel: Hashable {
     var taskResolved: Int
     let title: String
     let description: String
-    
 }

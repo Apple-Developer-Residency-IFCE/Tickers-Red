@@ -19,7 +19,8 @@ struct HomeView<T: Identifiable>: View {
                 Divider()
                 createScrollView(
                     title: "Escolha um Ticker para cuidar",
-                    items: tickersViewModel.tickers
+                    items: tickersViewModel.tickers,
+                    destination: VStack{Text("sobre isso")}
                 ) { item in
                     CardPetView(
                         isLocked: item.isLocked,
@@ -33,7 +34,8 @@ struct HomeView<T: Identifiable>: View {
                 }
                 createScrollView(
                     title: "Conquistas",
-                    items: achievementViewModel.achievements
+                    items: achievementViewModel.achievements,
+                    destination: AchievementsScreenView()
                 ) { item in
                     AchievementCardsHomeView(
                         isLocked: item.isLocked,
@@ -52,10 +54,23 @@ struct HomeView<T: Identifiable>: View {
     private func createScrollView<Item, Content: View>(
         title: String,
         items: [Item],
+        destination: some View,
         @ViewBuilder content: @escaping  (Item) -> Content
     ) -> some View where Item: Identifiable {
         VStack(spacing: 0) {
-            ShowAllButtonView(title: title)
+            HStack {
+                Text(title)
+                    .tickerFont(size: 16, weight: .bold)
+                Spacer()
+                NavigationLink {
+                    destination
+                } label: {
+                    Text("Ver tudo")
+                        .tickerFont(size: 16, weight: .bold)
+                        .foregroundColor(.blue)
+                }
+            }
+            .padding(EdgeInsets(top: 10, leading: 0, bottom: 10, trailing: 20))
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 15) {
                     ForEach(items) { item in
