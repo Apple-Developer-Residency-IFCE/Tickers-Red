@@ -78,4 +78,3 @@ struct AchievementCardsHomeView_Previews: PreviewProvider {
         AchievementCardsHomeView(isLocked: true, title: "Hora do Foco", subTitle: "Concluiu seu primeiro Pomodoro")
     }
 }
-
