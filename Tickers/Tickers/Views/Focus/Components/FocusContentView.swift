@@ -32,7 +32,7 @@ struct FocusContentView: View {
     private var durationText: some View {
         Text("\(durationInSecond.timeString)")
             .tickerFont(size: 90, weight: .bold)
-            .foregroundColor(.customBlue)
+            .foregroundColor(Color("Blue2"))
             .scaleEffect(scale)
     }
     

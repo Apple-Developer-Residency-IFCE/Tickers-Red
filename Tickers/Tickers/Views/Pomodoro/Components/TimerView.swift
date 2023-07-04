@@ -49,7 +49,7 @@ struct TimerView: View {
                         .stroke(fadingColor, lineWidth: 5)
                     Circle()
                         .trim(from: 0, to: CGFloat(progressTimer))
-                        .stroke(Color.customBlue, lineWidth: 5)
+                        .stroke(Color("Blue2"), lineWidth: 5)
                     Circle()
                         .fill(fadingColor)
                         .frame(width: 10, height: 10)
@@ -78,7 +78,7 @@ struct TimerView: View {
     private var ballKnobView: some View {
         GeometryReader { knobGeo in
             Circle()
-                .fill(Color.customBlue)
+                .fill(Color("Blue2"))
                 .frame(width: 20, height: 20)
                 .overlay(
                     Circle()
@@ -101,7 +101,7 @@ struct TimerView: View {
         VStack(spacing: 20) {
             Text("\(durationInSecond.timeString)")
                 .font(.system(size: 60, weight: .medium, design: .rounded))
-                .foregroundColor(Color.customBlue)
+                .foregroundColor(Color("Blue2"))
             HStack(alignment: .bottom, spacing: 20) {
 
                 Button {

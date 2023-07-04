@@ -20,7 +20,7 @@ struct DefinitionsView: View {
                     Image("hourglassWPencil")
                     Text("Definições")
                         .tickerFont(size: 18, weight: .bold)
-                        .foregroundColor(.customBlue)
+                        .foregroundColor(Color("Blue2"))
                     Spacer()
                     Image("exitGray")
                         .onTapGesture {

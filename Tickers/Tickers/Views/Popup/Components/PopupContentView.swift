@@ -22,7 +22,7 @@ struct PopupContentView: View {
         VStack(spacing: 20) {
             Text(titleText)
                 .tickerFont(size: 22, weight: .bold)
-                .foregroundColor(.customBlue)
+                .foregroundColor(Color("Blue2"))
                 .padding([.leading, .trailing], 50)
                 .multilineTextAlignment(.center)
             

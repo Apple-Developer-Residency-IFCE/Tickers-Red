@@ -50,7 +50,7 @@ struct PomodoroView: View {
                 ToolbarItem(placement: .principal) {
                     Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
                         .tickerFont(size: 22, weight: .bold)
-                        .foregroundColor(.customBlue)
+                        .foregroundColor(Color("Blue2"))
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Image(systemName: "plus")
@@ -88,7 +88,7 @@ struct PomodoroView: View {
                     Image("focusButton")
                     Text("Foco")
                         .tickerFont(size: 18, weight: .bold)
-                        .foregroundColor(.customBlue)
+                        .foregroundColor(Color("Blue2"))
                 }
             }
             NavigationLink(destination: DefinitionsView()){
@@ -96,7 +96,7 @@ struct PomodoroView: View {
                     Image("hourglassWPencil")
                     Text("Definições")
                         .tickerFont(size: 18, weight: .bold)
-                        .foregroundColor(.customBlue)
+                        .foregroundColor(Color("Blue2"))
                 }
             }
             NavigationLink(destination: SoundsView(sounds: SoundViewModel())){
@@ -104,7 +104,7 @@ struct PomodoroView: View {
                     Image("sounds")
                     Text("Sons")
                         .tickerFont(size: 18, weight: .bold)
-                        .foregroundColor(.customBlue)
+                        .foregroundColor(Color("Blue2"))
                 }
             } // HStack
         }
