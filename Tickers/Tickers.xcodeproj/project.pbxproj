@@ -30,9 +30,9 @@
 		7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
 		7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
 		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
-		7DB700C12A54CF35005EB90F /* AchievementsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C02A54CF35005EB90F /* AchievementsScreenView.swift */; };
-		7DB700C32A54CF79005EB90F /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C22A54CF79005EB90F /* AchievementViewModel.swift */; };
 		7DB700C52A54D054005EB90F /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C42A54D054005EB90F /* AchievementModel.swift */; };
+		7DB700C82A54EA71005EB90F /* AchievementsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */; };
+		7DB700C92A54EA71005EB90F /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */; };
 		B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
 		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
 		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
@@ -102,9 +102,9 @@
 		7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		7D77AD2E2A391C21000D356E /* TimerInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
 		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
-		7DB700C02A54CF35005EB90F /* AchievementsScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AchievementsScreenView.swift; path = "../../../../../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Tickers-Red 17.35.01/Tickers/Tickers/Scenes/AchievementsScreenView.swift"; sourceTree = "<group>"; };
-		7DB700C22A54CF79005EB90F /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AchievementViewModel.swift; path = ../../../../../../../../AchievementViewModel.swift; sourceTree = "<group>"; };
 		7DB700C42A54D054005EB90F /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
+		7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsScreenView.swift; sourceTree = "<group>"; };
+		7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCardsHomeView.swift; sourceTree = "<group>"; };
 		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
 		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
@@ -391,18 +391,11 @@
 			path = Sounds;
 			sourceTree = "<group>";
 		};
-		7DB700BD2A54CEE0005EB90F /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CoreData;
-			sourceTree = "<group>";
-		};
 		7DB700BE2A54CEF5005EB90F /* AchievementsView */ = {
 			isa = PBXGroup;
 			children = (
-				7DB700C02A54CF35005EB90F /* AchievementsScreenView.swift */,
-				7DB700C22A54CF79005EB90F /* AchievementViewModel.swift */,
+				7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */,
+				7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */,
 			);
 			path = AchievementsView;
 			sourceTree = "<group>";
@@ -445,7 +438,6 @@
 		DD427F4A2A300A0B0040A006 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				7DB700BD2A54CEE0005EB90F /* CoreData */,
 				CE1255142A537C31006F748F /* AchievementHomeModel.swift */,
 				7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */,
 				7D47306C2A4F91F4008C8ABB /* SoundModel.swift */,
@@ -674,11 +666,9 @@
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
 				CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* MissionComponent.swift in Sources */,
-				7DB700C32A54CF79005EB90F /* AchievementViewModel.swift in Sources */,
 				7DB700C52A54D054005EB90F /* AchievementModel.swift in Sources */,
 				7D47306D2A4F91F4008C8ABB /* SoundModel.swift in Sources */,
 				7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */,
-				7DB700C12A54CF35005EB90F /* AchievementsScreenView.swift in Sources */,
 				DD20AE672A4250C0002FB30D /* MissionsVIewModel.swift in Sources */,
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */,
@@ -693,11 +683,13 @@
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
 				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
 				CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */,
+				7DB700C92A54EA71005EB90F /* AchievementViewModel.swift in Sources */,
 				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				CE1D2C842A3151AA00B71AF1 /* SoundsView.swift in Sources */,
 				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
 				7D555AE52A4E269900FAF0FE /* SoundViewModel.swift in Sources */,
+				7DB700C82A54EA71005EB90F /* AchievementsScreenView.swift in Sources */,
 				DD6CA1702A46666E00FE5F0C /* SliderComponent.swift in Sources */,
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */,
