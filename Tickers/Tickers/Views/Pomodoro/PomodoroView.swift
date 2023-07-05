@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PomodoroView: View {
-    @State private var isPresented = false
     @ObservedObject var viewModel: PomodoroViewModel
     @ObservedObject var popupFactory: PomodoroPopupFactory
     @Environment(\.dismiss) var dismiss
@@ -43,6 +42,10 @@ struct PomodoroView: View {
                     )
                     tickersPomodoroView
                     footerView
+                }
+                
+                if viewModel.isShowingPopup {
+                    popupFactory.make()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -91,23 +94,19 @@ struct PomodoroView: View {
                         .foregroundColor(Color("Blue2"))
                 }
             }
-            NavigationLink(destination: DefinitionsView()){
-                VStack(alignment: .center){
-                    Image("hourglassWPencil")
-                    Text("Definições")
-                        .tickerFont(size: 18, weight: .bold)
-                        .foregroundColor(Color("Blue2"))
-                }
+            VStack(alignment: .center){
+                Image("hourglassWPencil")
+                Text("Definições")
+                    .tickerFont(size: 18, weight: .bold)
+                    .foregroundColor(Color("Blue2"))
             }
-            NavigationLink(destination: SoundsView(sounds: SoundViewModel())){
-                VStack(alignment: .center){
-                    Image("sounds")
-                    Text("Sons")
-                        .tickerFont(size: 18, weight: .bold)
-                        .foregroundColor(Color("Blue2"))
-                }
-            } // HStack
-        }
+            VStack(alignment: .center){
+                Image("sounds")
+                Text("Sons")
+                    .tickerFont(size: 18, weight: .bold)
+                    .foregroundColor(Color("Blue2"))
+            }
+        } // HStack
     }
     
 }
