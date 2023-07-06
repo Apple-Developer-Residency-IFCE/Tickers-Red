@@ -41,6 +41,7 @@
 		CE1255152A537C31006F748F /* AchievementHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1255142A537C31006F748F /* AchievementHomeModel.swift */; };
 		CE18E6C72A561B9E00315B42 /* TickersDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE18E6C52A561B9E00315B42 /* TickersDataModel.xcdatamodeld */; };
 		CE18E6CA2A561D4000315B42 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18E6C92A561D4000315B42 /* CoreDataManager.swift */; };
+		CE18E6D02A563A3500315B42 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE18E6CF2A563A3500315B42 /* CoreDataViewModel.swift */; };
 		CE1D2C842A3151AA00B71AF1 /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */; };
 		CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */; };
 		CE6044F22A394D900032C30A /* SnoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6044F12A394D900032C30A /* SnoreView.swift */; };
@@ -115,6 +116,7 @@
 		CE1255142A537C31006F748F /* AchievementHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AchievementHomeModel.swift; path = ../Views/Home/AchievementHomeModel.swift; sourceTree = "<group>"; };
 		CE18E6C62A561B9E00315B42 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		CE18E6C92A561D4000315B42 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CE18E6CF2A563A3500315B42 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
 		CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPopupFactory.swift; sourceTree = "<group>"; };
 		CE6044F12A394D900032C30A /* SnoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoreView.swift; sourceTree = "<group>"; };
@@ -426,6 +428,7 @@
 			children = (
 				CE18E6C52A561B9E00315B42 /* TickersDataModel.xcdatamodeld */,
 				CE18E6C92A561D4000315B42 /* CoreDataManager.swift */,
+				CE18E6CF2A563A3500315B42 /* CoreDataViewModel.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -673,6 +676,7 @@
 				DD20AE692A425173002FB30D /* MissionModel.swift in Sources */,
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
 				C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */,
+				CE18E6D02A563A3500315B42 /* CoreDataViewModel.swift in Sources */,
 				CE6044F22A394D900032C30A /* SnoreView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
 				CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */,
