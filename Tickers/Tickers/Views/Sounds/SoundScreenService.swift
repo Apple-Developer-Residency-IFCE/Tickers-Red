@@ -12,8 +12,9 @@ class APICaller{
     func fetchSong() async throws -> SoundStructModel? {
         
         //create the new url
-        guard let url = URL(string: "https://freesound.org/apiv2/sounds/572947/?token=Tc58tO9LOslcd4j2Et5EhWnSrgFr6Z4KobSlO6gR%22") else {
-            return nil  }
+        guard let url = URL(string: "https://freesound.org/apiv2/sounds/572947/?token=Tc58tO9LOslcd4j2Et5EhWnSrgFr6Z4KobSlO6gR") else {
+            return nil
+        }
         
         //create a new urlRequest passing the url
         let request = URLRequest(url: url)
