@@ -10,6 +10,7 @@ import SwiftUI
 struct PomodoroView: View {
     @ObservedObject var viewModel: PomodoroViewModel
     @ObservedObject var popupFactory: PomodoroPopupFactory
+    @State var isPresentingDefinitions: Bool = false
     @Environment(\.dismiss) var dismiss
     
     init(listTime: [Time]) {
@@ -99,12 +100,19 @@ struct PomodoroView: View {
                 Text("Definições")
                     .tickerFont(size: 18, weight: .bold)
                     .foregroundColor(Color("Blue2"))
+            }.onTapGesture {
+                isPresentingDefinitions = true
             }
-            VStack(alignment: .center){
-                Image("sounds")
-                Text("Sons")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(Color("Blue2"))
+            .sheet(isPresented: $isPresentingDefinitions) {
+                DefinitionsView(isPresentingDefinitions: $isPresentingDefinitions)
+            }
+            NavigationLink(destination: SoundsView(sounds: SoundViewModel())) {
+                VStack(alignment: .center){
+                    Image("sounds")
+                    Text("Sons")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(Color("Blue2"))
+                }
             }
         } // HStack
     }
