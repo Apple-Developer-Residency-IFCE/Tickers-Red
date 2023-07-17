@@ -29,6 +29,9 @@ struct SoundsView: View {
             .navBarWithBackButton(blackText: "Pomodoro")
         }
         .navigationBarBackButtonHidden(true)
+        .task {
+            try? await APICaller.shared.fetchSong()
+        }
     }
     
     var optionSound: some View {
