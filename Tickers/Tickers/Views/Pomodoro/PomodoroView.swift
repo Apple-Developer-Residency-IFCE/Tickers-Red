@@ -106,11 +106,13 @@ struct PomodoroView: View {
             .sheet(isPresented: $isPresentingDefinitions) {
                 DefinitionsView(isPresentingDefinitions: $isPresentingDefinitions)
             }
-            VStack(alignment: .center){
-                Image("sounds")
-                Text("Sons")
-                    .tickerFont(size: 18, weight: .bold)
-                    .foregroundColor(Color("Blue2"))
+            NavigationLink(destination: SoundsView(sounds: SoundViewModel())) {
+                VStack(alignment: .center){
+                    Image("sounds")
+                    Text("Sons")
+                        .tickerFont(size: 18, weight: .bold)
+                        .foregroundColor(Color("Blue2"))
+                }
             }
         } // HStack
     }
