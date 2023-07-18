@@ -34,6 +34,7 @@
 		7DB700C82A54EA71005EB90F /* AchievementsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */; };
 		7DB700C92A54EA71005EB90F /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */; };
 		B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
+		B7EB908B2A6749E200544343 /* TickersDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B7EB90892A6749E200544343 /* TickersDataModel.xcdatamodeld */; };
 		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
 		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
 		CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
@@ -111,12 +112,12 @@
 		7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsScreenView.swift; sourceTree = "<group>"; };
 		7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCardsHomeView.swift; sourceTree = "<group>"; };
+		B7EB908A2A6749E200544343 /* TickersDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TickersDataModel.xcdatamodel; sourceTree = "<group>"; };
 		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
 		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
 		CE06F2F62A4290BD00960E76 /* FocusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusContentView.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1255142A537C31006F748F /* AchievementHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AchievementHomeModel.swift; path = ../Views/Home/AchievementHomeModel.swift; sourceTree = "<group>"; };
-		CE18E6C62A561B9E00315B42 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
 		CE18E6C92A561D4000315B42 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CE18E6CF2A563A3500315B42 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundsView.swift; sourceTree = "<group>"; };
@@ -439,9 +440,9 @@
 		CE18E6C82A561BB000315B42 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				B7EB90892A6749E200544343 /* TickersDataModel.xcdatamodeld */,
 				CE71478B2A660D3D00680340 /* Definitions+CoreDataClass.swift */,
 				CE71478C2A660D3D00680340 /* Definitions+CoreDataProperties.swift */,
-				CE18E6C52A561B9E00315B42 /* TickersDataModel.xcdatamodeld */,
 				CE18E6C92A561D4000315B42 /* CoreDataManager.swift */,
 				CE18E6CF2A563A3500315B42 /* CoreDataViewModel.swift */,
 			);
@@ -694,6 +695,7 @@
 				C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */,
 				CE18E6D02A563A3500315B42 /* CoreDataViewModel.swift in Sources */,
 				CE6044F22A394D900032C30A /* SnoreView.swift in Sources */,
+				B7EB908B2A6749E200544343 /* TickersDataModel.xcdatamodeld in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
 				CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */,
 				DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */,
@@ -1073,12 +1075,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		CE18E6C52A561B9E00315B42 /* TickersDataModel.xcdatamodeld */ = {
+		B7EB90892A6749E200544343 /* TickersDataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				CE18E6C62A561B9E00315B42 /* CoreData.xcdatamodel */,
+				B7EB908A2A6749E200544343 /* TickersDataModel.xcdatamodel */,
 			);
-			currentVersion = CE18E6C62A561B9E00315B42 /* CoreData.xcdatamodel */;
+			currentVersion = B7EB908A2A6749E200544343 /* TickersDataModel.xcdatamodel */;
 			path = TickersDataModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
