@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct SoundComponent: View {
     @ObservedObject var soundViewModel: SoundViewModel
@@ -20,7 +21,6 @@ struct SoundComponent: View {
                     Image(sounds.isPlay ? "pauseSound" : "playSound").onTapGesture {
                         soundViewModel.selectMusicOption(sounds)
                     }
-                    Image(sounds.isDownload ? "downloadSound" : "cancelSound")
                         .padding(.trailing, 20)
                 }//: HStack
                 .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/14)

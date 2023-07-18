@@ -7,12 +7,13 @@
 
 import SwiftUI
 
+
 class SoundViewModel: ObservableObject {
     @Published var sounds: [Sound] = [
-        Sound(id: 0, title: "Chuva", isDownload: false),
-        Sound(id: 1, title: "Tempestade", isDownload: true),
-        Sound(id: 2, title: "Água Corrente", isDownload: true),
-        Sound(id: 3, title: "Lo-fi", isDownload: true)
+        Sound(id: 0, title: "Chuva", isDownload: false, path: URL(fileURLWithPath: Bundle.main.path(forResource: "chuva.mp3", ofType: nil)!)),
+        Sound(id: 1, title: "Tempestade", isDownload: true, path: URL(fileURLWithPath: Bundle.main.path(forResource: "tempestade.mp3", ofType: nil)!)),
+        Sound(id: 2, title: "Água Corrente", isDownload: true, path: URL(fileURLWithPath: Bundle.main.path(forResource: "water.mp3", ofType: nil)!)),
+        Sound(id: 3, title: "Lo-fi", isDownload: true, path: URL(fileURLWithPath: Bundle.main.path(forResource: "lofi.mp3", ofType: nil)!))
     ]
     
     func handleButtonPress(_ i: Int) {

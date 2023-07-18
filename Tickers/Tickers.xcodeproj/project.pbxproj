@@ -30,6 +30,11 @@
 		7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
 		7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
 		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
+		7D90FEFC2A660CA2009FC143 /* lofi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FEFB2A660CA2009FC143 /* lofi.mp3 */; };
+		7D90FF002A660CB0009FC143 /* tempestade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FEFD2A660CAF009FC143 /* tempestade.mp3 */; };
+		7D90FF012A660CB0009FC143 /* water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FEFE2A660CB0009FC143 /* water.mp3 */; };
+		7D90FF022A660CB0009FC143 /* chuva.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FEFF2A660CB0009FC143 /* chuva.mp3 */; };
+		7D90FF042A6614E4009FC143 /* SoundPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D90FF032A6614E4009FC143 /* SoundPlayerModel.swift */; };
 		7DB700C52A54D054005EB90F /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C42A54D054005EB90F /* AchievementModel.swift */; };
 		7DB700C82A54EA71005EB90F /* AchievementsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */; };
 		7DB700C92A54EA71005EB90F /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */; };
@@ -102,6 +107,11 @@
 		7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		7D77AD2E2A391C21000D356E /* TimerInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
 		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
+		7D90FEFB2A660CA2009FC143 /* lofi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = lofi.mp3; path = ../../../../../../../../Downloads/lofi.mp3; sourceTree = "<group>"; };
+		7D90FEFD2A660CAF009FC143 /* tempestade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = tempestade.mp3; path = ../../../../../../../../Downloads/tempestade.mp3; sourceTree = "<group>"; };
+		7D90FEFE2A660CB0009FC143 /* water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = water.mp3; path = ../../../../../../../../Downloads/water.mp3; sourceTree = "<group>"; };
+		7D90FEFF2A660CB0009FC143 /* chuva.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = chuva.mp3; path = ../../../../../../../../Downloads/chuva.mp3; sourceTree = "<group>"; };
+		7D90FF032A6614E4009FC143 /* SoundPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerModel.swift; sourceTree = "<group>"; };
 		7DB700C42A54D054005EB90F /* AchievementModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementModel.swift; sourceTree = "<group>"; };
 		7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementsScreenView.swift; sourceTree = "<group>"; };
 		7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
@@ -228,6 +238,7 @@
 		64EEA3E02A1EC93D0007F9CD /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				7D90FEFA2A660C7F009FC143 /* Sounds */,
 				64EEA3E12A1EC9560007F9CD /* Fonts */,
 			);
 			path = Assets;
@@ -249,6 +260,17 @@
 				7D19EE6F2A3BC3BE004CAC44 /* ProfileView.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		7D90FEFA2A660C7F009FC143 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7D90FEFF2A660CB0009FC143 /* chuva.mp3 */,
+				7D90FEFD2A660CAF009FC143 /* tempestade.mp3 */,
+				7D90FEFE2A660CB0009FC143 /* water.mp3 */,
+				7D90FEFB2A660CA2009FC143 /* lofi.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 		7DB700AC2A54A947005EB90F /* Views */ = {
@@ -452,6 +474,7 @@
 				DD67837B2A3BD725009D5A3A /* TickerModel.swift */,
 				DD20AE682A425173002FB30D /* MissionModel.swift */,
 				7DB700C42A54D054005EB90F /* AchievementModel.swift */,
+				7D90FF032A6614E4009FC143 /* SoundPlayerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -637,8 +660,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EEA3EA2A1ECB1B0007F9CD /* Nunito-Regular.ttf in Resources */,
+				7D90FEFC2A660CA2009FC143 /* lofi.mp3 in Resources */,
 				032134202A1D7AC4002FD592 /* Preview Assets.xcassets in Resources */,
+				7D90FF012A660CB0009FC143 /* water.mp3 in Resources */,
 				64EEA3E82A1ECB0E0007F9CD /* Nunito-Bold.ttf in Resources */,
+				7D90FF002A660CB0009FC143 /* tempestade.mp3 in Resources */,
+				7D90FF022A660CB0009FC143 /* chuva.mp3 in Resources */,
 				0321341D2A1D7AC4002FD592 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,6 +699,7 @@
 				CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */,
 				DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
+				7D90FF042A6614E4009FC143 /* SoundPlayerModel.swift in Sources */,
 				CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* MissionComponent.swift in Sources */,
 				7DB700C52A54D054005EB90F /* AchievementModel.swift in Sources */,
