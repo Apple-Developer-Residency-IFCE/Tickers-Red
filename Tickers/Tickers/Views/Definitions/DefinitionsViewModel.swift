@@ -12,7 +12,7 @@ class DefinitionsViewModel: ObservableObject {
     @Published var focusTime: Float = 0
     @Published var shortRest: Float = 0
     
-    private let coreDataViewModel: CoreDataViewModel<Definitions> // é a entidade
+    private let coreDataViewModel: CoreDataViewModel<Definitions>
     
     init(coreDataViewModel: CoreDataViewModel<Definitions> = CoreDataViewModel()) {
         self.coreDataViewModel = coreDataViewModel
