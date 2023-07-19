@@ -40,6 +40,7 @@
 		B70A7FB02A689338000106C2 /* CoreDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A7FA92A689338000106C2 /* CoreDataViewModel.swift */; };
 		B70A7FB32A68942F000106C2 /* Achievement+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A7FB12A68942F000106C2 /* Achievement+CoreDataClass.swift */; };
 		B70A7FB42A68942F000106C2 /* Achievement+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A7FB22A68942F000106C2 /* Achievement+CoreDataProperties.swift */; };
+		B70A7FB92A68975E000106C2 /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70A7FB82A68975E000106C2 /* AchievementViewModel.swift */; };
 		B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
 		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
 		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
@@ -120,6 +121,7 @@
 		B70A7FA92A689338000106C2 /* CoreDataViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewModel.swift; sourceTree = "<group>"; };
 		B70A7FB12A68942F000106C2 /* Achievement+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Achievement+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B70A7FB22A68942F000106C2 /* Achievement+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Achievement+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B70A7FB82A68975E000106C2 /* AchievementViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewModel.swift; sourceTree = "<group>"; };
 		B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCardsHomeView.swift; sourceTree = "<group>"; };
 		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
 		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
@@ -448,6 +450,7 @@
 			isa = PBXGroup;
 			children = (
 				7DB700C72A54EA71005EB90F /* AchievementMockDataModel.swift */,
+				B70A7FB82A68975E000106C2 /* AchievementViewModel.swift */,
 				CE1255142A537C31006F748F /* AchievementHomeModel.swift */,
 				7DB700C42A54D054005EB90F /* AchievementModel.swift */,
 				C82D8B3E2A4E041E00C2FE27 /* AchievementCard */,
@@ -722,6 +725,7 @@
 			files = (
 				DD20AE692A425173002FB30D /* MissionModel.swift in Sources */,
 				DD427F602A3133520040A006 /* CardPetView.swift in Sources */,
+				B70A7FB92A68975E000106C2 /* AchievementViewModel.swift in Sources */,
 				C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */,
 				CE6044F22A394D900032C30A /* SnoreView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,

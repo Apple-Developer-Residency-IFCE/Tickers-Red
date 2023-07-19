@@ -10,7 +10,7 @@ import CoreData
 
 final class CoreDataViewModel<T: NSManagedObject> {
     
-    private let viewContext: NSManagedObjectContext
+    let viewContext: NSManagedObjectContext
     
     init(viewContext: NSManagedObjectContext = CoreDataManager.shared.persistentContainer.viewContext) {
         self.viewContext = viewContext
