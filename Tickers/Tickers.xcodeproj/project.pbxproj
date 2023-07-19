@@ -30,8 +30,7 @@
 		7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
 		7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
 		7D77AD312A392120000D356E /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
-		7D90FF042A6614E4009FC143 /* SoundPlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D90FF032A6614E4009FC143 /* SoundPlayerModel.swift */; };
-		7D90FF292A67421A009FC143 /* teste.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D90FF282A67421A009FC143 /* teste.swift */; };
+		7D90FF042A6614E4009FC143 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D90FF032A6614E4009FC143 /* SoundPlayer.swift */; };
 		7D90FF312A675A56009FC143 /* lofi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FF2D2A675A56009FC143 /* lofi.mp3 */; };
 		7D90FF322A675A56009FC143 /* tempestade.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FF2E2A675A56009FC143 /* tempestade.mp3 */; };
 		7D90FF332A675A56009FC143 /* water.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7D90FF2F2A675A56009FC143 /* water.mp3 */; };
@@ -108,8 +107,7 @@
 		7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
 		7D77AD2E2A391C21000D356E /* TimerInterval.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInterval.swift; sourceTree = "<group>"; };
 		7D77AD302A392120000D356E /* PomodoroViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroViewModel.swift; sourceTree = "<group>"; };
-		7D90FF032A6614E4009FC143 /* SoundPlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayerModel.swift; sourceTree = "<group>"; };
-		7D90FF282A67421A009FC143 /* teste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teste.swift; sourceTree = "<group>"; };
+		7D90FF032A6614E4009FC143 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
 		7D90FF2D2A675A56009FC143 /* lofi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lofi.mp3; sourceTree = "<group>"; };
 		7D90FF2E2A675A56009FC143 /* tempestade.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tempestade.mp3; sourceTree = "<group>"; };
 		7D90FF2F2A675A56009FC143 /* water.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = water.mp3; sourceTree = "<group>"; };
@@ -454,7 +452,6 @@
 			children = (
 				7DB700B72A54B281005EB90F /* Components */,
 				CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */,
-				7D90FF282A67421A009FC143 /* teste.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -477,7 +474,7 @@
 				DD67837B2A3BD725009D5A3A /* TickerModel.swift */,
 				DD20AE682A425173002FB30D /* MissionModel.swift */,
 				7DB700C42A54D054005EB90F /* AchievementModel.swift */,
-				7D90FF032A6614E4009FC143 /* SoundPlayerModel.swift */,
+				7D90FF032A6614E4009FC143 /* SoundPlayer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -702,7 +699,7 @@
 				CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */,
 				DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
-				7D90FF042A6614E4009FC143 /* SoundPlayerModel.swift in Sources */,
+				7D90FF042A6614E4009FC143 /* SoundPlayer.swift in Sources */,
 				CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */,
 				641C68632A2564D000EAAEE6 /* MissionComponent.swift in Sources */,
 				7DB700C52A54D054005EB90F /* AchievementModel.swift in Sources */,
@@ -726,7 +723,6 @@
 				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
 				CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */,
 				CE1D2C842A3151AA00B71AF1 /* SoundsView.swift in Sources */,
-				7D90FF292A67421A009FC143 /* teste.swift in Sources */,
 				DD427F6C2A3136730040A006 /* HomeView.swift in Sources */,
 				7D555AE52A4E269900FAF0FE /* SoundViewModel.swift in Sources */,
 				7DB700C82A54EA71005EB90F /* AchievementsScreenView.swift in Sources */,

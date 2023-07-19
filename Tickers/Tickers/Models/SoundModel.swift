@@ -10,7 +10,7 @@ import Foundation
 struct Sound: Hashable {
     let id: Int
     let title: String
-    var isPlay: Bool = false
+    var isPlay: Bool
     var isDownload: Bool
-    let path: URL?
+    let path: String
 }

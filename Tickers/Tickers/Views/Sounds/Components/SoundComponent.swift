@@ -10,7 +10,6 @@ import AVFoundation
 
 struct SoundComponent: View {
     @ObservedObject var soundViewModel: SoundViewModel
-    @State private var audioPlayer: AVAudioPlayer?
     @State var musicSelected: Int?
     
     var body: some View {
@@ -21,35 +20,10 @@ struct SoundComponent: View {
                         .padding(.leading, 20)
                     Spacer()
                     Button(action: {
-                        if let path = sounds.path {
-                            do {
-                                audioPlayer = try AVAudioPlayer(contentsOf: path)
-                                audioPlayer?.prepareToPlay()
-                            } catch {
-                                print("Erro ao inicializar o AVAudioPlayer: \(error.localizedDescription)")
-                            }
-                        }
-                        if(!(musicSelected == sounds.id)){
-                            soundViewModel.selectMusicOption(sounds)
-                            if(sounds.isPlay){
-                                audioPlayer?.pause()
-                            }else{
-                                audioPlayer?.numberOfLoops = -1
-                                audioPlayer?.play()
-                            }
-                            musicSelected = sounds.id
-                        }else {
-                            soundViewModel.handleButtonPress(sounds.id)
-                            if(sounds.isPlay){
-                                audioPlayer?.pause()
-                            }else{
-                                audioPlayer?.numberOfLoops = -1
-                                audioPlayer?.play()
-                            }
-                        }
-                    }) {
+                        soundViewModel.selectMusicOption(sounds)
+                        }) {
                         Image(sounds.isPlay ? "pauseSound" : "playSound")
-                        .padding(.trailing, 20)
+                            .padding(.trailing, 20)
                     }//: HStack
                 }
                 .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/14)
