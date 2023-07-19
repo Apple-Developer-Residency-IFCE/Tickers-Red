@@ -26,7 +26,7 @@ class AchievementViewModel: ObservableObject {
         achievement = fetchedAchievement
     }
     
-    func createAchievement(id: UUID, xpAtual: Float, xpTotal: Float, isCompleted: Bool) {
+    func saveAchievement(id: UUID, xpAtual: Float, xpTotal: Float, isCompleted: Bool) {
         let newAchievement = Achievement(context: coreDataViewModel.viewContext)
         newAchievement.id = UUID()
         newAchievement.xpAtual = xpAtual
