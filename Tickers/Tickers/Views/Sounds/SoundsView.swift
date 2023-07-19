@@ -26,6 +26,7 @@ struct SoundsView: View {
                 SoundComponent(soundViewModel: sounds)
                 Spacer()
             } //: VStack
+            .background(Color("BackgroundColor"))
             .navBarWithBackButton(blackText: "Pomodoro")
         }
         .navigationBarBackButtonHidden(true)

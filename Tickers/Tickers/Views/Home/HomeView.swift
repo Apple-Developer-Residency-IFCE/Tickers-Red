@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView<T: Identifiable>: View {
-    
+    @AppStorage("Name") var name: String = ""
     // MARK: - Properties
     @ObservedObject var tickersViewModel: TickersViewModel
     @ObservedObject var achievementViewModel: AchievementHomeViewModel
@@ -47,6 +47,7 @@ struct HomeView<T: Identifiable>: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
             .padding(.leading)
             .background(Color("BackgroundColor"))
+            .navBarWithMissions(blackText: "Bem vindo,", blueText: name)
         } //: Nav
     }
     

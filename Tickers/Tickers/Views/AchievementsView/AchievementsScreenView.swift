@@ -20,6 +20,7 @@ struct AchievementsScreenView: View {
                     }
                 }
             }
+            .background(Color("BackgroundColor"))
             .navBarWithBackButton(blackText: "Conquistas")
         }.navigationBarBackButtonHidden(true)
     }
