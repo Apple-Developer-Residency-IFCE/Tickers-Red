@@ -12,5 +12,5 @@ struct Sound: Hashable {
     let title: String
     var isPlay: Bool = false
     var isDownload: Bool
-    let path: URL
+    let path: URL?
 }

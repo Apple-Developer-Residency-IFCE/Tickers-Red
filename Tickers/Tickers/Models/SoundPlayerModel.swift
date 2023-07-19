@@ -9,5 +9,5 @@ import Foundation
 import AVFoundation
 
 struct SoundPlayer: Hashable {
-    var audioPlayer: AVAudioPlayer
+    var audioPlayer: AVAudioPlayer?
 }
