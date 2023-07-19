@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AchievementsScreenView: View {
-    @ObservedObject var achievementViewModel = AchievementViewModel()
+    @ObservedObject var achievementViewModel = AchievementMockDataModel()
     
     var body: some View {
         NavigationView{

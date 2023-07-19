@@ -1,5 +1,5 @@
 //
-//  AchievementViewModel.swift
+//  AchievementMockDataModel.swift
 //  Tickers
 //
 //  Created by Julia Morales on 29/06/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class AchievementViewModel: ObservableObject {
+class AchievementMockDataModel: ObservableObject {
     @Published var achievements = [
                                     AchievementModel(isCompleted: true, isProgressive: false, taskTotal: 1, taskResolved: 2, title: "Hora do Foco", description: "Concluiu seu primeiro pomodoro."),
                                     AchievementModel(isCompleted: true, isProgressive: false, taskTotal: 1, taskResolved: 2, title: "Primeiros Passos", description: "Completou um total de 5 horas em foco."),
