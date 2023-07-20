@@ -49,6 +49,7 @@ struct PomodoroView: View {
                     popupFactory.make()
                 }
             }
+            .background(Color("BackgroundColor"))
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {

@@ -20,7 +20,7 @@ struct HomeView<T: Identifiable>: View {
                 createScrollView(
                     title: "Escolha um Ticker para cuidar",
                     items: tickersViewModel.tickers,
-                    destination: VStack{Text("sobre isso")}
+                    destination: TickersView(tickersViewModel: tickersViewModel)
                 ) { item in
                     CardPetView(
                         isLocked: item.isLocked,

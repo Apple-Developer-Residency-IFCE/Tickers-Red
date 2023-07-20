@@ -15,6 +15,7 @@ struct NavBarWithMissions: ViewModifier {
     
     func body(content: Content) -> some View {
         content
+            .background(Color("BackgroundColor"))
             .navigationBarBackButtonHidden(true)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

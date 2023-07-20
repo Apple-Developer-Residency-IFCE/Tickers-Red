@@ -48,7 +48,9 @@ struct ProfileView: View {
             theme
             Divider()
             Spacer()
-        }.padding(.top, 20)
+        }
+        .padding(.top, 20)
+        .background(Color("BackgroundColor"))
     }
     
     private var title: some View {

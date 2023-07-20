@@ -22,6 +22,7 @@ struct FocusView: View {
     var body: some View {
         NavigationView{
             ZStack {
+                Color("BackgroundColor").ignoresSafeArea()
                 if isPresented {
                     FocusContentView(durationInSecond: durationInSecond)
                         .animation(.easeInOut(duration: 0.5), value: isPresented)

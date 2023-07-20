@@ -41,6 +41,7 @@
 		B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
 		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
 		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
+		C898CF9E2A68B4D9002ED7C3 /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898CF9D2A68B4D9002ED7C3 /* TickersView.swift */; };
 		CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
 		CE1255152A537C31006F748F /* AchievementHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1255142A537C31006F748F /* AchievementHomeModel.swift */; };
@@ -118,6 +119,7 @@
 		B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCardsHomeView.swift; sourceTree = "<group>"; };
 		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
 		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
+		C898CF9D2A68B4D9002ED7C3 /* TickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersView.swift; sourceTree = "<group>"; };
 		CE06F2F62A4290BD00960E76 /* FocusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusContentView.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE1255142A537C31006F748F /* AchievementHomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AchievementHomeModel.swift; path = ../Views/Home/AchievementHomeModel.swift; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 		7DB700AC2A54A947005EB90F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C898CF9C2A68B4C0002ED7C3 /* Tickers */,
 				7DB700BE2A54CEF5005EB90F /* AchievementsView */,
 				7DB700AE2A54B0E7005EB90F /* GlobalComponents */,
 				DD427F542A3130B70040A006 /* CardPet */,
@@ -437,6 +440,14 @@
 				C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */,
 			);
 			path = AchievementCard;
+			sourceTree = "<group>";
+		};
+		C898CF9C2A68B4C0002ED7C3 /* Tickers */ = {
+			isa = PBXGroup;
+			children = (
+				C898CF9D2A68B4D9002ED7C3 /* TickersView.swift */,
+			);
+			path = Tickers;
 			sourceTree = "<group>";
 		};
 		C8EE385C2A561FFE000D10F2 /* Achievements */ = {
@@ -696,6 +707,7 @@
 				C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */,
 				CE6044F22A394D900032C30A /* SnoreView.swift in Sources */,
 				DD5E82D92A3155D6005248F8 /* CustomNavBarModifiers.swift in Sources */,
+				C898CF9E2A68B4D9002ED7C3 /* TickersView.swift in Sources */,
 				CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */,
 				DD67837E2A3BD8CF009D5A3A /* HomeViewModel.swift in Sources */,
 				DD427F702A31368E0040A006 /* FocusView.swift in Sources */,
