@@ -27,7 +27,7 @@ struct SoundComponent: View {
                     }//: HStack
                 }
                 .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/14)
-                .background(.gray)
+                .background(.white)
                 .cornerRadius(20)
                 .padding(.leading, 20)
                 .padding(.trailing, 20)

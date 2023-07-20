@@ -7,9 +7,7 @@
 
 import SwiftUI
 
-struct MainTabView: View {
-    @AppStorage("Name") var name: String = ""
-    
+struct MainTabView: View {    
     @State var isPresenting: Bool = false
     @State var currentScene: Int = 0
     @State var oldScene: Int = 0
@@ -52,7 +50,6 @@ struct MainTabView: View {
                     }
                     .tag(2)
             } // : TabView
-            .navBarWithMissions(blackText: "Bem vindo,", blueText: name)
         }
     }
 }
