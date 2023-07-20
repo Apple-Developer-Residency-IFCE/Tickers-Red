@@ -7,12 +7,13 @@
 
 import SwiftUI
 
+
 class SoundViewModel: ObservableObject {
     @Published var sounds: [Sound] = [
-        Sound(id: 0, title: "Chuva", isDownload: false),
-        Sound(id: 1, title: "Tempestade", isDownload: true),
-        Sound(id: 2, title: "Água Corrente", isDownload: true),
-        Sound(id: 3, title: "Lo-fi", isDownload: true)
+        Sound(id: 0, title: "Chuva", isPlay: false, isDownload: false, path: "chuva"),
+        Sound(id: 1, title: "Tempestade", isPlay: false, isDownload: true, path: "tempestade"),
+        Sound(id: 2, title: "Água Corrente", isPlay: false, isDownload: true, path: "water"),
+        Sound(id: 3, title: "Lo-fi", isPlay: false, isDownload: true, path: "lofi")
     ]
     
     func handleButtonPress(_ i: Int) {
@@ -21,7 +22,16 @@ class SoundViewModel: ObservableObject {
     
     func selectMusicOption(_ selectedOption: Sound) {
         for index in sounds.indices {
-            sounds[index].isPlay = sounds[index].id == selectedOption.id
+            if(sounds[index].id == selectedOption.id){
+                sounds[index].isPlay.toggle()
+            } else {
+                sounds[index].isPlay = false
+            }
+        }
+        if(selectedOption.isPlay){
+            SoundPlayer.shared.pauseMusic()
+        }else{
+            SoundPlayer.shared.playMusic(named: selectedOption.path)
         }
     }
 }
