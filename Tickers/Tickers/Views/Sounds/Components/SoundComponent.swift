@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct SoundComponent: View {
     @ObservedObject var soundViewModel: SoundViewModel
+    @State var musicSelected: Int?
     
     var body: some View {
         VStack {
@@ -17,12 +19,13 @@ struct SoundComponent: View {
                     Text("\(sounds.title)")
                         .padding(.leading, 20)
                     Spacer()
-                    Image(sounds.isPlay ? "pauseSound" : "playSound").onTapGesture {
+                    Button(action: {
                         soundViewModel.selectMusicOption(sounds)
-                    }
-                    Image(sounds.isDownload ? "downloadSound" : "cancelSound")
-                        .padding(.trailing, 20)
-                }//: HStack
+                        }) {
+                        Image(sounds.isPlay ? "pauseSound" : "playSound")
+                            .padding(.trailing, 20)
+                    }//: HStack
+                }
                 .frame(width: UIScreen.main.bounds.width - 40, height: UIScreen.main.bounds.height/14)
                 .background(.white)
                 .cornerRadius(20)
