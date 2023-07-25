@@ -51,7 +51,7 @@
 		CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */; };
 		CE6044F22A394D900032C30A /* SnoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6044F12A394D900032C30A /* SnoreView.swift */; };
 		CE71478A2A65FE2B00680340 /* DefinitionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7147892A65FE2B00680340 /* DefinitionsViewModel.swift */; };
-		CE7147902A6A006F00680340 /* Achievements.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71478F2A6A006F00680340 /* Achievements.swift */; };
+		CE7147902A6A006F00680340 /* AchievementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE71478F2A6A006F00680340 /* AchievementSystem.swift */; };
 		CED2AA4B2A3BCB5C00F54695 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4A2A3BCB5C00F54695 /* PopupView.swift */; };
 		CED2AA502A3D09B800F54695 /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4F2A3D09B800F54695 /* PopupContentView.swift */; };
 		DD20AE672A4250C0002FB30D /* MissionsVIewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD20AE662A4250C0002FB30D /* MissionsVIewModel.swift */; };
@@ -133,7 +133,7 @@
 		CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroPopupFactory.swift; sourceTree = "<group>"; };
 		CE6044F12A394D900032C30A /* SnoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnoreView.swift; sourceTree = "<group>"; };
 		CE7147892A65FE2B00680340 /* DefinitionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionsViewModel.swift; sourceTree = "<group>"; };
-		CE71478F2A6A006F00680340 /* Achievements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievements.swift; sourceTree = "<group>"; };
+		CE71478F2A6A006F00680340 /* AchievementSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementSystem.swift; sourceTree = "<group>"; };
 		CED2AA4A2A3BCB5C00F54695 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		CED2AA4F2A3D09B800F54695 /* PopupContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupContentView.swift; sourceTree = "<group>"; };
 		DD20AE662A4250C0002FB30D /* MissionsVIewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsVIewModel.swift; sourceTree = "<group>"; };
@@ -455,7 +455,7 @@
 				B70A7FB82A68975E000106C2 /* AchievementViewModel.swift */,
 				CE1255142A537C31006F748F /* AchievementHomeModel.swift */,
 				7DB700C42A54D054005EB90F /* AchievementModel.swift */,
-				CE71478F2A6A006F00680340 /* Achievements.swift */,
+				CE71478F2A6A006F00680340 /* AchievementSystem.swift */,
 				C82D8B3E2A4E041E00C2FE27 /* AchievementCard */,
 				B7205A612A4CE8D700FBFADD /* AchievementHomeCards */,
 			);
@@ -747,7 +747,7 @@
 				DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
 				B70A7FAB2A689338000106C2 /* Definitions+CoreDataClass.swift in Sources */,
-				CE7147902A6A006F00680340 /* Achievements.swift in Sources */,
+				CE7147902A6A006F00680340 /* AchievementSystem.swift in Sources */,
 				B70A7FB42A68942F000106C2 /* Achievement+CoreDataProperties.swift in Sources */,
 				35A4BC9F2A390CA6003EBF52 /* ProgressBarComponent.swift in Sources */,
 				C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */,
