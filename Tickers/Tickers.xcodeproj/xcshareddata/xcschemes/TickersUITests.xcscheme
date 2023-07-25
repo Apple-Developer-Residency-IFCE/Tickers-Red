@@ -24,6 +24,17 @@
                ReferencedContainer = "container:Tickers.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "032134242A1D7AC5002FD592"
+               BuildableName = "TickersTests.xctest"
+               BlueprintName = "TickersTests"
+               ReferencedContainer = "container:Tickers.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -53,15 +64,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "032134142A1D7AC4002FD592"
-            BuildableName = "Tickers.app"
-            BlueprintName = "Tickers"
-            ReferencedContainer = "container:Tickers.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

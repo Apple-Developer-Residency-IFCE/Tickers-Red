@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ActivityKit
 
 struct TimerView: View {
     
@@ -95,6 +96,26 @@ struct TimerView: View {
         }
     }  //: View
     
+    // MARK: Live activity
+    func liveActivity(){
+        
+        if #available(iOS 16.1, *) {
+            @State var activity: Activity<TickersActivityAttributes>? = nil
+            if isTimerRunning {
+                let attributes = TickersActivityAttributes()
+                let state = TickersActivityAttributes.ContentState(timer: durationInSecond)
+                
+                activity = try? Activity<TickersActivityAttributes>.request(attributes: attributes, contentState: state, pushType: nil)
+            } else {
+                let state = TickersActivityAttributes.ContentState(timer: durationInSecond)
+                if let currentActivity = activity {
+                    Task {
+                        await currentActivity.end(using: state, dismissalPolicy: .immediate)
+                    }
+                }
+            }
+        }
+    }
     
     // MARK: View to create buttons of body view
     private var timerControlsView: some View {
@@ -112,6 +133,7 @@ struct TimerView: View {
 
                 Button {
                     onPlayPause()
+                    liveActivity()
                 } label: {
                     Image(isTimerRunning ? "pauseWatch" : "playButton")
                         .padding(5).padding(.bottom, 10)

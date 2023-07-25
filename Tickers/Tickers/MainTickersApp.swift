@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import WidgetKit
+
 
 @main
 struct TickersApp: App {

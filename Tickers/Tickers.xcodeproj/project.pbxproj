@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134182A1D7AC4002FD592 /* MainTickersApp.swift */; };
 		0321341D2A1D7AC4002FD592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0321341C2A1D7AC4002FD592 /* Assets.xcassets */; };
 		032134202A1D7AC4002FD592 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0321341F2A1D7AC4002FD592 /* Preview Assets.xcassets */; };
 		0321342A2A1D7AC5002FD592 /* TickersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134292A1D7AC5002FD592 /* TickersTests.swift */; };
@@ -41,6 +40,54 @@
 		B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
 		C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
 		C82D8B422A4E04A800C2FE27 /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
+		C86F08432A6F29F4006611DD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86F08422A6F29F4006611DD /* WidgetKit.framework */; };
+		C86F08452A6F29F4006611DD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86F08442A6F29F4006611DD /* SwiftUI.framework */; };
+		C86F08482A6F29F4006611DD /* TickersActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F08472A6F29F4006611DD /* TickersActivityBundle.swift */; };
+		C86F084A2A6F29F4006611DD /* TickersActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F08492A6F29F4006611DD /* TickersActivityAttributes.swift */; };
+		C86F084C2A6F29F4006611DD /* TickersActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F084B2A6F29F4006611DD /* TickersActivity.swift */; };
+		C86F084E2A6F29F6006611DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C86F084D2A6F29F6006611DD /* Assets.xcassets */; };
+		C86F08522A6F29F6006611DD /* TickersActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C86F08402A6F29F4006611DD /* TickersActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C86F08592A6F337E006611DD /* TickersActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C86F08492A6F29F4006611DD /* TickersActivityAttributes.swift */; };
+		C86F085A2A7068CC006611DD /* MainTickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134182A1D7AC4002FD592 /* MainTickersApp.swift */; };
+		C86F085E2A706AF8006611DD /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 642A62AC2A257D41002B83C7 /* MainTabView.swift */; };
+		C86F085F2A706B09006611DD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19EE6F2A3BC3BE004CAC44 /* ProfileView.swift */; };
+		C86F08602A706BFD006611DD /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6B2A3136730040A006 /* HomeView.swift */; };
+		C86F08612A706C04006611DD /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837D2A3BD8CF009D5A3A /* HomeViewModel.swift */; };
+		C86F08622A706C1E006611DD /* PomodoroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640E307C2A281749007C6AC0 /* PomodoroView.swift */; };
+		C86F08632A706C25006611DD /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5FD86B2A37B7F800C6AC24 /* PomodoroModel.swift */; };
+		C86F08642A706C7F006611DD /* PomodoroViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD302A392120000D356E /* PomodoroViewModel.swift */; };
+		C86F08652A706C84006611DD /* PomodoroPopupFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5FEEC82A4110CF00EA932B /* PomodoroPopupFactory.swift */; };
+		C86F08662A706C8F006611DD /* TickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD67837B2A3BD725009D5A3A /* TickerModel.swift */; };
+		C86F08672A706CA2006611DD /* AchievementHomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1255142A537C31006F748F /* AchievementHomeModel.swift */; };
+		C86F08682A706CB2006611DD /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4A2A3BCB5C00F54695 /* PopupView.swift */; };
+		C86F08692A706CC9006611DD /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645E0DE12A1EDE4D00293553 /* TimerView.swift */; };
+		C86F086A2A706CDB006611DD /* CardPetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F5F2A3133520040A006 /* CardPetView.swift */; };
+		C86F086B2A706CE4006611DD /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898CF9D2A68B4D9002ED7C3 /* TickersView.swift */; };
+		C86F086C2A706CED006611DD /* AchievementsScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C62A54EA71005EB90F /* AchievementsScreenView.swift */; };
+		C86F086D2A706CF3006611DD /* AchievementCardsHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */; };
+		C86F086E2A706CFE006611DD /* TickerFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEA3EB2A1EDADF0007F9CD /* TickerFont.swift */; };
+		C86F08702A706D08006611DD /* PopupContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED2AA4F2A3D09B800F54695 /* PopupContentView.swift */; };
+		C86F08712A706D23006611DD /* CustomNavBarModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD5E82D82A3155D6005248F8 /* CustomNavBarModifiers.swift */; };
+		C86F08722A706D2B006611DD /* AchievementViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C72A54EA71005EB90F /* AchievementViewModel.swift */; };
+		C86F08732A706D35006611DD /* ProgressBarComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35A4BC9E2A390CA6003EBF52 /* ProgressBarComponent.swift */; };
+		C86F08742A706D41006611DD /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
+		C86F08752A706D4A006611DD /* AchievementCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */; };
+		C86F08762A706D53006611DD /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643BA2F02A200CBC00B8DA69 /* RadioButton.swift */; };
+		C86F08772A706D5E006611DD /* ConfirmBtView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646B6E4C2A201C9B0048402C /* ConfirmBtView.swift */; };
+		C86F08782A706E5A006611DD /* AchievementModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB700C42A54D054005EB90F /* AchievementModel.swift */; };
+		C86F08792A706E6C006611DD /* ProgressBarAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */; };
+		C86F087A2A706E96006611DD /* SoundsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1D2C832A3151AA00B71AF1 /* SoundsView.swift */; };
+		C86F087B2A706EAB006611DD /* SoundViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D555AE42A4E269900FAF0FE /* SoundViewModel.swift */; };
+		C86F087C2A706EB6006611DD /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D47306C2A4F91F4008C8ABB /* SoundModel.swift */; };
+		C86F087D2A706EC0006611DD /* SoundComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D555AE22A4E102300FAF0FE /* SoundComponent.swift */; };
+		C86F087E2A706EC7006611DD /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D90FF032A6614E4009FC143 /* SoundPlayer.swift */; };
+		C86F087F2A706ED9006611DD /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD427F6F2A31368E0040A006 /* FocusView.swift */; };
+		C86F08802A706EE1006611DD /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
+		C86F08812A706EEA006611DD /* DefinitionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB062E62A4646E900483761 /* DefinitionsView.swift */; };
+		C86F08822A706EFF006611DD /* SliderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6CA16F2A46666E00FE5F0C /* SliderComponent.swift */; };
+		C86F08832A706F13006611DD /* SnoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6044F12A394D900032C30A /* SnoreView.swift */; };
+		C86F08842A706F50006611DD /* TimerInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D77AD2E2A391C21000D356E /* TimerInterval.swift */; };
+		C86F08862A707091006611DD /* MainTickersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032134182A1D7AC4002FD592 /* MainTickersApp.swift */; };
 		C898CF9E2A68B4D9002ED7C3 /* TickersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C898CF9D2A68B4D9002ED7C3 /* TickersView.swift */; };
 		CE06F2F72A4290BD00960E76 /* FocusContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE06F2F62A4290BD00960E76 /* FocusContentView.swift */; };
 		CE0CFDD82A2941DE002F167F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0CFDD72A2941DE002F167F /* CustomTextField.swift */; };
@@ -78,7 +125,28 @@
 			remoteGlobalIDString = 032134142A1D7AC4002FD592;
 			remoteInfo = Tickers;
 		};
+		C86F08502A6F29F6006611DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0321340D2A1D7AC4002FD592 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C86F083F2A6F29F4006611DD;
+			remoteInfo = TickersActivityExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C86F08532A6F29F6006611DD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C86F08522A6F29F6006611DD /* TickersActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		032134152A1D7AC4002FD592 /* Tickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -119,6 +187,14 @@
 		B716C2902A4E5719002C4671 /* AchievementCardsHomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCardsHomeView.swift; sourceTree = "<group>"; };
 		C82D8B3F2A4E044C00C2FE27 /* AchievementCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementCardView.swift; sourceTree = "<group>"; };
 		C82D8B412A4E04A800C2FE27 /* ProgressBarAchievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarAchievement.swift; sourceTree = "<group>"; };
+		C86F08402A6F29F4006611DD /* TickersActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TickersActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C86F08422A6F29F4006611DD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C86F08442A6F29F4006611DD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C86F08472A6F29F4006611DD /* TickersActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersActivityBundle.swift; sourceTree = "<group>"; };
+		C86F08492A6F29F4006611DD /* TickersActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersActivityAttributes.swift; sourceTree = "<group>"; };
+		C86F084B2A6F29F4006611DD /* TickersActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersActivity.swift; sourceTree = "<group>"; };
+		C86F084D2A6F29F6006611DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C86F084F2A6F29F6006611DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C898CF9D2A68B4D9002ED7C3 /* TickersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickersView.swift; sourceTree = "<group>"; };
 		CE06F2F62A4290BD00960E76 /* FocusContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusContentView.swift; sourceTree = "<group>"; };
 		CE0CFDD72A2941DE002F167F /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
@@ -163,6 +239,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C86F083D2A6F29F4006611DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F08452A6F29F4006611DD /* SwiftUI.framework in Frameworks */,
+				C86F08432A6F29F4006611DD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -172,6 +257,8 @@
 				032134172A1D7AC4002FD592 /* Tickers */,
 				032134282A1D7AC5002FD592 /* TickersTests */,
 				032134322A1D7AC5002FD592 /* TickersUITests */,
+				C86F08462A6F29F4006611DD /* TickersActivity */,
+				C86F08412A6F29F4006611DD /* Frameworks */,
 				032134162A1D7AC4002FD592 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -182,6 +269,7 @@
 				032134152A1D7AC4002FD592 /* Tickers.app */,
 				032134252A1D7AC5002FD592 /* TickersTests.xctest */,
 				0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */,
+				C86F08402A6F29F4006611DD /* TickersActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -442,6 +530,27 @@
 			path = AchievementCard;
 			sourceTree = "<group>";
 		};
+		C86F08412A6F29F4006611DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C86F08422A6F29F4006611DD /* WidgetKit.framework */,
+				C86F08442A6F29F4006611DD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C86F08462A6F29F4006611DD /* TickersActivity */ = {
+			isa = PBXGroup;
+			children = (
+				C86F08472A6F29F4006611DD /* TickersActivityBundle.swift */,
+				C86F08492A6F29F4006611DD /* TickersActivityAttributes.swift */,
+				C86F084B2A6F29F4006611DD /* TickersActivity.swift */,
+				C86F084D2A6F29F6006611DD /* Assets.xcassets */,
+				C86F084F2A6F29F6006611DD /* Info.plist */,
+			);
+			path = TickersActivity;
+			sourceTree = "<group>";
+		};
 		C898CF9C2A68B4C0002ED7C3 /* Tickers */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,10 +685,12 @@
 				032134112A1D7AC4002FD592 /* Sources */,
 				032134122A1D7AC4002FD592 /* Frameworks */,
 				032134132A1D7AC4002FD592 /* Resources */,
+				C86F08532A6F29F6006611DD /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C86F08512A6F29F6006611DD /* PBXTargetDependency */,
 			);
 			name = Tickers;
 			productName = Tickers;
@@ -622,6 +733,23 @@
 			productReference = 0321342F2A1D7AC5002FD592 /* TickersUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C86F083F2A6F29F4006611DD /* TickersActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C86F08562A6F29F6006611DD /* Build configuration list for PBXNativeTarget "TickersActivityExtension" */;
+			buildPhases = (
+				C86F083C2A6F29F4006611DD /* Sources */,
+				C86F083D2A6F29F4006611DD /* Frameworks */,
+				C86F083E2A6F29F4006611DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TickersActivityExtension;
+			productName = TickersActivityExtension;
+			productReference = C86F08402A6F29F4006611DD /* TickersActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -643,6 +771,9 @@
 						CreatedOnToolsVersion = 14.3;
 						TestTargetID = 032134142A1D7AC4002FD592;
 					};
+					C86F083F2A6F29F4006611DD = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 				};
 			};
 			buildConfigurationList = 032134102A1D7AC4002FD592 /* Build configuration list for PBXProject "Tickers" */;
@@ -661,6 +792,7 @@
 				032134142A1D7AC4002FD592 /* Tickers */,
 				032134242A1D7AC5002FD592 /* TickersTests */,
 				0321342E2A1D7AC5002FD592 /* TickersUITests */,
+				C86F083F2A6F29F4006611DD /* TickersActivityExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -695,6 +827,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C86F083E2A6F29F4006611DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F084E2A6F29F6006611DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -721,6 +861,7 @@
 				DD427F6E2A3136820040A006 /* MissionsView.swift in Sources */,
 				DD67837C2A3BD725009D5A3A /* TickerModel.swift in Sources */,
 				643BA2F12A200CBC00B8DA69 /* RadioButton.swift in Sources */,
+				C86F08592A6F337E006611DD /* TickersActivityAttributes.swift in Sources */,
 				35A4BC9F2A390CA6003EBF52 /* ProgressBarComponent.swift in Sources */,
 				C82D8B402A4E044C00C2FE27 /* AchievementCardView.swift in Sources */,
 				7D19EE702A3BC3BE004CAC44 /* ProfileView.swift in Sources */,
@@ -729,7 +870,6 @@
 				CED2AA502A3D09B800F54695 /* PopupContentView.swift in Sources */,
 				645E0DE22A1EDE4D00293553 /* TimerView.swift in Sources */,
 				642A62AD2A257D41002B83C7 /* MainTabView.swift in Sources */,
-				032134192A1D7AC4002FD592 /* MainTickersApp.swift in Sources */,
 				CE5FEEC92A4110CF00EA932B /* PomodoroPopupFactory.swift in Sources */,
 				7DB700C92A54EA71005EB90F /* AchievementViewModel.swift in Sources */,
 				7D5FD86C2A37B7F800C6AC24 /* PomodoroModel.swift in Sources */,
@@ -742,6 +882,7 @@
 				646B6E4D2A201C9B0048402C /* ConfirmBtView.swift in Sources */,
 				B716C2912A4E5719002C4671 /* AchievementCardsHomeView.swift in Sources */,
 				64EEA3EC2A1EDADF0007F9CD /* TickerFont.swift in Sources */,
+				C86F08862A707091006611DD /* MainTickersApp.swift in Sources */,
 				640E307D2A281749007C6AC0 /* PomodoroView.swift in Sources */,
 				7D77AD2F2A391C21000D356E /* TimerInterval.swift in Sources */,
 				CE1255152A537C31006F748F /* AchievementHomeModel.swift in Sources */,
@@ -767,6 +908,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C86F083C2A6F29F4006611DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C86F08742A706D41006611DD /* CustomTextField.swift in Sources */,
+				C86F08782A706E5A006611DD /* AchievementModel.swift in Sources */,
+				C86F087A2A706E96006611DD /* SoundsView.swift in Sources */,
+				C86F086C2A706CED006611DD /* AchievementsScreenView.swift in Sources */,
+				C86F08772A706D5E006611DD /* ConfirmBtView.swift in Sources */,
+				C86F087C2A706EB6006611DD /* SoundModel.swift in Sources */,
+				C86F08822A706EFF006611DD /* SliderComponent.swift in Sources */,
+				C86F08622A706C1E006611DD /* PomodoroView.swift in Sources */,
+				C86F08752A706D4A006611DD /* AchievementCardView.swift in Sources */,
+				C86F08722A706D2B006611DD /* AchievementViewModel.swift in Sources */,
+				C86F08482A6F29F4006611DD /* TickersActivityBundle.swift in Sources */,
+				C86F086A2A706CDB006611DD /* CardPetView.swift in Sources */,
+				C86F08672A706CA2006611DD /* AchievementHomeModel.swift in Sources */,
+				C86F08712A706D23006611DD /* CustomNavBarModifiers.swift in Sources */,
+				C86F08682A706CB2006611DD /* PopupView.swift in Sources */,
+				C86F087D2A706EC0006611DD /* SoundComponent.swift in Sources */,
+				C86F08632A706C25006611DD /* PomodoroModel.swift in Sources */,
+				C86F086E2A706CFE006611DD /* TickerFont.swift in Sources */,
+				C86F08732A706D35006611DD /* ProgressBarComponent.swift in Sources */,
+				C86F08642A706C7F006611DD /* PomodoroViewModel.swift in Sources */,
+				C86F08842A706F50006611DD /* TimerInterval.swift in Sources */,
+				C86F08702A706D08006611DD /* PopupContentView.swift in Sources */,
+				C86F08762A706D53006611DD /* RadioButton.swift in Sources */,
+				C86F08802A706EE1006611DD /* FocusContentView.swift in Sources */,
+				C86F08692A706CC9006611DD /* TimerView.swift in Sources */,
+				C86F087E2A706EC7006611DD /* SoundPlayer.swift in Sources */,
+				C86F08652A706C84006611DD /* PomodoroPopupFactory.swift in Sources */,
+				C86F08602A706BFD006611DD /* HomeView.swift in Sources */,
+				C86F08812A706EEA006611DD /* DefinitionsView.swift in Sources */,
+				C86F084C2A6F29F4006611DD /* TickersActivity.swift in Sources */,
+				C86F08662A706C8F006611DD /* TickerModel.swift in Sources */,
+				C86F08612A706C04006611DD /* HomeViewModel.swift in Sources */,
+				C86F085A2A7068CC006611DD /* MainTickersApp.swift in Sources */,
+				C86F086B2A706CE4006611DD /* TickersView.swift in Sources */,
+				C86F08792A706E6C006611DD /* ProgressBarAchievement.swift in Sources */,
+				C86F087B2A706EAB006611DD /* SoundViewModel.swift in Sources */,
+				C86F084A2A6F29F4006611DD /* TickersActivityAttributes.swift in Sources */,
+				C86F087F2A706ED9006611DD /* FocusView.swift in Sources */,
+				C86F085F2A706B09006611DD /* ProfileView.swift in Sources */,
+				C86F08832A706F13006611DD /* SnoreView.swift in Sources */,
+				C86F085E2A706AF8006611DD /* MainTabView.swift in Sources */,
+				C86F086D2A706CF3006611DD /* AchievementCardsHomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -779,6 +969,11 @@
 			isa = PBXTargetDependency;
 			target = 032134142A1D7AC4002FD592 /* Tickers */;
 			targetProxy = 032134302A1D7AC5002FD592 /* PBXContainerItemProxy */;
+		};
+		C86F08512A6F29F6006611DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C86F083F2A6F29F4006611DD /* TickersActivityExtension */;
+			targetProxy = C86F08502A6F29F6006611DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -900,6 +1095,7 @@
 		0321343A2A1D7AC5002FD592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -910,6 +1106,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tickers/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -933,6 +1130,7 @@
 		0321343B2A1D7AC5002FD592 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -943,6 +1141,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Tickers/Info.plist;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1041,6 +1240,64 @@
 			};
 			name = Release;
 		};
+		C86F08542A6F29F6006611DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TickersActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TickersActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.Tickers.TickersActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C86F08552A6F29F6006611DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TickersActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TickersActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = lucasOliveira.Tickers.TickersActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1076,6 +1333,15 @@
 			buildConfigurations = (
 				032134402A1D7AC5002FD592 /* Debug */,
 				032134412A1D7AC5002FD592 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C86F08562A6F29F6006611DD /* Build configuration list for PBXNativeTarget "TickersActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C86F08542A6F29F6006611DD /* Debug */,
+				C86F08552A6F29F6006611DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
