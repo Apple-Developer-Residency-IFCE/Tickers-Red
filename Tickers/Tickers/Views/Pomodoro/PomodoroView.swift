@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct PomodoroView: View {
-    @ObservedObject var viewModel: PomodoroViewModel
+    @ObservedObject var pomodoroViewModel: PomodoroViewModel
     @ObservedObject var popupFactory: PomodoroPopupFactory
     @State var isPresentingDefinitions: Bool = false
     @Environment(\.dismiss) var dismiss
     
     init(listTime: [Time]) {
         let vm = PomodoroViewModel(timeList: listTime)
-        self.viewModel = vm
+        self.pomodoroViewModel = vm
         self.popupFactory = PomodoroPopupFactory(viewModel: vm)
     }
     
@@ -28,13 +28,13 @@ struct PomodoroView: View {
                     .padding(.top, 380)
                 VStack {
                     TimerView(
-                        durationInSecond: viewModel.timeList[viewModel.count].remainigTime,
-                        isTimerRunning: viewModel.isRunning,
-                        progressTimer: viewModel.progressTimer,
+                        durationInSecond: pomodoroViewModel.timeList[pomodoroViewModel.count].remainigTime,
+                        isTimerRunning: pomodoroViewModel.isRunning,
+                        progressTimer: pomodoroViewModel.progressTimer,
                         onReset: { popupFactory.show(.reset) },
-                        onPlayPause: { viewModel.onPlayPause() },
+                        onPlayPause: { pomodoroViewModel.onPlayPause() },
                         onSkip: {
-                            if viewModel.isCurrentTimerRest() {
+                            if pomodoroViewModel.isCurrentTimerRest() {
                                 popupFactory.show(.skipRest)
                             } else {
                                 popupFactory.show(.skipPomo)
@@ -45,14 +45,14 @@ struct PomodoroView: View {
                     footerView
                 }
                 
-                if viewModel.isShowingPopup {
+                if pomodoroViewModel.isShowingPopup {
                     popupFactory.make()
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
-                    Text(viewModel.timeList[viewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
+                    Text(pomodoroViewModel.timeList[pomodoroViewModel.count].isPomodoro ? "Pomodoro" : "Pausa")
                         .tickerFont(size: 22, weight: .bold)
                         .foregroundColor(Color("Blue2"))
                 }
@@ -71,7 +71,7 @@ struct PomodoroView: View {
     
     private var tickersPomodoroView: some View {
         VStack{
-            if(viewModel.timeList[viewModel.count].isPomodoro){
+            if(pomodoroViewModel.timeList[pomodoroViewModel.count].isPomodoro){
                 HStack(spacing: 20){
                     Image("football").padding(.bottom, -60).padding(.leading, 10)
                     Image("babyCatAwake").padding(.bottom, 90).padding(.trailing, 50)
@@ -87,7 +87,7 @@ struct PomodoroView: View {
     
     private var footerView: some View {
         HStack(alignment: .bottom, spacing: 50){
-            NavigationLink(destination: FocusView(durationInSecond: viewModel.timeList[viewModel.count].remainigTime)) {
+            NavigationLink(destination: FocusView(durationInSecond: pomodoroViewModel.timeList[pomodoroViewModel.count].remainigTime)) {
                 VStack(alignment: .center){
                     Image("focusButton")
                     Text("Foco")
