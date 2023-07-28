@@ -15,3 +15,22 @@ struct AchievementModel: Hashable {
     let title: String
     let description: String
 }
+
+class Achievements: Identifiable {
+    let id: UUID
+    var tickerName: String
+    var xpRequiredByLevel: [Int: Int]
+    var xpTotal: Int
+    var xpAtual: Int
+    var isCompleted: Bool {
+        return xpAtual >= xpTotal
+    }
+    
+    init(id: UUID = UUID(), tickerName: String, xpRequiredByLevel: [Int: Int]) {
+        self.id = id
+        self.tickerName = tickerName
+        self.xpRequiredByLevel = xpRequiredByLevel
+        self.xpTotal = 0
+        self.xpAtual = 0
+    }
+}
